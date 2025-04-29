@@ -33,7 +33,7 @@ pipeline {
         stage('Find Dynamic Report Name') {
             steps {
                 script {
-                    def files = sh(script: "ls ${REPORT_DIR}/*.html", returnStdout: true).trim().split("\n")
+                    def files = bat(script: "ls ${REPORT_DIR}/*.html", returnStdout: true).trim().split("\n")
                     if (files.length == 0) {
                         error "No report file found!"
                     }

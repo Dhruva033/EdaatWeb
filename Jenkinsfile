@@ -29,34 +29,30 @@ pipeline {
             }
         }
 
-         stage('Find Latest Report') {
+    stage('Find Latest Report') {
             steps {
-                script {
-                    def reportFile = bat(script: """
-                        for /f "delims=" %%i in ('dir /b /od ${REPORT_DIR}\\*.html') do set LAST_REPORT=%%i
-                        echo %LAST_REPORT%
-                    """, returnStdout: true).trim()
-                    
-                    if (reportFile) {
-                        env.REPORT_FILE = reportFile
-                        echo "Latest report file: ${env.REPORT_FILE}"
-                    } else {
-                        error "No report file found!"
-                    }
-                }
+                bat '''
+                for /f "delims=" %%i in ('dir /b /od %REPORT_DIR%\\*.html') do set "latest=%%i"
+                echo Latest Report=!latest! > latest_report.txt
+                '''
             }
         }
 
-        stage('Publish Test Report') {
+        stage('Publish HTML Report') {
             steps {
-                publishHTML(target: [
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: "${REPORT_DIR}",
-                    reportFiles: "${REPORT_FILE}",
-                    reportName: 'Automation Test Results'
-                ])
+                script {
+                    def reportFile = readFile('latest_report.txt').trim().replace('Latest Report=', '')
+                    echo "Latest report file: ${reportFile}"
+
+                    publishHTML(target: [
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: "${env.REPORT_DIR}",
+                        reportFiles: reportFile,
+                        reportName: 'Automation Test Results'
+                    ])
+                }
             }
         }
     }

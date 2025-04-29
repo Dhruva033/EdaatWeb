@@ -1,8 +1,7 @@
 pipeline {
     agent any
-    
-    
-      tools {
+
+    tools {
         maven 'Maven 3.9.5'
         jdk 'myjdk'
     }
@@ -20,25 +19,33 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat 'mvn test -DsuiteXmlFile=TestSuite/Client_P2.xml'
+                sh 'mvn test -DsuiteXmlFile=TestSuite/Client_P2.xml'
             }
         }
 
         stage('Find Dynamic Report Name') {
             steps {
                 script {
-                    def files = bat(script: "ls ${REPORT_DIR}/*.html", returnStdout: true).trim().split("\n")
-                    if (files.length == 0) {
-                        error "No report file found!"
+                    def reportPath = new File(env.REPORT_DIR)
+                    if (!reportPath.exists()) {
+                        error "Report directory does not exist: ${env.REPORT_DIR}"
                     }
-                    env.REPORT_FILE = files[0].tokenize('/').last()
-                    echo "Report file detected: ${env.REPORT_FILE}"
+
+                    def htmlFiles = reportPath.listFiles().findAll { it.name.endsWith('.html') }
+                    if (htmlFiles.isEmpty()) {
+                        error "No HTML report found in ${env.REPORT_DIR}"
+                    }
+
+                    // Pick the most recently modified HTML report
+                    def latestFile = htmlFiles.max { it.lastModified() }
+                    echo "Found latest report file: ${latestFile.name}"
+                    env.REPORT_FILE = latestFile.name
                 }
             }
         }
@@ -49,8 +56,8 @@ pipeline {
                     allowMissing: false,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
-                    reportDir: "${REPORT_DIR}",
-                    reportFiles: "${REPORT_FILE}",
+                    reportDir: "${env.REPORT_DIR}",
+                    reportFiles: "${env.REPORT_FILE}",
                     reportName: 'Automation Test Results'
                 ])
             }

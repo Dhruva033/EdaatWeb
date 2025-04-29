@@ -1,0 +1,93 @@
+/**
+* Test Script Name  				 : N/A
+* Objective     					 : Verify PaidOutsideEDAAT Functionality
+* Version      						 : 1.0
+* Author       						 : Basavaraj Mudnur
+* Created Date 			      		 : 
+* Last Updated on					 : N/A
+* Updated By   			 			 : Basavaraj Mudnur
+* Pre-Conditions					 : N/A
+* Manual Test case Name				 : N/A
+* Epic Details						 : N/A
+* User Story Details				 : N/A
+* Defects affecting this test script : N/A
+* WorkArounds/Known Issues			 : N/A
+**/
+package com.azmqalabs.edaattestautomation.apppages.biller.pages;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.azmqalabs.edaattestautomation.apppages.masterpages.BasePage;
+import com.azmqalabs.edaattestautomation.common.uielement.fieldDecorator;
+import com.azmqalabs.edaattestautomation.objectrepository.EdaatOR;
+
+public class BillerSettingsPaidOutsideEDAATBillsPage extends BasePage{
+	public BillerSettingsPaidOutsideEDAATBillsPage(WebDriver driver,ExtentTest test) {
+
+		this.driver=driver;
+		this.test=test;
+
+		PageFactory.initElements(new fieldDecorator(driver,test), this);
+	}  
+
+
+	@FindBy(xpath = EdaatOR.Biller_Settings)
+	public WebElement Setting;
+
+
+	public boolean Exists(){
+		return super.Exists(Setting); 
+	}
+	//Function Summary : Navigate to Paid OutsideBillsEdaatBills page 
+		//Parameter Summary: N/A
+		public void navigatetoPaidOutsideBills() {
+		try {
+			WebClickUsingJS(EdaatOR.Biller_Settings);
+			Thread.sleep(1000);
+			WebClickUsingJS(EdaatOR.Biller_PaidOutsidemenu);
+			Thread.sleep(1000);
+			this.takeScreenShot();
+			test.log(Status.PASS,"#FUNC-Verify Navigate to Paid OutsideBillsEdaatBills page " + driver.getTitle() +" * Navigate to Paid OutsideBillsEdaatBills page is Pass * " );
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			this.takeScreenShot();
+			test.log(Status.FAIL,"#FUNC-View Navigate to Paid OutsideBillsEdaatBills page " + driver.getTitle() +" * Navigate to Paid OutsideBillsEdaatBills page is Fail * " );
+		}
+		
+		}
+		
+		//Function Summary : Method to upload Bulk data
+		//Parameter Summary: ConfirmMsg
+		public void uploadBulkData(Map<Object, Object> testdatamap) throws InterruptedException, IOException  {
+		try {
+			WebClickUsingActions(EdaatOR.Biller_Attachfile);
+			Thread.sleep(2000);
+//			File classpathRoot = new File(System.getProperty("user.dir")); 
+//			File app = new File(classpathRoot.getAbsolutePath() +"//SeleniumGrid//attachment//Customers-and-Invoices-Template.exe"); 
+//			String sFilename = app.toString(); 					
+//			Runtime.getRuntime().exec(sFilename);
+//			Thread.sleep(2000);
+			WebClick(EdaatOR.Biller_Proccesbtn);
+			VerifyValue1(WebGetText(EdaatOR.Biller_successmsg),testdatamap.get("ConfirmMsg").toString() );
+			this.takeScreenShot();
+			test.log(Status.PASS,"#FUNC-Verify upload Bulk data " + driver.getTitle() +" * upload Bulk data is Pass * " );
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			this.takeScreenShot();
+			test.log(Status.FAIL,"#FUNC-Verify upload Bulk data " + driver.getTitle() +" * Verify is Fail * " );
+		}
+			
+			
+		}
+}

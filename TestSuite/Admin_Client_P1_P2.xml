@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMngCorporteClientclick"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserListSearch"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminContactsMngMsgClose"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserGrpMgmclick"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmSubBillerSearch"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystmMngDistributionFileExport"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtIndiClientStatusSearch"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserGrpMgmviewpermision"/> 
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserMngUserliststatustoggle"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmIndividualClientNIDdownload"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMngContactsGridView"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUsersManagementViewUserUnderGroup"/>	
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserListAddNewUser"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmContactMgmStatusToggle"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmDistributionDailyTransferVerify"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmSubBillerGridView"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtCorporateClientSettingsBtn"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtIndividualClientSearch"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserGrpMgmAddGroup"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserListUserNameClick"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminContactsSearch"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtCorporateClientReqRec"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtIndiClientGridView"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmIndividualClientStatustoggle"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmContactsMgmStatus"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserGrpMgmEditGrpPermission"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserMgmUsersListUserEdit"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmIndividualClientNameClick"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmCorporateClientMgmSearch"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmSubBillerEditbutton"/> 
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmContactsMessageReply"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmDistributionDailyTransferRecord"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserMgmGroupMgmVerifyDeleteGroup"/> 
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserMgmUserListDeletedUsersCheckBox"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmCorporateClientStatustoggle"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmCorporateClientSearch"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmDistributionRecord"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmIndividualClientRecordClick"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMngCorporteClientMgmGridView"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmIndividualClientAccountSettingButton"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserGrpMgmSearchGroup"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserMgmUsersListUserDelete"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillsInvalid"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillvalids"/>
+     <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemManagementAddTaxes"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtToggleTaxes"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtCategoryGridView"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSearchCatgory"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmGridView"/>
+       <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmToggleStatus"/>
+        <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtTaxesGridView"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtProductCatgoriesAdd"/>
+	 <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtSearchTaxes"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtProductCatgoriesUpdate"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmGridView"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmUpdateGridView"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmApproveToggle"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmInvalidActivation"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmSearch"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmCloseBiller"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmReject"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmSaveApprove"/>	
+	<class name="com.azmqalabs.edaattestautomation.testscripts.Client.ClientPayablesIncomingBillsBillNumberClick"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.Client.ClientPayablesIncommingBillsPrint"/>
+	 <class name="com.azmqalabs.edaattestautomation.testscripts.Client.ClientPayIncommingBillsSearch"/>
+      
+  </classes>
+  </test>
+</suite>
+

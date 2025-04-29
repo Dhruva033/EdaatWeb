@@ -1,0 +1,534 @@
+/**
+
+* Test Script Name  				 : N/A
+* Objective                          : Verify IndividualClient Functionality.
+* Version      						 : 1.0
+* Author       						 : Arun Kumar MS
+* Created Date 			      		 : 15/08/2023
+* Last Updated on					 : N/A
+* Updated By   			 			 : 
+* Pre-Conditions					 : N/A
+* Manual Test case Name				 : N/A
+* Epic Details						 : N/A
+* User Story Details				 : N/A
+* Defects affecting this test script : N/A
+* WorkArounds/Known Issues			 : N/A
+**/
+package com.azmqalabs.edaattestautomation.apppages.biller.pages;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Map;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.azmqalabs.edaattestautomation.apppages.GlobalConstant;
+import com.azmqalabs.edaattestautomation.apppages.masterpages.BasePage;
+import com.azmqalabs.edaattestautomation.common.uielement.fieldDecorator;
+import com.azmqalabs.edaattestautomation.objectrepository.EdaatOR;
+
+
+
+public class BillerSubbillerPage extends BasePage
+{
+
+	public BillerSubbillerPage(WebDriver driver,ExtentTest test)
+	{
+		 this.driver=driver;
+		 this.test=test;
+		 
+		 PageFactory.initElements(new fieldDecorator(driver,test), this);
+	}  
+	
+
+	@FindBy(xpath = EdaatOR.Biller_Client)
+	public WebElement Client;
+	private boolean existsElement;
+		
+	    
+	    public boolean Exists(){
+	    	return super.Exists(Client); 
+		}
+		
+ 	//Function Summary   : Method to activate and deactivate individual sub biller.	
+	//Parameter Summary   : NationalID.	
+	public void ActivateDeactivate(Map<Object,Object> testdatamap){
+	    try{
+	    	WebClickUsingJS(EdaatOR.Biller_IndividualSubBillerPage);
+	    	Thread.sleep(1000);	
+	    	if(CheckElementExists(EdaatOR.Biller_IndividualToggle)==true) {
+	    		WebEdit(EdaatOR.Biller_Individual_NationalID,testdatamap.get("NationalID").toString());        			
+				Thread.sleep(1000);
+	    		WebClickUsingJS(EdaatOR.Biller_Individual_searchBtn);
+				Thread.sleep(1000);
+				WebClickUsingJS(EdaatOR.Biller_IndividualToggle);
+				Thread.sleep(1000);
+				VerifyValue1(getText(EdaatOR.Biller_ConfirmationPopupMessage), testdatamap.get("Active").toString());
+				Thread.sleep(1000);
+				WebClick(EdaatOR.Biller_YesBtn);
+				Thread.sleep(1000);
+				WebClickUsingJS(EdaatOR.Biller_IndividualToggle);
+				Thread.sleep(1000);
+				VerifyValue1(getText(EdaatOR.Biller_ConfirmationPopupMessage), testdatamap.get("InActive").toString());				Thread.sleep(1000);
+				WebClick(EdaatOR.Biller_YesBtn);
+				this.takeScreenShot();
+				test.log(Status.PASS,"#FUNC-Individual sub biller Deactivate/Activate Done" + driver.getTitle() +" * Individual sub biller Deactivate/Activate Done PASS * " );
+	    	}
+	    	else {
+	    		test.log(Status.FAIL,"#FUNC-Individual sub biller Deactivate/Activate Not Done" + driver.getTitle() +" * Individual sub biller Deactivate/Activate Not Done FAIL  * " );
+	    }
+	    }
+	    	catch(Exception e){
+	    	test.log(Status.FAIL," #FUNC-Individual sub biller Deactivate/Activate Not Done " + driver.getTitle() +" * Individual sub biller Deactivate/Activate Not Done FAIL * " );
+	        this.takeScreenShot();
+	    }
+	}
+	    //Function Summary : Method to add Individual Subbiller. 
+		//Parameter Summary: BillerName,National ID,IBanNumber,BeneficaryName,FixedValueAmount,Percentage Value,MobileNumber,Email.
+	    public boolean AddSubBiller(Map<Object, Object> testdatamap){
+		//	boolean existsElement = false;
+			try{
+				WebClickUsingJS(EdaatOR.Biller_Sub_Individualclient);
+	        	Thread.sleep(2000);
+	        	WebClickUsingJS(EdaatOR.Biller_Sub_IndividualsubBiller);
+	        	Thread.sleep(2000);
+				WebClick(EdaatOR.Biller_AddSubBilleer);
+				Thread.sleep(1000);
+				WebEdit(EdaatOR.Biller_SubBillerName,testdatamap.get("BillerName").toString());
+				Thread.sleep(1000);
+				WebEdit(EdaatOR.Biller_Subbiller_NId,testdatamap.get("National ID").toString());
+				Thread.sleep(1000);
+				WebEdit(EdaatOR.Biller_SubBiller_IBAN,testdatamap.get("IBanNumber").toString());
+				Thread.sleep(1000);
+				WebEdit(EdaatOR.Biller_SubBiller_Benificary,testdatamap.get("BeneficaryName").toString());
+				EnterBillerIBANAttmnt();
+		
+				WebClickUsingJS(EdaatOR.Biller_SubBiller_Invoice_Total_AMT_ChkBox);
+				Thread.sleep(2000);
+				WebClickUsingJS(EdaatOR.Biller_SubBiller_FixedValue_ChkBox);
+				Thread.sleep(2000);
+				WebEdit(EdaatOR.Biller_SubBiller_FixedValue_Amt,testdatamap.get("FixedValueAmount").toString());
+				WebClickUsingJS(EdaatOR.Biller_SubBiller_Percentage_ChkBox);
+				Thread.sleep(3000);
+				WebEdit(EdaatOR.Biller_SubBiller_Percentage_Val,testdatamap.get("Percentage Value").toString());
+				WebClickUsingJS(EdaatOR.Biller_SubBiller_Trans_Fee_Deduct_ChxBox);
+				Thread.sleep(2000);
+				WebEdit(EdaatOR.Biller_SubBiller_MOB,testdatamap.get("MobileNumber").toString());
+				WebEdit(EdaatOR.Biller_SubBiller_Email,testdatamap.get("Email").toString());
+				WebClick(EdaatOR.Biller_SubBillerAddButton);
+				Thread.sleep(2000);
+				
+
+	           	
+	        }catch(Exception e){
+//	       test.log(Status.FAIL,"#FUNC-Add Individual client" + driver.getTitle() +" * Add Individual client PASS * " );
+	            this.takeScreenShot();
+	        }
+	        return existsElement;
+	    }
+	
+	public boolean SubbillerSearch(Map<Object, Object> testdatamap){
+		boolean existsElement = false;
+		try{
+
+			    AddSubBiller(testdatamap);
+	        	WebEdit(EdaatOR.Biller_Individualclient_Name,testdatamap.get("BillerName").toString());
+				Thread.sleep(1000);
+				WebEdit(EdaatOR.Biller_Subbiller_NId,testdatamap.get("National ID").toString());
+				Thread.sleep(1000);
+				WebClickUsingJS(EdaatOR.Biller_Subbiller_Search);
+				this.takeScreenShot();
+            	existsElement=ExistsCheck("//td[text()='+National ID+']");
+				Thread.sleep(1000);
+			
+           	
+        }catch(Exception e){
+//       test.log(Status.FAIL,"#FUNC-Add Individual client" + driver.getTitle() +" * Add Individual client PASS * " );
+            this.takeScreenShot();
+        }
+        return existsElement;
+    }
+
+
+	public boolean EditSubBiller(Map<Object, Object> testdatamap){
+		boolean existsElement = false;
+		try{
+			    SubbillerSearch(testdatamap);
+				WebClick(EdaatOR.Biller_SubBiller_Edit);
+				Thread.sleep(2000);
+				//WebClickUsingJS(EdaatOR.Biller_SubBiller_Invoice_Total_AMT_ChkBox);
+				//Thread.sleep(2000);
+				//WebClickUsingJS(EdaatOR.Biller_SubBiller_FixedValue_ChkBox);
+				//Thread.sleep(2000);
+				WebEdit(EdaatOR.Biller_SubBiller_FixedValue_Amt,testdatamap.get("FixedValueAmount").toString());
+				//WebClickUsingJS(EdaatOR.Biller_SubBiller_Percentage_ChkBox);
+				//Thread.sleep(3000);
+				WebEdit(EdaatOR.Biller_SubBiller_Percentage_Val,testdatamap.get("Percentage Value").toString());
+				WebClickUsingJS(EdaatOR.Biller_SubBiller_Trans_Fee_Deduct_ChxBox);
+				Thread.sleep(2000);
+				this.takeScreenShot();
+				WebClick(EdaatOR.Biller_SubBiller_Save);
+				Thread.sleep(2000);
+
+        }catch(Exception e){
+//       test.log(Status.FAIL,"#FUNC-Add Individual client" + driver.getTitle() +" * Add Individual client PASS * " );
+            this.takeScreenShot();
+        }
+        return existsElement;
+	}
+	public void EnterBillerIBANAttmnt() throws Exception {
+		WebClickUsingActions(EdaatOR.Biller_IBANAttmnt_eField);
+		getAutoItImagePathFile();
+
+	}
+
+
+	  //Function Summary : Method to Verify Individual Subbiller. 
+		//Parameter Summary: BillerName.
+
+	public void VerifyIndividualClient(Map<Object, Object> testdatamap) throws IOException {
+		// TODO Auto-generated method stub
+		SubbillerSearch(testdatamap);
+		VerifyValue1(getText("//td/a[contains(text(),'"+testdatamap.get("BillerName").toString()+"')]"),testdatamap.get("BillerName").toString());
+		
+	}
+	public void ClickOnCorporateSubBiller() {
+		WebClickUsingJS(EdaatOR.Biller_subbiller);
+		waitForPageToLoad();
+	}
+
+
+	public void ClickOnSubbiller() {
+		WebClickUsingJS(EdaatOR.Biller_subbiller_Corp);
+		waitForPageToLoad();
+	}
+	public void NavigateCorporateSubBiller(){
+		ClickOnSubbiller();
+		ClickOnCorporateSubBiller();
+	}
+	public void ClickOnAddSubbiller() throws InterruptedException
+	{
+		WebClick(EdaatOR.Biller_subbiller_Corpaddbtn);
+		Thread.sleep(1000);
+	}
+	public void EnterGeneralinfo(Map<Object, Object> testdatamap) throws InterruptedException
+	{
+		WebEdit(EdaatOR.Biller_subbiller_Corpname, testdatamap.get("BillerName").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corpcrnum, testdatamap.get("CRNumber").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corpiban, testdatamap.get("IBANNumber").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corpbenfname, testdatamap.get("BeneficiaryName").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corptaxnum, testdatamap.get("Taxnumber").toString());
+		this.takeScreenShot();
+	}
+	public void EnterIBANImg() throws InterruptedException, IOException
+	{
+		WebClickUsingActions(EdaatOR.Biller_subbiller_Ibanclick);
+		getAutoITFile();
+		this.takeScreenShot();
+	}
+	public void getAutoITFile() throws InterruptedException, IOException
+	{
+		File classpathRoot = new File(System.getProperty("user.dir"));
+		Thread.sleep(800);
+		File app = new File(classpathRoot.getAbsolutePath() + "//SeleniumGrid//attachment//ImageUpload.exe");
+		String sFilename = app.toString();
+		Thread.sleep(1000);
+		Runtime.getRuntime().exec(sFilename);
+		Thread.sleep(800);
+	}
+	public void EnterCRattach() throws InterruptedException, IOException {
+		WebClickUsingActions(EdaatOR.Biller_subbiller_crattach);
+		getAutoITFile();
+	}
+	public void EnterOperationalFeesInfo(Map<Object, Object> testdatamap) throws InterruptedException
+	{
+		WebClick(EdaatOR.Biller_subbiller_Corpfees);
+		Thread.sleep(800);
+		WebClick(EdaatOR.Biller_subbiller_Corpfixedvalue);
+		Thread.sleep(800);
+		WebClearandEdit(EdaatOR.Biller_subbiller_Corpfixedefield,testdatamap.get("FixedValue").toString());
+		WebClick(EdaatOR.Biller_subbiller_Corpperc);
+		Thread.sleep(800);
+		WebClearandEdit(EdaatOR.Biller_subbiller_Corpperefield,testdatamap.get("Percentage").toString());
+		scrollDowntillend(driver);
+		this.takeScreenShot();
+	}
+	public void EnterNationalAddressinfo(Map<Object, Object> testdatamap) throws InterruptedException {
+		
+		WebClick(EdaatOR.Biller_subbiller_corpcity);
+		Thread.sleep(1000);
+		WebClickUsingActions("//li[text()='"+testdatamap.get("City").toString()+"']");
+		Thread.sleep(2000);
+		WebEdit(EdaatOR.Biller_subbiller_Corpdistname,testdatamap.get("DistrictName").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corpstreetefield,testdatamap.get("StreetName").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corpzipcode,testdatamap.get("ZipCode").toString());
+		Thread.sleep(800);
+		WebEdit(EdaatOR.Biller_subbiller_Corpbuildno,testdatamap.get("BuildingNo").toString());
+		this.takeScreenShot();
+	}
+	public void EnterContactInfo(Map<Object, Object> testdatamap) {
+		WebEdit(EdaatOR.Biller_subbiller_Corpempname,testdatamap.get("EmployeeName").toString());
+		WebEdit(EdaatOR.Biller_subbiller_Corpempemail,testdatamap.get("EmployeeEmail").toString());
+		WebEdit(EdaatOR.Biller_subbiller_Corpempmobile,testdatamap.get("EmployeeMobileNumber").toString());
+		this.takeScreenShot();
+		
+	}
+	public void ClickOnAddBtn() {
+		
+		WebClick(EdaatOR.Biller_subbiller_Corpadd);
+		
+	}
+	public void EnterSearchitem(Map<Object, Object> testdatamap) {
+		
+		WebEdit(EdaatOR.Biller_subbiller_srch,testdatamap.get("BillerName").toString());
+		WebEdit(EdaatOR.Biller_subbiller_crsrch,testdatamap.get("CRNumber").toString());
+		WebClick(EdaatOR.Biller_subbiller_srcclick);
+		
+	}
+	public void AddCorporateSubBiller(Map<Object, Object> testdatamap) throws InterruptedException
+	{
+		ClickOnAddSubbiller();
+		try
+		{
+		if(CheckElementExists(EdaatOR.Biller_subbiller_Corpverify)==true)
+		{
+		   EnterGeneralinfo(testdatamap);
+		   EnterIBANImg();
+		   EnterCRattach();
+		   EnterOperationalFeesInfo(testdatamap);
+		   EnterNationalAddressinfo(testdatamap);
+		   EnterContactInfo(testdatamap);
+		   ClickOnAddBtn();
+		   EnterSearchitem(testdatamap);
+		   VerifyValue1(getText("//table[@id='tblSubBillers']//a[contains(text(),'"+testdatamap.get("BillerName").toString()+"')]"), testdatamap.get("BillerName").toString());
+		   VerifyValue1(getText("//a[contains(text(),'"+testdatamap.get("BillerName").toString()+"')]/../..//td[2]"),testdatamap.get("CRNumber").toString());
+		   VerifyValue1(getText("//a[contains(text(),'"+testdatamap.get("BillerName").toString()+"')]/../..//td[6]"),testdatamap.get("Status").toString());
+		   this.takeScreenShot();
+		   test.log(Status.PASS,"#FUNC-Add Corporate SubBiller" + driver.getTitle() +" * Add Corporate SubBiller PASS * " );
+		}
+		else
+		{
+			test.log(Status.FAIL,"#FUNC-Add Corporate SubBiller" + driver.getTitle() +" * Add Corporate SubBiller FAIL * " );
+		}
+		}
+		catch (Exception e) {
+			test.log(Status.FAIL,"#FUNC-Add Corporate SubBiller" + driver.getTitle() +" * Add Corporate SubBiller FAIL * " );
+		}
+	}
+
+	
+ 	//Function Summary   : Method to view table	
+	//Parameter Summary   : BillerName.	
+	public void TableGridview(Map<Object,Object> testdatamap){
+	    try{
+	    	String BillerName=testdatamap.get("BillerName").toString();
+	    	WebClickUsingJS(EdaatOR.Biller_CorporateSubBillerPage);
+	    	Thread.sleep(1000);	    
+	    	if(CheckElementExists(EdaatOR.Biller_CorporateSubBillerGrid)==true) {
+    			Thread.sleep(2000);
+    			WebClear(EdaatOR.Biller_CorporateSubBiller_BillerName);
+    			WebEdit(EdaatOR.Biller_CorporateSubBiller_BillerName, BillerName);        			
+    			WebClick(EdaatOR.Biller_CorporateSubBiller_searchBtn);
+    			Thread.sleep(1000);
+    			WebClick("//a[contains(text(),'"+BillerName+"')]");
+    			Thread.sleep(1000);
+    			switchTonextwindow();
+    			scrollDowntillend(driver);
+    			this.takeScreenShot();
+    			WebClick(EdaatOR.Biller_CorporateSubBiller_Back);
+    			test.log(Status.PASS,"#FUNC-Corporate SubBiller Table Exists" + driver.getTitle() +" * Corporate SubBiller Table Exists PASS * " );
+	    		}
+	    	else {
+	    		test.log(Status.FAIL,"#FUNC-Corporate SubBiller Table Not Exists" + driver.getTitle() +" *Corporate SubBiller Table Not Exists FAIL * " );
+	    	}
+	    }catch(Exception e){
+	    	test.log(Status.FAIL,"#FUNC-Table View Corporate SubBiller" + driver.getTitle() +" * Table View Corporate SubBiller FAIL * " );
+	        this.takeScreenShot();
+	    }
+}
+ //Function Summary:Verify sub biller Individual Grid View details
+	  //Function Parameters:N/A.
+	  	    public void SubBillerIndividualGridView(String view,String table)
+	  		{
+	  			try {
+
+	  				boolean Ele = GridViewtable(view,table);
+	  				if (Ele == true)
+	  					test.log(Status.PASS,"#FUNC-Grid View" + driver.getTitle() + " * Grid View PASS * ");
+	  				else
+	  					test.log(Status.FAIL,"#FUNC-Grid View" + driver.getTitle() + " * Grid View FAIL * ");
+	  			} catch (Exception e) {
+	  				test.log(Status.FAIL, "#FUNC-Grid View" + driver.getTitle() + " * Grid View FAIL * ");
+	  				this.takeScreenShot();
+	  			}
+	  		}
+	  	//Function Summary:Verify sub biller Individual Grid View details
+	  	//Function Parameters:N/A.
+	  		public boolean GridViewtable(String view,String table) {
+	  			boolean existsNID = false;
+	  			try {
+	  				WebClickUsingJS(EdaatOR.Biller_subBiller);
+	  				Thread.sleep(1000);
+	  				WebClickUsingJS(view);
+	  				Thread.sleep(1000);
+	  				this.takeScreenShot();
+	  				if (ExistsCheck(table) == true) {
+	  					existsNID = true;
+	  				}
+	  				existsNID = true;
+	  			}
+
+	  			catch (Exception e) {
+	  				e.printStackTrace();
+	  				this.takeScreenShot();
+	  			}
+	  			return existsNID;
+	  		}
+	  		
+	  //Function Summary:Verify sub biller Individual Grid View details
+	  //Function Parameters:N/A.
+	  		public void SubBillerIndividual(Map<Object, Object> testdatamap) throws Exception
+	  		{
+	  			WebClickUsingJS(EdaatOR.Biller_subBiller_individual_link);
+	  			addSubBiller(testdatamap);
+	  			SearchBiller(testdatamap);
+	  		}
+	  		
+	  //Function Summary:Search sub biller 
+	  //Function Parameters:SubBillerName and NationalID.
+	  		public void SearchBiller(Map<Object, Object> testdatamap)
+	  		{
+	  		    try {
+	  			        WebClear(EdaatOR.Biller_AddsubBiller_SeaName);
+	  			        WebEdit(EdaatOR.Biller_AddsubBiller_SeaName,testdatamap.get("SubBillerName").toString());
+	  			        Thread.sleep(1000);
+	  			        WebClear(EdaatOR.Biller_AddsubBiller_SeaNation);
+	  			        WebEdit(EdaatOR.Biller_AddsubBiller_SeaNation,testdatamap.get("NationalID").toString());
+	  		         	Thread.sleep(1000);
+	  			        WebClickUsingJS(EdaatOR.Biller_AddsubBiller_Search);
+	  			        Thread.sleep(1000);
+	  		        	VerifyValue1(getText(EdaatOR.Biller_AddsubBiller_verify), testdatamap.get("NationalID").toString());
+	  			        this.takeScreenShot();
+	  			        test.log(Status.PASS,"#FUNC-SearchBiller" + driver.getTitle() +" * SearchBiller PASS* " );
+	  		       }
+	  		   catch(Exception e){
+	  		    	test.log(Status.FAIL,"#FUNC-SearchBiller" + driver.getTitle() +" * SearchBillerFAIL * " );
+	  		            this.takeScreenShot();
+	  		        	}
+
+	  		}
+	  		
+	  //Function Summary:To add product.
+	  //Function Parameters:Product,Fixed Value,Percentage,IBAN and Beneficiary Name.
+	  		public void addproduct(Map<Object, Object> testdatamap) throws Exception
+	  		{
+	  		 try {	   
+	  			WebClickUsingJS(EdaatOR.Biller_AddsubBiller_addprod);
+	  			WebSelect(EdaatOR.Biller_AddsubBiller_prodname,testdatamap.get("Product").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_fixed);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_fixed,testdatamap.get("Fixed Value").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_per);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_per,testdatamap.get("Percentage").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_prodiban);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_prodiban,testdatamap.get("IBAN").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_prodbene);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_prodbene,testdatamap.get("Beneficiary Name").toString());
+	  			Thread.sleep(1000);
+	  			EnterIbanAttachment();
+	  			Thread.sleep(1000);
+	  			WebClickUsingJS(EdaatOR.Biller_AddsubBiller_prodaddbt);
+	  			Thread.sleep(1000);
+	  			this.takeScreenShot();
+	  			test.log(Status.PASS,"#FUNC-addproduct" + driver.getTitle() +" * addproduct PASS* " );
+	  		   }
+	  		   catch(Exception e){
+	  		    	test.log(Status.FAIL,"#FUNC-addproduct" + driver.getTitle() +" * addproduct FAIL * " );
+	  		            this.takeScreenShot();
+	  		        	}
+
+	  		}
+	  		public void EnterIbanAttach() throws Exception {
+	  			WebClickUsingActions(EdaatOR.Biller_AddsubBiller_Iban);
+	  			getAutoItImagePathFile();
+	  		}
+	  		public void EnterIbanAttachment() throws Exception {
+	  				WebClickUsingActions(EdaatOR.Biller_AddsubBiller_prodatch);
+	  				getAutoItImagePathFile();
+	  			}
+	  		public void  getAutoItImagePathFile() throws Exception {
+	  				File classpathRoot = new File(System.getProperty("user.dir"));
+	  				Thread.sleep(800);
+	  				File app = new File(classpathRoot.getAbsolutePath() + "//SeleniumGrid//attachment//ImageUpload.exe");
+	  				String sFilename = app.toString();
+	  				Thread.sleep(1000);
+	  				Runtime.getRuntime().exec(sFilename);
+	  				Thread.sleep(800);
+	  			}
+
+	  //Function Summary:To Add sub biller 
+	  //Function Parameters:SubBillerName,IBAN Number,Beneficiary,Mobile,Emails and NationalID.
+	  	public void addSubBiller(Map<Object, Object> testdatamap) throws Exception 
+	  	{
+	  	 try {
+	  			WebClickUsingJS(EdaatOR.Biller_AddsubBiller_btn);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_name);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_name,testdatamap.get("SubBillerName").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_National);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_National,testdatamap.get("NationalID").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_IBAN);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_IBAN,testdatamap.get("IBAN Number").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_Beneficiary);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_Beneficiary,testdatamap.get("Beneficiary").toString());
+	  			Thread.sleep(1000);
+	  			EnterIbanAttach();
+	              WebClickUsingJS(EdaatOR.Biller_AddsubBiller_Fees);
+	  			Thread.sleep(1000);
+	  			addproduct(testdatamap);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_mbl);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_mbl,testdatamap.get("Mobile").toString());
+	  			Thread.sleep(1000);
+	  			WebClear(EdaatOR.Biller_AddsubBiller_Email);
+	  			WebEdit(EdaatOR.Biller_AddsubBiller_Email,testdatamap.get("Email").toString());
+	  			Thread.sleep(1000);
+	  			WebClickUsingJS(EdaatOR.Biller_AddsubBiller_check);
+	  			Thread.sleep(1000);
+	              WebClickUsingJS(EdaatOR.Biller_AddsubBiller_addbtn);  
+	      		test.log(Status.PASS,"#FUNC-addbiller" + driver.getTitle() +" * Create Individual Client Invoice Pass * " );
+	              this.takeScreenShot();
+	  		}
+	  		catch(Exception e){
+	  		test.log(Status.FAIL,"#FUNC-addbiller" + driver.getTitle() +" * Create Individual Client Invoice FAIL * " );
+	  		this.takeScreenShot();
+	  		}
+	  }
+
+}
+
+	
+	
+	
+  
+	
+	
+    
+

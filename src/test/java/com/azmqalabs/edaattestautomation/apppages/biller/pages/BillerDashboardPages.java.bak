@@ -1,0 +1,91 @@
+/**
+* Test Script Name  				 : N/A
+* Objective                          : Verify the Dashboard Functionality.
+* Version      						 : 1.0
+* Author       						 : Arun Kumar MS
+* Created Date 			      		 : 11/08/2023
+* Last Updated on					 : N/A
+* Updated By   			 			 : 
+* Pre-Conditions					 : N/A
+* Manual Test case Name				 : N/A
+* Epic Details						 : N/A
+* User Story Details				 : N/A
+
+**/
+package com.azmqalabs.edaattestautomation.apppages.biller.pages;
+
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.azmqalabs.edaattestautomation.apppages.GlobalConstant;
+import com.azmqalabs.edaattestautomation.apppages.masterpages.BasePage;
+import com.azmqalabs.edaattestautomation.common.uielement.fieldDecorator;
+import com.azmqalabs.edaattestautomation.objectrepository.EdaatOR;
+
+
+
+public class BillerDashboardPages extends BasePage
+{
+
+	public BillerDashboardPages(WebDriver driver,ExtentTest test)
+	{
+		 this.driver=driver;
+		 this.test=test;
+		 
+		 PageFactory.initElements(new fieldDecorator(driver,test), this);
+	}  
+	
+
+	@FindBy(xpath = EdaatOR.Biller_Dashboard)
+	public WebElement Dashboard;
+		
+	    
+	    public boolean Exists(){
+	    	return super.Exists(Dashboard); 
+		}
+	  //Function Summary : Method to Search TrackedBillerName. 
+	//Parameter Summary: TrackedBillerName,FromYear,FromMonth,ToYear,ToMonth.
+	    public void TrackerBillerSearch(Map<Object, Object> testdatamap)
+	    {
+	    	try {
+		        WebClick(EdaatOR.Biller_Dashboardmenu);
+		        Thread.sleep(1000);
+		        WebClick(EdaatOR.Biller_TrackerName);
+		        Thread.sleep(2000);
+		        WebClickUsingActions("//li[text()='"+testdatamap.get("TrackedBillerName").toString()+"']");
+		        WebClick(EdaatOR.Biller_Dashboard_FromDate);
+		    	selectDropdownValue_PartialText(EdaatOR.Biller_Dashboard_Fromyear,testdatamap.get("FromYear").toString());
+	     
+		    	selectDropdownValue_PartialText(EdaatOR.Biller_Dashboard_FromMonth,testdatamap.get("FromMonth").toString());
+	        	WebClick("//a[text()='"+testdatamap.get("FromDate").toString()+"']");
+	        	WebClick(EdaatOR.Biller_Dashboard_TODate);
+	        	selectDropdownValue_PartialText(EdaatOR.Biller_Dashboard_Toyear,testdatamap.get("ToYear").toString());
+	        	selectDropdownValue_PartialText(EdaatOR.Biller_Dashboard_ToMonth,testdatamap.get("ToMonth").toString());
+	        	WebClick("//a[text()='"+testdatamap.get("ToDate").toString()+"']");
+	        	 Thread.sleep(5000);
+	        	WebClick(EdaatOR.Biller_DashboardSearchBtn);
+	        	 Thread.sleep(6000);
+	        	verifyElementIsPresent(EdaatOR.Biller_AttachetedImage_Link);
+	        	this.takeScreenShot();
+				test.log(Status.PASS,"#FUNC-Search TrackedBillerName is successful" + driver.getTitle() +" * DashBoard PASS * " );	
+			}
+			catch(Exception e){
+				test.log(Status.FAIL,"#FUNC-Search TrackedBillerName is Failed" + driver.getTitle() +" * DashBoard FAIL * " );
+				this.takeScreenShot();
+			}
+
+	    	
+	    	
+	    }
+
+}

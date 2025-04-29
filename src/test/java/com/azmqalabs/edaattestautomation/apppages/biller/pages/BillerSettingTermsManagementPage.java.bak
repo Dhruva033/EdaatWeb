@@ -1,0 +1,246 @@
+/**
+* Test Script Name  				 : N/A
+* Objective                          : Verify the TermsManagement Functionality.
+* Version      						 : 1.0
+* Author       						 : Arun Kumar MS
+* Created Date 			      		 : 11/08/2023
+* Last Updated on					 : N/A
+* Updated By   			 			 : 
+* Pre-Conditions					 : N/A
+* Epic Details						 : N/A
+* User Story Details				 : N/A
+**/
+package com.azmqalabs.edaattestautomation.apppages.biller.pages;
+
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.azmqalabs.edaattestautomation.apppages.GlobalConstant;
+import com.azmqalabs.edaattestautomation.apppages.masterpages.BasePage;
+import com.azmqalabs.edaattestautomation.common.uielement.fieldDecorator;
+import com.azmqalabs.edaattestautomation.objectrepository.EdaatOR;
+
+
+
+public class BillerSettingTermsManagementPage extends BasePage
+{
+
+	public BillerSettingTermsManagementPage(WebDriver driver,ExtentTest test)
+	{
+		 this.driver=driver;
+		 this.test=test;
+		 
+		 PageFactory.initElements(new fieldDecorator(driver,test), this);
+	}  
+	
+
+	@FindBy(xpath = EdaatOR.Biller_Termsmanagementsym)
+	public WebElement TermsManagement;
+		
+	    
+	    public boolean Exists(){
+	    	return super.Exists(TermsManagement); 
+		}
+	  //Function Summary :Method to Verify grid view of termsmanagement module. 
+	//Parameter Summary: N/A.
+	  
+		public void VerifyGridView() {
+			// TODO Auto-generated method stub
+			try {
+		        WebClick(EdaatOR.Biller_Settingbtn);
+		        Thread.sleep(1000);
+		        WebClickUsingJS(EdaatOR.Biller_Termsmanagementbtn);
+		        Thread.sleep(2000);
+		        verifyElementIsPresent(EdaatOR.Biller_Termsmanagementsym);		       
+		        verifyElementIsPresent(EdaatOR.Biller_Termsnameinarabic);		       
+	        	Thread.sleep(2000);
+	        	this.takeScreenShot();
+				test.log(Status.PASS,"#FUNC-Verify gridview is successful" + driver.getTitle() +" * TermsMangement PASS * " );	
+			}
+			catch(Exception e){
+				test.log(Status.FAIL,"#FUNC-Verify gridview is Failed" + driver.getTitle() +" * TermsMangement FAIL * " );
+				this.takeScreenShot();
+			}				
+		}
+		//Function Summary   : Method to Navigate Term management section in Settings Module.
+				//Parameter Summary : N/A
+			public void navigateTerm() throws Exception {
+				WebClickUsingJS(EdaatOR.Biller_Settings);
+				Thread.sleep(2000);
+				WebClickUsingJS(EdaatOR.Biller_Terms_menu);
+				Thread.sleep(2000);
+			}
+			//Function Summary   : Method to Search Terms
+			//Parameter Summary : EnglishName
+	public void SearchTerm(Map<Object,Object>testdatamap) throws Exception {
+				try {
+					WebEdit(EdaatOR.Biller_TermTXT_Field,testdatamap.get("EnglishName").toString());
+					Thread.sleep(2000);
+					WebClickUsingJS(EdaatOR.Biller_Term_SearchBTN);
+					Thread.sleep(2000);
+					VerifyValue1(getText("(//tr/td[contains(text(),'"+testdatamap.get("EnglishName").toString()+"')])[1]"),testdatamap.get("EnglishName").toString());
+					test.log(Status.PASS,"#FUNC-Verify Nevigate to TermsManagement is successful" + driver.getTitle() +" * Nevigate to TermsManagement PASS * " );	
+				}
+				catch(Exception e){
+					test.log(Status.FAIL,"#FUNC-Verify Nevigate to TermsManagement is Failed" + driver.getTitle() +" * Nevigate to TermsManagement is FAIL * " );
+					this.takeScreenShot();
+				}
+					
+			}
+	//Function Summary   : Method to verify terms Search Functionality
+			//Parameter Summary : EnglishName
+			public void VerifySearchTerm(Map<Object,Object>testdatamap) throws Exception {
+				try {
+					WebEdit(EdaatOR.Biller_TermTXT_Field,testdatamap.get("EnglishName").toString());
+					Thread.sleep(2000);
+					WebClickUsingJS(EdaatOR.Biller_Term_SearchBTN);
+					this.takeScreenShot();
+					if(CheckElementExists(EdaatOR.Biller_TermNoDataAvilableTxt)==true);
+					{
+						VerifyToaddActiveTerm(testdatamap);
+											
+					}
+					VerifyValue1(getText("(//tr/td[contains(text(),'"+testdatamap.get("EnglishName").toString()+"')])[1]"),testdatamap.get("EnglishName").toString());
+					test.log(Status.PASS,"#FUNC-Verify Search Terms is successful" + driver.getTitle() +" * Verify Search Terms is PASS * " );	
+				}
+				catch(Exception e){
+					test.log(Status.FAIL,"#FUNC-Verify Search Terms is FAIL" + driver.getTitle() +" * Verify Search Terms is FAIL * " );
+					this.takeScreenShot();
+				}
+					
+			}
+			
+			//Function Summary   : Method to Add and DeActivate Terms
+			//Parameter Summary : EnglishName,ArabicName,ArabicText,EnglishText
+		public void AddTermAndDeActivate(Map<Object,Object>testdatamap) {
+				
+				try {
+					navigateTerm();
+					WebClick(EdaatOR.Biller_AddTerm_Btn);
+					Thread.sleep(1000);
+					WebEdit(EdaatOR.Biller_TermName_Arabic,testdatamap.get("ArabicName").toString());
+					Thread.sleep(1000);
+					WebEdit(EdaatOR.Biller_TermName_ENG,testdatamap.get("EnglishName").toString());
+					Thread.sleep(1000);
+					WebEdit(EdaatOR.Biller_TermText_Arabic,testdatamap.get("ArabicText").toString());
+					Thread.sleep(1000);
+					WebEdit(EdaatOR.Biller_TermText_Eng,testdatamap.get("EnglishText").toString());
+					Thread.sleep(1000);
+					WebClick(EdaatOR.Biller_TermToggle);
+					Thread.sleep(1000);
+					WebClick(EdaatOR.Biller_TermSave_BTN);
+					Thread.sleep(1000);
+					SearchTerm(testdatamap);
+					Thread.sleep(1000);
+					VerifyValue1(getText("//td[text()='"+testdatamap.get("EnglishName").toString()+"']"),testdatamap.get("EnglishName").toString());
+					Thread.sleep(2000);
+					WebClick(EdaatOR.Biller_TermStatusToggle);
+					Thread.sleep(1000);
+					WebClick(EdaatOR.Biller_TermConfirmBTN);
+					Thread.sleep(1000);
+					
+					
+
+					test.log(Status.PASS,"#FUNC-Search Product Template" + driver.getTitle() +" * Product Management PASS * " );	
+
+				}
+				catch(Exception e){
+					test.log(Status.FAIL,"#FUNC-Search Product Template" + driver.getTitle() +" * Product Management FAIL * " );
+					this.takeScreenShot();
+				}
+}
+//Function Summary :Method to Navigate "TermsManagement" Page
+		//Parameter Summary: N/A
+		public void navigatetoTermsManagement(Map<Object, Object> testdatamap) throws InterruptedException {	
+	        try {
+	        	WebClick(EdaatOR.Biller_Settingbtn);
+		        Thread.sleep(1000);
+		        WebClick(EdaatOR.Biller_Termsmanagementbtn);
+		        Thread.sleep(2000);
+	        	this.takeScreenShot();
+				test.log(Status.PASS,"#FUNC-Verify Nevigate to TermsManagement is successful" + driver.getTitle() +" * Nevigate to TermsManagement PASS * " );	
+			}
+			catch(Exception e){
+				test.log(Status.FAIL,"#FUNC-Verify Nevigate to TermsManagement is Failed" + driver.getTitle() +" * Nevigate to TermsManagement is FAIL * " );
+				this.takeScreenShot();
+			}
+			
+		}
+		
+		//Function Summary :Method to Search Term in TermsManagement" Page
+		//Parameter Summary:EnglishName
+	/*	private void SearchTerm(Map<Object, Object> testdatamap) {
+			try {
+				  WebEdit(EdaatOR.Biller_searchtxtfield, testdatamap.get("EnglishName").toString());
+			      WebClick(EdaatOR.Biller_Searchbtn);
+				this.takeScreenShot();
+				test.log(Status.PASS,"#FUNC- Search Term  is successful" + driver.getTitle() +" * Search Term PASS * " );	
+			}
+			catch(Exception e){
+				test.log(Status.FAIL,"#FUNC-Search Term is Failed" + driver.getTitle() +" * Search Term is FAIL * " );
+				this.takeScreenShot();
+			}
+		}*/
+
+		//Function Summary : Method to add and active Term 
+		//Parameter Summary: ArebicName,EnglishName,ArebicTermName,EnglishTermName
+		public void VerifyToaddActiveTerm(Map<Object, Object> testdatamap) {
+			 try {
+			        WebClickUsingJS(EdaatOR.Biller_AddTermbtn);
+                    this.takeScreenShot();
+			        WebEdit(EdaatOR.Biller_Arebicname, testdatamap.get("ArebicName").toString());
+			        WebEdit(EdaatOR.Biller_Englishname, testdatamap.get("EnglishName").toString());
+			        WebEdit(EdaatOR.Biller_Termarebicname, testdatamap.get("ArebicTermName").toString());
+			        WebEdit(EdaatOR.Biller_TermEnglishname, testdatamap.get("EnglishTermName").toString());
+			        WebClickUsingJS(EdaatOR.Biller_TermpopupActivebtn);
+			        WebClick(EdaatOR.Biller_Termpopupsavebtn);
+			        SearchTerm(testdatamap);
+			        VerifyValue1(getText("(//tr/td[contains(text(),'"+testdatamap.get("EnglishName").toString()+"')])[1]"),testdatamap.get("EnglishName").toString());
+					this.takeScreenShot();
+					test.log(Status.PASS,"#FUNC-Verify Nevigate to TermsManagement is successful" + driver.getTitle() +" * Nevigate to TermsManagement PASS * " );	
+				}
+				catch(Exception e){
+					test.log(Status.FAIL,"#FUNC-Verify Nevigate to TermsManagement is Failed" + driver.getTitle() +" * Nevigate to TermsManagement is FAIL * " );
+					this.takeScreenShot();
+			
+		}
+	
+	}
+	
+			  //Function Summary : Method to add and active Term 
+				//Parameter Summary: ArebicName,EnglishName,ArebicTermName,EnglishTermName
+				public void VerifyToviewActiveTerm(Map<Object, Object> testdatamap) {
+					 try {
+					        WebClick(EdaatOR.Biller_AddTermbtn);
+					        WebEdit(EdaatOR.Biller_Arebicname, testdatamap.get("ArebicName").toString());
+					        WebEdit(EdaatOR.Biller_Englishname, testdatamap.get("EnglishName").toString());
+					        WebEdit(EdaatOR.Biller_Termarebicname, testdatamap.get("ArebicTermName").toString());
+					        WebEdit(EdaatOR.Biller_TermEnglishname, testdatamap.get("EnglishTermName").toString());
+					        WebClickUsingJS(EdaatOR.Biller_TermpopupActivebtn);
+					        WebClick(EdaatOR.Biller_Termpopupsavebtn);
+					        SearchTerm(testdatamap);
+					        VerifyValue1(getText("(//tr/td[contains(text(),'"+testdatamap.get("EnglishName").toString()+"')])[1]"),testdatamap.get("EnglishName").toString());
+							WebClickUsingJS(EdaatOR.Biller_TermsManagement_Editbtn);
+					        VerifyValue1(WebGetText(EdaatOR.Biller_TermsManagement_updatetxt),testdatamap.get("ViewText").toString());
+
+					        this.takeScreenShot();
+							
+							test.log(Status.PASS,"#FUNC-Verify Nevigate to TermsManagement is successful" + driver.getTitle() +" * Nevigate to TermsManagement PASS * " );	
+						}
+						catch(Exception e){
+							test.log(Status.FAIL,"#FUNC-Verify Nevigate to TermsManagement is Failed" + driver.getTitle() +" * Nevigate to TermsManagement is FAIL * " );
+							this.takeScreenShot();
+					
+				}
+	}
+}

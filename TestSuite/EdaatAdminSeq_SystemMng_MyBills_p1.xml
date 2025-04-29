@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtToggleTaxes"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmToggleStatus"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillsInvalid"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillvalids"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemManagementAddTaxes"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtCategoryGridView"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSearchCatgory"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmGridView"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtTaxesGridView"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtProductCatgoriesAdd"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtSearchTaxes"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtProductCatgoriesUpdate"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmGridView"/>
+     </classes>
+  </test> 
+</suite> 

@@ -1,0 +1,2050 @@
+package com.azmqalabs.edaattestautomation.objectrepository;
+
+public class EdaatOR {
+
+//Biller Module
+	// Login Page for All
+	public final static String LoginPage_Username = "//input[@name='UserName']";
+	public final static String LoginPage_Password = "//input[@name='Password']";
+	public final static String LoginPage_LogIn = "//button[@id='btnlogin']";
+	public final static String LoginPage_Invalid_LogIn = "//span[text()='Invalid username or password']";
+	public final static String LoginPage_send = "//button[@id='btnSendRequest']";
+	public final static String LoginPage_confirmation = "//label[@id='Message' and contains(text(),'please check your email and reset the password.')]";
+	
+	public final static String LoginPage_Changelanguage = "//li[@class='nav-item d-none d-lg-flex ml-2']//a[text()='EN']";
+	public final static String Logout = "(//a[text()='Logout'])[1]";
+	public final static String LoginPage_Error ="//span[@style='display: block;' and text()='Invalid username or password']";
+	public final static String LoginPage_Error_Invalid ="//span[@style='display: block;' and text()='Your account needs to be activated']";
+	public final static String LoginPage_Forgetlink = "//a[text()='Forgot password?']";
+	// Biller Home page
+	public final static String Biller_HomePage_Main = "//h6[text()='Main Page']";
+	public final static String Biller_Link = "//a[text()='Biller Login']";
+	//public final static String Client_Link = "//a[text()='Client Login' and @class='btn btn-accent2']";
+	public final static String EdaatLogo = "//img[@class='img-en']";
+	public final static String HomePage = "(//h1[@class='display-3 animated zoomIn mb-3 w-100'])[1]";
+    //Client Home Page
+    public final static String Client_Link = "//a[text()='Client Login']";
+ public final static String ArabicClient_Link = "//a[@class='btn btn-accent2']";
+    public final static String Changelanguagebtn = "(//a[text()='EN'])[2]";
+    public final static String Clientloginbtn = "//h5[text()='Login']";
+	//public final static String Client_Link = "(//a[text()='Client Login'])[1]";
+
+//Client Forgot Password 
+    public final static String Client_forgotpwd_Btn = "//a[text()='Forgot password?']";
+    public final static String Client_forgotpwd_verify = "//h5[text()='Reset your password']";
+    public final static String Client_Username_efield = "//input[@id='UserName']";
+    public final static String Client_Username_sendbtn = "//button[@id='btnSendRequest']";
+    public final static String Client_Username_confirm_verify = "//h5[text()='Confirm']";
+    public final static String Client_Username_close = "//button[text()='Close']";
+	public final static String Client_SignUp_Btn = "//a[contains(@href,'CustomerSignUp')]";
+	public final static String Client_FirstName_eField = "//input[@id='FirstName']";
+	public final static String Client_SecName_eField = "//input[@id='FatherName']";
+	public final static String Client_ThriName_eField = "//input[@id='GrandFatherName']";
+	public final static String Client_LastName_eField = "//input[@id='LastName']";
+	public final static String Client_NationalID_eField = "//input[@id='NationalID']";
+	public final static String Client_DateOfBirthHijri_eField = "//input[@id='DateOfBirthHijri']";
+	public final static String Client_RegistDate_Issuedate = "(//tr[td[a[contains(@class,'calendars-today')]]]//following-sibling::td)[5]";
+	public final static String Client_ExperyDate_eField = "//input[@id='DateOfBirth']";
+	public final static String Client_RegistDate_exprDate= "//a[contains(@class,'calendars-today')]";
+	public final static String Client_IDAttachment_eField= "//input[@id='IBANAttachment']";
+	public final static String Client_PhNo_eField = "//input[@id='MobileNo']";
+	public final static String Client_EmailID_eField = "//input[@id='Email']";
+	public final static String Client_Password_eField = "//input[@id='Password']";
+	public final static String Client_ConfPawd_eField= "//input[@id='ConfirmPassword']";
+	public final static String Client_Terms_CheckBox = "//input[@id='Confirmation']";
+	public final static String Client_Registration_btn = "//input[@id='btnSignUpWithoutOTP']";
+	public final static String Client_Registrationconfmmsg = "//h4[contains(text(),'Registration completed successfully')]";
+	public final static String Client_HelloClient_Main = "//a[@class='nav-link background-primary-mid text-white text-center']";
+	public final static String Client_EmailValidatonMessage = "//h5[text()='Email Already Exists']";
+	public final static String Client_EmailCloseButton = "//button[text()='Close']";
+
+	
+
+//Client My Account page
+  
+    public final static String ClientMyAccUpdateLoginInfo="//a[@id='UpdateCustomerLoginInfo2']";
+    public final static String ClientLogininfoOldPassword="//input[@id='OldPassword']";
+    public final static String ClientLogininfoNewPassword="//input[@id='NewPassword']";
+    public final static String ClientLogininfoConfirmPassword="//input[@id='ConfirmPassword']";
+    public final static String ClientLogininfoSaveBtn="//input[@id='btnAdd']";
+    public final static String ClientLogininfoCancelBtn="//a[text()='Cancel']";
+    public final static String ClientLogininfoyesbtn="//button[text()='Yes']";
+    public final static String ClientLogininfoSave_Verify="//h5[contains(text(),'updating')]";
+	
+	
+	
+	
+	
+	// Biller Add Individual Client Page
+	public final static String Biller_Client = "//a[@id='lnkMyClients2']";
+	public final static String Biller_Dashboard = "//h6[text()='Dashboard']";
+	public final static String Biller_TrackerName = "//input[@type='search']";
+	public final static String Biller_Dashboardmenu = "//a[@id='lnkDashbord2']";
+	public final static String Biller_Total_no_bills="//h1[@id='billCount']";
+	public final static String Biller_BillsList_page="//div/h6[text()='Bills List']";
+	public final static String Biller_MyBalance="//div/h6[text()=' My Balance']";
+	public final static String Biller_Warningmsg_BalanceDetails="//div[@class='TotalAmountAlert ']";
+	public final static String Biller_Totalamt_Transfer="//div/h6[text()=' Total Amounts Transferred']";
+	public final static String Biller_TotalamtPaid_text="//td[text()='Total Amounts Paid']";
+	public final static String Biller_InvoicesVolumeStatus="//canvas[@id='chBillStatusCount']";
+	public final static String Biller_InvoicesValueStatus="//canvas[@id='chBillStatusAmount']";
+	public final static String Biller_Corporate = "//h6[text()='Corporate Info']";
+	public final static String Systemmgmt_Menu = "//a[@id='lnkSystemMangement2']";
+	public final static String Systemmgmt_NotApproved_Menu = "//a[@id='lnkUnderApprovedBillerList2']";
+	public final static String Systemmgmt_NotApproved_Edit= "//td[9]";
+	public final static String Systemmgmt_Approved_Menu = "//a[@id='lnkApprovedBillerList2']";
+	public final static String Systemmgmt_InvoiceTemplate = "//a[@id=\"lnkInvoiceSetting2\"]";
+	public final static String Systemmgmt_NonApprovedCloseBtn = "//button[@class='btn btn-link']";
+	
+	//Biller API document Page
+	public final static String Biller_ApiDoc= "//h6[text()='API Document']";
+	public final static String Biller_ApiDocPageLink = "//a[@id='ApiDocument']";
+	public final static String Biller_ApiDocDownload = "//a[@role='button']";
+
+	
+	
+	//Biller Receivables paid outside page
+	public final static String Biller_PaidOutside = "//h6[text()='Paid Outside EDAAT']";
+	public final static String Biller_PaidOutsidePage = "//a[@id='lnkPayCashList2']";
+	public final static String Biller_BillNo = "//input[@id='BillNo']";
+	public final static String Biller_DocumentNo = "//input[@id='VoucherNo']";
+//   public final static String Biller_SubBillerType = "//select[@id='SubBillerType']";
+	//public final static String Biller_SubBillerName = "//span[@id='select2-SubBillerId-container']";
+	public final static String Biller_SubBillerCname = "(//span[@id='select2-InterpriseSubBillerId-container']";
+	public final static String Biller_SearchBtn = "//button[@id='btnSearch']";
+	//public final static String Biller_SearchBtn = "//button[@id='btnSearch']";
+	
+	//Biller Receivables paid outside page
+	public final static String Biller_BalanceDetailsPage = "//a[@id='lnkWalletDetails2']";
+	public final static String Biller_BalanceDetailsViewBtn = "(//a[@title='View Contract'])[1]";
+	public final static String Biller_InvoiceDetails = "//h6[text()='Invoice Details']";
+	//Biller Import Clients Data
+	public final static String Biller_Clients_link= "//a[@id='lnkMyClients2']";
+	public final static String Biller_ImportClientdata= "//h6[text()='Import Clients Data']";
+	public final static String Biller_ImportClientsData_Link= "//a[@id='lnkImportClients2']";
+	public final static String Biller_Corporate_type_select= "//label[@for='rdCompany']";
+	public final static String Biller_Individual_type_select= "//label[@for='rdCustomer']";
+	public final static String Biller_Corporate_type_verify= "(//span[@id='lblImageName2'])[2]";
+	public final static String Biller_Individual_type_verify= "(//span[@id='lblImageName2'])[1]";
+	
+	
+
+	//Biller Settings Price List
+	public final static String Biller_settings_Price = "//a[@id='lnkPriceList2']";
+	public final static String Biller_settings_efield = "//input[@id='Name']";
+	public final static String Biller_settings_sbtn = "//button[text()=' Search']";
+	public final static String Biller_settings_Pricebtn = "//button[@onclick='Update(this);']";
+	public final static String Biller_settings_Priceverify = "//h6[text()='Update price list']";
+	public final static String Biller_settings_Pricenameverify= "(//div/label)[2]";
+	//Biller Discount Management
+	public final static String Biller_settings_Discount = "//a[@id='lnkDiscountList2']";
+	public final static String Biller_settings_Discount_addbtn = "//button[@id='btnAddDiscount']";
+	public final static String Biller_settings_Discount_engefield = "//input[@id='NameEn']";
+	public final static String Biller_settings_Discount_arabicefield = "//input[@id='NameAr']";
+	public final static String Biller_settings_Discount_perefield = "//input[@id='Value']";
+	public final static String Biller_settings_Discount_adddiscbtn = "//button[text()='Add Discount']";
+	public final static String Biller_settings_Discount_srch = "//input[@id='DiscountName']";
+	public final static String Biller_settings_Discount_srchbtn = "//button[text()='Search']";
+	public final static String Biller_settings_Discount_confyesbtn = "//button[@id='btnConfirmActivation']";
+	public final static String Biller_settings_Discount_togelexists = "//table[@id='tblDiscounts']//span";
+	public final static String Biller_settings_Discount_Confacti= "//h5[text()='Confirm activation?']";
+	public final static String Biller_settings_Discount_Cancelacti= "//h5[text()='Cancel activation?']";
+	
+	//Biller Corporate Subbiller add
+	public final static String Biller_subbiller= "//a[@id='lnkSubBillers2']";
+	public final static String Biller_subbiller_Corp= "//a[@id='lnkSubBillersComanyList2']";
+	public final static String Biller_subbiller_Corpaddbtn= "//button[@id='btnAddSubBiller']";
+	public final static String Biller_subbiller_Corpname= "//input[@id='CompanyNameAr']";
+	public final static String Biller_subbiller_Corpcrnum= "//input[@id='RegistrationNo']";
+	public final static String Biller_subbiller_Corpiban= "//input[@id='IBAN']";
+	public final static String Biller_subbiller_Corpbenfname= "//input[@id='BeneficiaryName']";
+	public final static String Biller_subbiller_Corptaxnum= "//input[@id='VATNo']";
+	public final static String Biller_subbiller_Corpfees= "//label[@for='HasInvoiceFees']";
+	public final static String Biller_subbiller_Corpfixedvalue= "//label[@for='HasOperationalFees']";
+	public final static String Biller_subbiller_Corpfixedefield= "//input[@id='OperationalFees']";
+	public final static String Biller_subbiller_Corpperc= "//label[@for='HasOperationalFeesPercentage']";
+	public final static String Biller_subbiller_Corpperefield= "//input[@id='OperationalFeesPercentage']";
+	public final static String Biller_subbiller_Corpdistname= "//input[@id='District']";
+	public final static String Biller_subbiller_Corpstreetefield= "//input[@id='Street']";
+	public final static String Biller_subbiller_Corpzipcode= "//input[@id='PostalCode']";
+	public final static String Biller_subbiller_Corpbuildno= "//input[@id='BuildingNo']";
+	public final static String Biller_subbiller_Corpempname= "//input[@id='EmployeeName']";
+	public final static String Biller_subbiller_Corpempemail= "//input[@id='EmployeeEmail']";
+	public final static String Biller_subbiller_Corpempmobile= "//input[@id='EmployeeMobileNo']";
+	public final static String Biller_subbiller_Corpadd= "//input[@id='btnAdd']";
+	public final static String Biller_subbiller_Corpverify= "//h6[text()='Add Corporate Sub Biller']";
+	public final static String Biller_subbiller_Ibanclick= "//input[@id='IBANAttachment']";
+	public final static String Biller_subbiller_corpcity= "//span[text()='Select City']";
+	public final static String Biller_subbiller_crattach= "//input[@id='RegistrationAttachment']";
+	public final static String Biller_subbiller_srch= "//input[@id='Name']";
+	public final static String Biller_subbiller_crsrch= "//input[@id='RegistrationNumber']";
+	public final static String Biller_subbiller_srcclick= "//button[text()='Search']";
+	public final static String Biller_subbiller_Nodata= "//td[contains(text(),'No data available in table')]";
+	public final static String Biller_subbiller_nameverify= "//table[@id='tblSubBillers']//td[1]";
+	public final static String Biller_subbiller_crverify= "//button[text()='Search']";
+	public final static String Biller_subbiller_Product= "//label[@for='HasProductFees']";
+	public final static String Biller_subbiller_corpaddProduct= "//a[@id='btnNewProduct']";
+	public final static String Biller_subbiller_corpaddProduct_ProductID="//select[@name='ProductId']";
+	public final static String Biller_AddsubBiller_ProductPer="//input[@id='txtProductPercentage']";
+	public final static String Billersubbiller_productIBAN="//input[@id='txtProductIBAN']";
+	public final static String Billersubbiller_product_BenName="//input[@id='txtProductBeneficiaryName']";
+	public final static String Biller_subbiller_Productcrattach="//input[@id='ProductIBANAttachment']";
+	public final static String Biller_Subbiller_ProductAddBtn="//button[.='Add']";
+	public final static String Biller_Subbiller_transferfrmsubiller="//label[@for='DeductTransferFeesFromSubBiller']";
+
+	
+	
+	public final static String Systemmgmt_table = "//table[@id='dtBasicExample']";
+	public final static String Systemmgmt_table_approved = "//table[@id='dtApprovedBillers']";
+	public final static String Systemmgmt_table_Invoice = "//div[@id=\"DataTables_Table_0_wrapper\"]";
+	public final static String Systemmgmt_toggle = "//input[@id='1']";
+	public final static String Admin_SystemMgm_BillerActivateButton="(//a[contains(@href,'BillerActivation')])";
+	
+	//Biller Receivables Corporate Sub biller page
+		public final static String Biller_CorporateSubBillerPage = "//a[@id='lnkSubBillersComanyList2']";
+		public final static String Biller_CorporateSubBillerGrid = "//table[@id='tblSubBillers']";
+		public final static String Biller_CorporateSubBiller_BillerName= "//input[@id='Name']";
+		public final static String Biller_CorporateSubBiller_searchBtn= "//button[text()='Search']";
+		public final static String Biller_CorporateSubBiller_Name= "//a[contains(text(),'Chandan')]";
+		public final static String Biller_CorporateSubBiller_Back= "//a[text()='Back']";
+	
+		//Biller Receivables Individual Sub biller page
+				public final static String Biller_IndividualSubBillerPage = "//a[@id='lnkSubBillersIndividualList2']";
+				public final static String Biller_IndividualToggle = "//input[@class='switch']";
+				public final static String Biller_Individual_NationalID= "//input[@id='NationalId']";
+				public final static String Biller_Individual_searchBtn= "//button[text()='Search']";
+				public final static String Biller_YesBtn= "//button[@id='btnConfirmActivation']";
+				public final static String Biller_ConfirmationPopupMessage= "//h5[@id='ConfirmActivationMessage']";
+				
+	//Biller Settings Bills Cancellation
+ public final static String Biller_BillsCancellation = "//a[@id='lnkCancelBills2']";				
+ public final static String Biller_AttachExcel = "//input[@id='ExcelFile']";				
+ public final static String Biller_ProcessBtn = "//button[@id='btnProcessingExcelFile']";				
+ public final static String Biller_SuccessfulMsg = "//span[@id='spnUnderProcessing']";				
+				
+				
+				
+	//Biller Settings price lists
+    public final static String Biller_PricingList = "//a[@id='lnkPriceList2']";
+    public final static String Biller_AddBtn = "//button[@id='btnAddPriceList']";
+    public final static String Biller_PriceNameAr = "//input[@id='NameAr']";
+    public final static String Biller_PriceNameEn = "//input[@id='NameEn']";
+    public final static String Biller_Ratio = "//input[@id='Value']";
+    public final static String Biller_FromCalendar = "//input[@id='FromDate']";
+    public final static String Biller_FromYear = "(//select[@class='calendars-month-year'])[2]";
+    public final static String Biller_FromMonth = "(//select[@class='calendars-month-year'])[1]";
+    public final static String Biller_ToCalendar = "//input[@id='ToDate']";
+    public final static String Biller_AddPriceBtn = "//button[@id='btnAdd']";
+    public final static String Biller_SearchName = "//input[@id='Name']";
+    public final static String Biller_RadioBtn= "(//input[@name='RoundingTypeID'])[1]";
+    public final static String Biller_SearchButton= "//button[text()=' Search']";
+	public final static String Biller_Add_Individualclient = "//a[@id='lnkCustomerList2']";
+	public final static String Biller_Add_client = "//a[@id='lnkCustomerList2']";
+	public final static String Biller_Add_Companyclient = "//a[@id='lnkCompanyList2']";
+	public final static String Biller_Sub_Individualclient = "//a[@id='lnkSubBillers2']";
+	public final static String Biller_Sub_IndividualsubBiller = "//a[@id='lnkSubBillersIndividualList2']";
+	public final static String Biller_Settings = "//a[@id='lnkMySettings']";
+	public final static String Biller_Individualclient_sname = "//input[@id='SecondName']";
+	public final static String Biller_Add_Individualclient_Button = "//button[@id='btnAddCustomer']";
+	public final static String Biller_Add_Invoice_Button = "//button[@id='btnAddTemplate']";
+	public final static String Biller_Add_Prod_Buttonbtn="//[button[@id='AddProduct']";
+	public final static String Biller_Add_Invoice_template = "//a[@id='lnkInvoiceSetting2']";
+	public final static String Biller_Add_Product = "//a[text()='Products Management']";
+	public final static String Biller_Invoice_TemplateArabic = "//input[@id='NameAr']";
+	public final static String Biller_Prod_NameArabic = "(//input[@id='Name'])[2]";
+	public final static String Biller_Invoice_TemplateEng= "//input[@id='NameEn']";
+	public final static String Biller_Prod_Price= "//input[@id='Price']";
+	public final static String Biller_Prod_Addbutton="//button[@id='btnAddProduct']";
+	public final static String Biller_Individualclient_fname = "//input[@id='FirstName']";
+	public final static String Biller_Individualclient_Cname = "//input[@id='Name']";
+	public final static String Biller_Maxlimit = "//input[@id='Limit']";
+	public final static String Biller_TransferDuration = "//input[@id='TransferDuration']";
+	public final static String Biller_AzimFee = "//input[@id='AzimFee']";
+	public final static String Biller_sadadFee = "//input[@id='sadadFee']";
+	public final static String Biller_BillerAliasNameEn = "//input[@id='BillerAliasNameEn']";
+	public final static String Biller_MaximumInvoiceAmount = "//input[@id='MaximumInvoiceAmount']";
+	public final static String Biller_Imgdownload = "//a[@class='text-white']";
+	public final static String Biller_Pricelistsym = "//h6[text()='Pricing List']";
+	public final static String Biller_Pricelistgrid = "//table";
+	//Change Name//public final static String Biller_InvoiceName= "(//tr[2]|//td[2])[1]";
+	public final static String Biller_InvoiceName= "(//td[2])";
+	public final static String Biller_Invoice_TemplateDisc= "//textarea[@name='Description']";
+	public final static String Biller_Invoice_TemplateRefcode= "//input[@class='form-control animated fadeIn']";
+	public final static String Biller_Invoice_Templateactideacti= "//input[@class='switch']";
+	public final static String Biller_Invoice_TemplateBillpay= "(//input[@type='checkbox'])[5]";
+	public final static String Biller_Invoice_TemplateVeriable= "(//input[@type='checkbox'])[8]";
+
+	
+	public final static String Biller_Individualclient_tname = "//input[@id='ThirdName']";
+	public final static String Biller_Individualclient_lname = "//input[@id='LastName']";
+	public final static String Biller_Individualclient_IdNumber = "//input[@id='IdNumber']";
+	public final static String Biller_Subbiller_NId="//input[@id='NationalId']";
+	public final static String Biller_Individualclient_Name = "//input[@id='Name']";
+	public final static String Biller_Individualclient_CustomerRefNumber = "//input[@id='CustomerRefNumber']";
+	public final static String Biller_Individualclient_DateOfBirth = "//input[@id='DateOfBirth']";
+	public final static String Biller_Invoice_Templatetype_Rec= "//input[@id='BillType_16']";
+	public final static String Biller_Invoice_Templatetype_Chkboxes= "//div[@class='form-group mb-4']/div//input[@type='checkbox']";
+	public final static String Biller_Individualclient_refno = "//input[@name='CustomerRefNumber']";
+	public final static String Biller_Individualclient_togle ="//label[@for='status']";
+	
+	public final static String Biller_Invoice_Select="(//select[@id='ServiceId'])[2]";
+	public final static String Biller_Individualclient_DateOfYear = "//select[@title='Change the year']";
+	public final static String Biller_Dashboard_Fromyear = "//select[@title='Change the year']";
+	public final static String Biller_Dashboard_Toyear = "//select[@title='Change the year']";
+	public final static String Biller_Dashboard_FromDate = "//input[@id='FromDate']";
+	public final static String Biller_Dashboard_TODate = "//input[@id='ToDate']";
+	public final static String Biller_Individualclient_DateOfMonth = "//select[@title='Change the month']";
+	public final static String Biller_Dashboard_FromMonth = "//select[@title='Change the month']";
+	public final static String Biller_Dashboard_ToMonth = "//select[@title='Change the month']";
+	public final static String Biller_DashboardSearchBtn = "//button[@id='btnSearch']";
+	public final static String Biller_Individualclient_MobileNo = "//input[@id='MobileNo']";
+	public final static String Biller_Individualclient_Add = "//input[@type='submit']";
+	public final static String Biller_Invoice_Add = "//button[@id='btnAdd']";
+	public final static String Biller_Save = "//input[@id='btnSave']";
+	public final static String Biller_Save_Yes = "//button[@id='btnConfirmSaveBillerInfo']";
+	public final static String Biller_Save_Yesclose = "//button[@id='btnCloseSendInformationToChecker']";
+	
+	public final static String Biller_Invoice_Delete = "//select[@onchange='SelectAction(this)']";
+	public final static String Biller_Invoice_Reason ="//li[text()='End Service']";
+	public final static String Biller_Invoice_view ="(//a[@title='View Contract'])[1]";
+	public final static String Biller_Invoice_form ="//form[@action='ePayment-ar4.html']";
+	
+	public final static String Biller_Invoice_Deletebtn = "//button[@id='btnConfirmDelete']";
+	public final static String Biller_Invoice_Reasontxt="//input[@type='search']";
+	public final static String Biller_Invoice_Deletechkbox="//label[@for='Deleted']";
+	public final static String Biller_Invoice_table="//table[@id='tblCustomers']";
+	public final static String Biller_Invoice_Templatetype= "//input[@id='BillType_16']";
+	public final static String Biller_Invoice_Templatetype_One= "//input[@id='BillType_15']";
+	public final static String Admin_TaxEng= "//input[@id='TaxName']";
+	public final static String Admin_Tax_Search ="//button[text()='Search']";
+	public final static String Admin_Tax_Nodata ="//td[text()='No data available in table']";
+	public final static String Biller_Individualclient_Email = "//input[@id='Email']";
+	public final static String Biller_Individualclient_Refno = "//input[@id='CustomerRefNumber']";
+	public final static String Biller_Individualclient_Search = "//button[@id='btnSearch']";
+	public final static String Biller_Individualclient_SearchBtn = "//button[@id='btnSearch']";
+	public final static String Biller_Individualclient_Edit = "	//td[9]";
+	public final static String Biller_Edit = "(//a[@class='mx-1 action bg-accent'])[1]";
+	public final static String Biller_Individualclient_Searchname = "(//span[contains(text(),'CorporateOne')])[1]";
+	public final static String Biller_Corpclient_Searchname = "(//span[contains(text(),'client')])[1]";
+	public final static String Biller_Individualclient_SearchByname = "//input[@id='Name']";
+	public final static String Biller_Subbiller_Search ="//button[text()='Search']";	
+	public final static String Biller_Individualclient_Back ="//a[text()='Back']";
+	public final static String Biller_Individualclient_Deactivate ="(//input[@type='checkbox'])[3]";
+	public final static String Biller_Individualclient_button="//button[@id='btnConfirmActivation']";
+	public final static String Biller_Confirm_toggle="//button[@id='btnConfirmActivation']";
+	
+	//public final static String Biller_Individualclient_button="//button[@id='btnConfirmApproveBillerInfo']";
+	//public final static String Biller_Confirm_toggle="//button[@id='btnConfirmActivation']";	
+	public final static String Biller_ApprovedMgm_Menu="//a[@id='lnkApprovedBillerList2']";
+	public final static String Biller_Individualclient_export="//a[@id='btnExport']";
+	public final static String Biller_Individualclient_Corponame = "(//input[@type='text'])[1]";
+	public final static String Biller_Individualclient_Customercrnum = "//input[@id='RegistrationNo']";
+
+
+	//Corporate
+	public final static String Biller_Corporateclient_commissioner_Mobile = "//input[@id='CommissionerMobileNo']";
+	public final static String Biller_Corporateclient_commissioner_Email = "//input[@id='CommissionerEmail']";
+	public final static String Biller_Corporateclient_commissioner_Crno = "//input[@id='CustomerRefNumber']";
+	public final static String Biller_Corporateclient_name = "//input[@id='NameAr']";
+	public final static String Biller_Corporateclient_Rno = "//input[@id='RegistrationNo']";
+	public final static String Biller_Corporateclient_lang = "//label[text()='English']";
+	public final static String Biller_Corporateclient_commissioner = "//input[@id='CommissionerNameAr']";
+	public final static String Biller_Corporateclient_commissionerID = "//input[@id='CommissionerNationalId']";
+	public final static String Biller_Corporateclient_Name = "//input[@id='CompanyName']";
+	public final static String Biller_Corporateclient_Save = "//input[@id='btnUpdate']";
+	public final static String Biller_Corporateclient_tbl = "//table[@id='tblCompanies']";
+	public final static String Biller_Corporateclient_search = "//input[@id='CompanyName']";
+	public final static String Biller_CorporateReportBillerName = "//div[text()='ENGLISH BILLER']";
+	public final static String Biller_CorporateReport = "//iframe";
+    public final static String Biller_Corpoclient_CustomerRefNumber = "//input[@id='CustomerRefNumber']";
+
+	//signup
+
+	public final static String Biller_SignUp_Btn ="//a[contains(@href,'BillerCompanySignUp')]";
+	public final static String Biller_CompanyName_eField ="//input[@name='CompanyNameAr']";
+	public final static String Biller_EconomySector_List ="//select[@name='EconomicSectorID']";
+	public final static String Biller_Country_List ="//select[@name='CountryID']";
+	public final static String Biller_City_List ="//select[@name='CityID']";
+	public final static String Biller_District_eField ="//input[@name='District']";
+	public final static String Biller_Street_eField ="//input[@name='Street']";
+	public final static String Biller_BuildNo_eField ="//input[@name='BuildingNo']";
+	public final static String Biller_PostalCode_eField ="//input[@name='PostalCode']";
+	public final static String Biller_MailBox_eField ="//input[@name='MailBox']";
+	public final static String Biller_OfficNo_eField ="//input[@name='OfficeNo']";
+	public final static String Biller_EmplyName_eField ="//input[@name='EmployeeName']";
+	public final static String Biller_EmplyJobTitle_eField ="//input[@name='EmployeeJobTitle']";
+	public final static String Biller_EmplyMobileNumber_eField ="//input[@name='EmployeeMobileNo']";
+	public final static String Biller_EmplyEmail_eField ="//input[@name='EmployeeEmail']";
+	public final static String Biller_CustomerSupPhNo_eField ="//input[@name='CustomerSupportPhoneNo']";
+	public final static String Biller_IBANum_eField ="//input[@name='IBAN']";
+	public final static String Biller_IBANAttmnt_eField ="//input[@name='IBANAttachment']";
+	public final static String Biller_BankCountryType_List ="//select[@name='BankAccountTypeId']";
+	public final static String Biller_BankCertAttmnt_eField ="//input[@name='BankCertificateAttachment']";
+	public final static String Biller_CRNumber_eField ="//input[@name='RegistrationNo']";
+	public final static String Biller_RegiAttachment_eField ="//input[@name='RegistrationAttachment']";
+    public final static String Biller_SubName ="//input[@id='BillerSubName']";
+	public final static String Biller_confirmCheckbox ="//input[@id='BillerSubNameConfirmation']";
+	public final static String Biller_RegistDate_eField ="//input[@name='RegistrationDateHijri']";
+	public final static String Biller_RegistDate_Issuedate ="(//tr[td[a[contains(@class,'calendars-today')]]]//following-sibling::td)[5]";
+	public final static String Biller_RegistDate_exprDate ="//a[contains(@class,'calendars-today')]";
+	public final static String Biller_ExperyDate_eField ="//input[@name='ExpiredRegistrationDateHijri']";
+	public final static String Biller_Taxno_eField ="//input[@name='TaxNo']";
+	public final static String Biller_IsTaxable_RadBtn ="//div[label[contains(text(),'Taxable')]]/input[@name='IsTaxable']";
+	public final static String Biller_NoTaxable_RadBtn ="//div[label[contains(text(),'Non-Taxable')]]/input[@name='Taxable']";
+	public final static String Biller_TaxRegisAttmnt_eField ="//input[@name='TaxRegistrationAttachment']";
+	public final static String Biller_FirstName_eField ="//input[@name='FirstNameAr']";
+	public final static String Biller_SurName_eField ="//input[@name='FatherNameAr']";
+	public final static String Biller_GradFatherName_eField ="//input[@name='GrandFatherNameAr']";
+	public final static String Biller_LastName_eField ="//input[@name='LastNameAr']";
+	public final static String Biller_NationalID_eField ="//input[@name='NationalID']";
+	public final static String Biller_CommisionIdentyAttmnt_eField ="//input[@name='CommissionerIdentityAttachment']";
+	public final static String Biller_MemDumAssoAttmnt_eField ="//input[@name='MemorandumOfAssociationAttachment']";
+	public final static String Biller_AuthLterTemltAttmnt_eField ="//span[@id='lblAuthorizationLetterTemplateAttachment']";
+	public final static String Biller_CommisionPhNo_eField ="//input[@name='CommissionerPhoneNo']";
+	public final static String Biller_CommisionEmail_eField ="//input[@name='CommissionerEmail']";
+	public final static String Biller_UserID_eField ="//input[@name='Username']";
+	public final static String Biller_Password_eField ="//input[@name='Password']";
+	public final static String Biller_ConfPawd_eField ="//input[@name='ConfirmPassword']";
+	public final static String Biller_Confirmation_CheckBox="//input[@name='Confirmation']";
+	public final static String Biller_ReCatchBox_eField ="//iframe[@title='reCAPTCHA']";
+	public final static String Biller_CatchBox_eField ="//span[@id='recaptcha-anchor']";
+	public final static String Biller_SignUp_btn="//input[@id='btnSignUp']";
+	public final static String Biller_confirmpassoword="//span[@id='ConfirmPassword-error']";
+	public final static String Biller_RegisterComp_btn ="//h4[contains(text(),'Registration completed successfully')]";
+	public final static String Biller_Close_btn ="//button[text()='Close']";
+	public final static String Biller_AuthTempl_Link ="//a[text()='Authorization Letter Sample']";
+  public final static String Biller_AttachetedImage_Link1="(//h6)[2]";
+  public final static String Biller_AttachetedImage_Link="//input[contains(@accept,'image') and (@name='IBANAttachment')]";
+
+	public final static String Biller_Receivable_Link="//a[contains(text(),'Receivables')]";
+	public final static String Biller_Balance_Link="//a[@id='lnkWalletDetails2']";
+	public final static String Biller_Update_btn="//button[@data-target='#updateAliasModal']";
+	public final static String Biller_Wallet_efield="//input[@id='Alias']";
+	public final static String Biller_Wallet_yesbtn="//button[@id='btnUpdateAlias']";
+	public final static String Biller_updated_Wallet="//h6[@id='hdrAlias']";
+	public final static String Biller_ExportBill_Link="(//a[contains(text(),'Exported Bills')])[2]";
+	public final static String Biller_AddInvoice_btn="//button[@id='btnAddInvoice']";
+	public final static String Biller_AddInvoice_Header="//h6[text()='Create Invoice']";
+	public final static String Biller_Invoice_IndividualRdv="//input[@id='rdIndividual']";
+	public final static String Biller_Invoice_CopoRdv="//input[@id='rdCompany']";
+//	public final static String Biller_Invoice_IndividualRdv="//label[@for='rdIndividual']";
+//	public final static String Biller_Invoice_CopoRdv="//label[@for='rdCompany']";
+	public final static String Biller_Invoice_CustIDListindi="//select[@name='CustomerId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Biller_Invoice_CustIDListcorpo="//select[@name='CompanyId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Biller_Invoice_SBilIdList="//select[@name='SubBillerId']/following-sibling::span//span[contains(@class,'arrow')]";
+	public final static String Biller_Invoice_SBilShareamountFil="//input[@id='SubBillerShareAmount']";
+	public final static String Biller_Invoice_SBilSharePerFil="//input[@id='SubBillerSharePercentage']";
+	public final static String Biller_Invoice_TemplateList="//select[@id='InvoiceTemplateId']";
+	public final static String Biller_Invoice_Create="//button[@id='btnCreateInvoice']";
+	public final static String Biller_Invoice_AddProductBtn="//a[@id='btnAddProductModal']";
+	public final static String Biller_Invoice_Subbill="//input[@id='rdSubbillerIndividual']";
+	public final static String Biller_Invoice_TaxPric="//input[@id='tbxPrice']";
+	public final static String Biller_Invoice_ProductID="//select[@name='ProductId']";
+	public final static String Biller_Invoice_AddBtn="//button[.='Add']";
+	public final static String Biller_Invoice_DateInvoc="//input[@name='IssueDate']";
+	public final static String Biller_Invoice_DurationID="//select[@id='DurationTypeId']";
+	public final static String Biller_Invoice_MinTax="//input[@name='MinLimit']";
+	public final static String Biller_Invoice_CreateReapeat="//button[@id='btnCreateRepeatInvoice']";
+	public final static String Biller_Invoice_Conditon="//textarea[@id='txtConditions']";
+	public final static String Biller_Invoice_Conditonbtn="//div[@id='divTerms']//input";
+	public final static String Biller_Invoice_Descript="//textarea[@id='txtBillDescription']";
+	public final static String Biller_Invoice_Descript1="//textarea[@id='txtDescription_1']";
+//	public final static String Biller_Invoice_SaveButton="//button[@id='btnUpdateBill']";
+	public final static String Biller_Invoice_SaveButton="//button[@id='btnCreateInvoice']";
+	public final static String Biller_Invoice_ExportButton="//button[@id='btnUpdateBill']";
+	public final static String Biller_Invoice_Exportandcreatebtn="//button[@id='btnExportInvoice']";
+	public final static String Biller_Invoice_Billnumber="//input[@id='billNo']";
+	public final static String Biller_Invoice_Searchbtn="//button[@id='btnSearch']";
+	public final static String Biller_Invoice_Count="(//table[@id='tblBillList']//tbody/tr[@role='row'])";
+	public final static String Biller_Invoice_AfteraddCount="(//table[@id='tblInvoiceList']//tbody/tr[@role='row'])";
+	public final static String Biller_Invoice_AfteraddInvoice="(//table[@id='tblBillList']//tbody/tr[@role='row'])";
+	public final static String Biller_ExportExcel="//a[@id='btnExport']";
+	public final static String Biller_ConformExportExcel="//span[@id='spnUnderProcessing']";
+	public final static String Biller_InvoiceLastCheckBox="(//table[@id='tblBillList']//tbody/tr[@role='row'])//input[@type='checkbox'][last()]";
+	public final static String Biller_Export_CancellationBtn="//button[@id='btnCancelSelected']";
+	public final static String Biller_Export_PayOutsideBtn="//button[@id='btnPayCashSelected']";
+	public final static String Biller_Export_ViewContactBtn="(//table[@id='tblBillList']//tbody/tr[@role='row'])//a[@title='View Contract'][last()]";
+	public final static String Biller_Invoice_ClientRoleId="(//li[@role='treeitem'])";
+	public final static String Biller_Invoice_NextBtn="//a[text()='Next']";
+	public final static String Biller_Invoice_Next="//li[a[text()='Next']][contains(@class,'next disabled')]";
+	public final static String Biller_Invoice_GetBilId="(//td[contains(text(),' Bill Number')]/span)[1]";
+	public final static String Biller_Invoice_BillNo="//a[contains(@href,'billNo')]";
+	public final static String Biller_Invoice_BillerNumber="//label[contains(text(),'Bill Number')]/h6";
+	public final static String Biller_Invoice_PrintButton="//button[@id='btnPrintInvoice']";
+	public final static String Biller_Invoice_ViewInsButton="//a[text()='View Installments']";
+	public final static String Biller_Invoice_ContractNumber="//label[text()='Contract Number:']";
+	public final static String Biller_ExportContact_Link="//a[contains(text(),'Exported Contracts')]";
+	public final static String Biller_ExportContact_InvID="//a[contains(@href,'invoiceId')]";
+	public final static String Biller_Invoice_GetContactId="(//td[contains(text(),' Bill Number')]/span)[1]";
+	public final static String Biller_ExportContact_ContactHeader="//label[contains(text(),'Contract Number')]/following-sibling::span";
+	public final static String Biller_ExportContact_InvoiceDetails="//h6[text()='Invoice Details']";
+	public final static String Biller_Tamplate_Table="(//table[contains(@id,'DataTables_Table')]//tbody/tr[@role='row'])";
+	public final static String Biller_Tamplate_UpdateBtn="//button[contains(@id,'btnUpdate')]";
+	public final static String Biller_Tamplate_UpdateTitleHdr="//h5[@id='exampleModalLongTitle']";
+	public final static String Biller_Tamplate_UpdateDesHdr="//label[text()='Description']";
+	public final static String Biller_Tamplate_UpdateInVTyeHdr="//label[text()='Invoice Type']";
+	public final static String Biller_Tamplate_AddTitleHdr="//h5[@id='exampleModalLongTitle']";
+	public final static String Biller_Tamplate_AddTemplNameArbicHdr="//label[text()='Template Name in Arabic']";
+	public final static String Biller_Tamplate_AddTemplNameEngHdr="//label[text()='Template Name in English']";
+	public final static String Biller_Tamplate_AddRefercodeHdr="(//label[text()='Reference Code'])";
+	public final static String Biller_Tamplate_AddActDdeacHdr="(//label[text()='Activate/Deactivate'])[1]";
+	public final static String Biller_Tamplate_AddBillPaymentyHdr="(//label[text()='Bill Payment'])";
+	public final static String Biller_Tamplate_DeleteBtn="//button[contains(@id,'btnDelete')]";
+	public final static String Biller_Tamplate_DeletePop="//h5[@id='ConfirmActivationMessage']";
+	public final static String Biller_Tamplate_DeleteConfBtn="// button[@id='btnConfirm']";
+	public final static String Biller_Tamplate_DeleteNoBtn="// button[text()='No']";
+	public final static String Biller_Product_Table="(//table[@id='tblProducts']//tbody/tr[@role='row'])";
+	public final static String Biller_Product_PName="(//table[@id='tblProducts']//tbody/tr[@role='row'])[1]/td[3]";
+	public final static String Biller_Product_PCate="(//table[@id='tblProducts']//tbody/tr[@role='row'])[1]/td[4]";
+	public final static String Biller_Product_NameInput="//input[@id='Name']";
+	public final static String Biller_Product_SearchIDlist="//select[@id='ServiceId']";
+	public final static String Biller_Product_SeachBtn="//button[@id='btnSearch']";
+	public final static String Biller_Product_NoData="//td[contains(text(),'No data available in table')]";
+	public final static String Biller_Product_ToggleBtn="(//table[@id='tblProducts']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+	public final static String Biller_Product_ActivePop="//h5[@id='ConfirmActivationMessage']";
+	public final static String Biller_Product_ActiveConfbtn="//button[@id='btnConfirmActivation']";
+	public final static String Biller_Menu_Discount ="//a[text()='Discounts Management']";
+	public final static String Biller_Discount_AddBtn ="//button[@id='btnAddDiscount']";
+	public final static String Biller_Discount_EngInp ="//input[@id='NameEn']";
+	public final static String Biller_Discount_AtrabInp ="//input[@id='NameAr']";
+	public final static String Biller_Discount_Percent ="//input[@id='Value']";
+	public final static String Biller_Discount_toggle ="//label[@for='status']";
+	public final static String Biller_Discount_Verify ="//table[@id='tblDiscounts']//td[1]";
+	public final static String Biller_Discount_Deactivatetgl="//span[@class='switch switch-sm']";
+	public final static String Biller_Discount_Deact_confirm="//h5[text()='Cancel activation?']";
+	public final static String Biller_Discount_Canyes="//button[@id='btnConfirmActivation']";
+	public final static String Biller_Discount_AddDiscBtn ="//button[contains(text(),'Add Discount')]";
+	//public final static String Biller_Discount_AddDiscBtn ="//button[contains(text(),'Add Discount')]";
+	public final static String Biller_Discount_DiscName ="//input[@id='DiscountName']";
+	public final static String Biller_Discount_Name ="//table/tbody/tr/td[1]";
+	public final static String Biller_Discount_SearchBtn ="//button[contains(text(),'Search')]";
+	public final static String Biller_Discount_DeleteBtn ="//a[@class='mx-1 action bg-danger deleteItem']";	
+	public final static String Biller_User_DeleteBtn ="//a[@class=\"mx-1 action bg-danger\"]";	
+	public final static String Biller_User_ConfirmDeleteBtn ="//button[@class=\"btn btn-danger\"]";	
+	
+	public final static String Biller_Tamplate_ConfirmDeletePop="//h5[@id='ConfirmDeleteMessage']";
+	public final static String Biller_Discount_YesConfBtn ="//button[@id='btnConfirmDelete']";
+	public final static String Biller_Systemmgmt_TempBenificaryName = "//input[@name='TempBenificaryName']";
+	public final static String Biller_Systemmgmt_BillerCode = "//input[@name='BillerCode']";
+	public final static String Biller_Systemmgmt_TransferDuration = "//input[@name='TransferDuration']";
+	public final static String Biller_Systemmgmt_BillerAliasNameAr = "//input[@name='BillerAliasNameAr']";
+	public final static String Biller_Systemmgmt_BillerAliasNameEn = "//input[@name='BillerAliasNameEn']";
+	public final static String Biller_Systemmgmt_BillingCatgeoryType = "//select[@id='BillerCategoryId']";
+	public final static String Biller_Systemmgmt_HasSubBillers = "(//input[@name='HasSubBillers'])[1]";
+	public final static String Biller_Systemmgmt_HasIndividualSubBillers = "(//input[@name='HasIndividualSubBillers'])[1]";
+	public final static String Biller_Systemmgmt_HasEnterpriseSubBillers= "(//input[@name='HasEnterpriseSubBillers'])[1]";
+	public final static String Biller_Systemmgmt_IsUrgentBillUploader= "(//input[@name='IsUrgentBillUploader'])[1]";
+	public final static String Biller_Systemmgmt_HasMaximumInvoiceNumberPerDay= "(//input[@name='HasMaximumInvoiceNumberPerDay'])[1]";
+	public final static String Biller_Systemmgmt_MaximumInvoiceNumber= "//input[@name='MaximumInvoiceNumber']";
+	public final static String Biller_Systemmgmt_HasMaximumInvoiceAmountPerDay= "(//input[@name='HasMaximumInvoiceAmountPerDay'])[1]";
+	public final static String Biller_Systemmgmt_Btnapprove= "//button[@id='btnApprove']";
+	public final static String Biller_Systemmgmt_MaximumInvoiceAmount= "(//input[@name='MaximumInvoiceAmount'])[1]";
+	public final static String Biller_Systemmgmt_Super= "(//input[@name='IsSuperBiller'])[1]";
+	public final static String Biller_Systemmgmt_Tracker= "(//input[@name='IsTrackedBiller'])[1]";
+	public final static String Biller_Systemmgmt_Confirm= "//button[@id='btnConfirmSetAsSuperBiller']";
+	public final static String Biller_Systemmgmt_NewSuperBiller= "//select[@name='NewSuperBillerId']";
+	
+	public final static String Biller_Systemmgmt_ConfirmApprove= "//button[@id='btnConfirmApproveBillerInfo']";
+	public final static String Biller_Systemmgmt_RejectButton= "//button[@id='btnReject']";
+	public final static String Biller_Systemmgmt_ConfirmReject= "//button[@id='btnConfirmRejectBillerInfo']";
+
+	
+	public final static String Biller_Menu_UserManagement ="//a[text()='Groups Management']";
+	public final static String Biller_Menu_UserList ="//a[text()='Users List']";
+	public final static String Biller_UserList_AddUserBt ="//button[@id='btnAddUser']";
+	public final static String Biller_UserListAdd_NameInput ="//input[@id='NameAR']";
+	public final static String Biller_UserListAdd_EmailInput ="//input[@id='EMail']";
+	public final static String Biller_UserListAdd_PhoneInput ="//input[@id='Phone']";
+	public final static String Biller_UserListAdd_GroupCheckBox ="//div[@id='GroupsListDiv']//input";
+	public final static String Biller_UserListAdd_GroupCheckBox2 ="//input[@id=75]";
+	public final static String Biller_UserListAdd_AddUserBtPop ="//button[@id='btnAddUser']";
+	public final static String Biller_UserListSearch_NameBt ="//input[@id='Name']";
+	public final static String Biller_UserListSearch_EmailBt ="//input[@id='Email']";
+	public final static String Biller_UserListSearch_SaerchBt ="//button[@id='btnSearch']";
+	public final static String Biller_UserList_DeleteBtn ="//a[contains(@id,'btndelete')]";	
+	public final static String Biller_UserList_ConfirmDeletePop="(//h5[@id=\"ConfirmActivationMessage\"])[3]";
+	public final static String Biller_UserList_YesConfBtn ="//button[@id='btnConfirmDelete']";
+	public final static String Biller_Individualclient_Invoice="//input[@id='rdIndividual']";
+//	public final static String Biller_Individualclient_Invoice_cName="//span[@id='select2-CustomerId-container']";
+	public final static String Biller_Individualclient_Invoice_ChooseName="//select[@id='CustomerId']";
+	public final static String Biller_Invoice_Fixed="//input[@name='SubBillerShareAmount']";
+	public final static String Biller_Invoice_Percentage="//input[@name='SubBillerSharePercentage']";
+	public final static String Biller_PriceListpagetxt = "//h6[@class='justify-content-start align-middle align-self-center']";
+	public final static String Biller_PriceList="//a[@id='lnkPriceList2']";
+	public final static String Biller_PriceListsfield="//input[@id='Name']";
+	public final static String Biller_PriceListSeacrchbtn="//button[@class='btn btn-primary']";
+	public final static String Biller_Settings_Invoice_template = "//a[@id='lnkInvoiceSetting2']";
+	public final static String Biller_Invoice_Templategridview = "//table[@id='DataTables_Table_0']";
+	public final static String Biller_ReportMenu = "//a[@id='lnkMyReports']";
+	public final static String Biller_ClientsInvoicesReport = "(//a[@class=\"nav-link\"])[18]";
+	//public final static String Biller_ReceivablesReportsbtn = "//a[@class='dropdown-toggle collapsed']";
+	public final static String Biller_ReceivablesReportsbtn = "//a[@id='refReceiptsSub22']";
+	public final static String Biller_ClientsInvoicesReportMenu = "//a[@id='lnkExportedInvoicesReport2']";
+
+	public final static String Biller_CorporateClientReport = "//a[@id='lnkBillerCompanyClientsReport']";
+	public final static String Biller_Clientreport_FromDate = "//input[@id='FromDate']";
+    public final static String Biller_Clientreport_Fromyear = "//select[@title='Change the year']";
+    public final static String Biller_Clientreport_FromMonth = "//select[@title='Change the month']";
+    public final static String Biller_Clientreport_TODate = "//input[@id='ToDate']";
+    public final static String Biller_Clientreport_Toyear = "(//select[@class='calendars-month-year'])[2]";
+    public final static String Biller_Clientreport_ToMonth = "(//select[@class='calendars-month-year'])[1]";
+    public final static String Biller_ClientType = "//select[@id='ClientTypeId']";
+    public final static String Biller_ClientNamearro = "(//span[@class='select2-selection__arrow'])[1]";
+    public final static String Biller_ClientNametextbox= "//input[@type='search']";
+   // public final static String Biller_ClientNametextbox= "(//span[@role='combobox'])[1]";
+    public final static String Biller_ClientNameoption= "//ul[@role='tree']/li[1]";
+    public final static String Biller_ClientNametext= "//li[@role='treeitem']";
+    public final static String Biller_BillStatus = "(//span[@role='combobox'])[2]";
+    public final static String Biller_IdorCR = "//input[@id='ClientRefNumber']";
+    public final static String Biller_SubBillerType = "//select[@id='SubBillerType']";
+    public final static String Biller_clientSubBillerName = "//span[text()='- Select Sub Biller -']";
+
+    public final static String Biller_SubBillerNamearro = "(//span[@role='presentation'])[4]";
+    public final static String Biller_Clientstatus= "(//span[@role='combobox'])[2]";
+    public final static String Biller_SubBillerNametxtbox = "//input[@type='search']";
+    public final static String Biller_SubbillerNameoption = "//ul[@role='tree']/li[1]";
+    public final static String Biller_Generatebtn = "//button[@id='btnSearch']";
+    public final static String Biller_invoiceReport = "//a[@tabindex='1']";
+    public final static String Biller_Exporttoexcelbtn = "//button[@id='btnExport']";
+    public final static String Biller_exportedmsg = "//div[@id='dvUnderProcessing']";
+    public final static String Biller_Termsmanagementsym="//h6[text()='Terms Management']";
+    public final static String Biller_Settingbtn="//a[@id='lnkMySettings']";
+    public final static String Biller_Termsmanagementbtn="(//a[text()='Terms Management'])[2]";
+    public final static String Biller_Termsnameinarabic="//tr/th[text()='Term Name in Arabic']";    
+    public final static String Biller_AddTermbtn="//button[@id='btnAddTerm']";    
+    public final static String Biller_Arebicname="//input[@id='NameAr']";    
+    public final static String Biller_Englishname="//input[@id='NameEn']";    
+    public final static String Biller_Termarebicname="//textarea[@id='DescriptionAr']";    
+    public final static String Biller_TermEnglishname="//textarea[@id='DescriptionEn']";    
+    public final static String Biller_TermpopupActivebtn="//input[@id='status']";    
+    public final static String Biller_Termpopupsavebtn="(//button[@class='btn btn-primary'])[3]";    
+    public final static String Biller_searchtxtfield="//input[@id='TermName']";    
+public static final String Biller_TermsManagement_Editbtn = "(//button[@onclick='Update(this);'])[1]";	
+	public static final String Biller_TermsManagement_updatetxt = "//h6[@class='modal-title']";	
+   // public final static String Biller_Searchbtn="(//button[@class='btn btn-primary'])[1]";    
+
+    public final static String Biller_PaidOutsidemenu="//a[text()='Paid Outside EDAAT Bills'][1]";    
+    public final static String Biller_Attachfile="//input[@id='ExcelFile']";    
+    public final static String Biller_Proccesbtn="//button[@id='btnProcessingExcelFile']";    
+    public final static String Biller_successmsg="//span[@id='spnUnderProcessing']";    
+     //Biller Reports Sub biller Report
+    public final static String Biller_SubBillerReportLink="//a[@id='lnkSubBillersInfoReport2']";    
+    public final static String Biller_SubBillerNationalID="//input[@id='NationalId']";    
+    public final static String Biller_SubBillerGenerateReport="//button[@id='btnSearch']";    
+    public final static String Biller_SubBillerCRNumber="//input[@id='RegistrationNumber']";    
+    public final static String Biller_SubBillerIndividual="//input[@id='rdSubbillerIndividual']";    
+    public final static String Biller_SubBillerCorporate="//label[text()='Corporate']";    
+	
+	//Receivables Sadad payment Transaction report
+	public final static String Biller_Receivables_Sadadpaybtn = "//a[@id='lnkSadadPaymentsTransactionsReport']";
+	public final static String Biller_Receivables_SadadpayInvoicetype = "//select[@id='InvoiceTypeId']";
+	public final static String Biller_Receivables_SadadpayInvoiceno= "//input[@id='InvoiceNumber']";
+	public final static String Biller_Receivables_SadadpayClienttype = "//select[@id='InvoiceTypeId']";
+	public final static String Biller_Receivables_SadadpayClientname= "//span[@id='select2-ClientId-container']";
+	public final static String Biller_Receivables_SadadpayClientselect= "//span[@id='select2-ClientId-container']";
+	public final static String Biller_Receivables_Sadadpay_FromMonth="//select[@title='Change the month']";
+	public final static String Biller_Receivables_Sadadpay_FromYear="//select[@title='Change the year']";
+	public final static String Biller_Receivables_Sadadpay_ToMonth="//select[@title='Change the month']";
+	public final static String Biller_Receivables_Sadadpay_ToYear="//select[@title='Change the year']";
+	public final static String Biller_Receivables_Sadadpay_FromCalender="//input[@id='FromDate']";
+	public final static String Biller_Receivables_Sadadpay_ToCalender="//input[@id='ToDate']";
+	public final static String Biller_Receivables_Sadadpay_product="//span[text()='Select Product']";
+	public final static String Biller_Receivables_Sadadpay_generatebtn="//button[@id='btnSearch']";
+	public final static String Biller_Receivables_Sadadpay_frame="//iframe";
+	public final static String Biller_Receivables_Sadadpay_Verify="//div[text()='Sadad Payment Transactions Report']";
+	
+	//Receivable Super Biller Report	
+   
+    public final static String Biller_OverDueBillesTrackedBiller = "//input[@class='select2-search__field']";
+    public final static String Biller_OverDueBillsReportPage = "(//a[@href='/SuperReport/ClientDelayedBillsReport'])[2]";
+// Biller SuperBiller SubBiller
+    public final static String Biller_SuperBiller_subBillerbtn = "//a[@id='lnkSubBillersInfoTrackReport2']";
+	public final static String Biller_SuperBiller_SubBiller_selectInd = "//label[text()='Individual']";
+	public final static String Biller_SuperBiller_SubBiller_selectCorp= "//label[text()='Corporate']";
+	public final static String Biller_SuperBiller_SubBiller_Nationalefield= "//input[@name='NationalId']";
+	public final static String Biller_SuperBiller_SubBiller_Crnumberefield= "//input[@name='RegistrationNumber']";
+	public final static String Biller_SuperBiller_SubBiller_trackbill= "//input[@role='textbox']";
+	public final static String Biller_SuperBiller_SubBiller_generatebtn= "//button[@id='btnSearch']";
+	public final static String Biller_SuperBiller_SubBiller_frame= "//iframe";
+	public final static String Biller_SuperBiller_SubBiller_indVerify= "//div[contains(text(),'Individual Sub Billers')]";
+	public final static String Biller_SuperBiller_SubBiller_CorpVerify= "//div[text()='Corporate Sub Billers Report']";
+	
+	
+	public final static String Admin_Receivable_Link="//a[contains(text(),'Receivables')]";
+	public final static String Admin_Billerno_search="//input[@id='billNo']";
+	public final static String Admin_Billerno_button="//button[@id='btnSearch']";
+	public final static String Admin_ExportBill_Link="//a[contains(text(),'Exported Bills')]";
+	public final static String Admin_AddInvoice_btn="//button[@id='btnAddInvoice']";
+	public final static String Admin_AddInvoice_Header="//h6[text()='Create Invoice']";
+	public final static String Admin_Invoice_IndividualRdv="//input[@id='rdIndividual']";
+	public final static String Admin_Invoice_CopoRdv="//input[@id='rdCompany']";
+	public final static String Admin_Invoice_ComCustIDList="//select[@name='CompanyId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Admin_Invoice_CustIDList="//select[@name='CustomerId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Admin_Invoice_SBilIdList="//select[@name='SubBillerId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Admin_Invoice_SBilShareamountFil="//input[@id='SubAdminShareAmount']";
+	public final static String Admin_Invoice_SBilSharePerFil="//input[@id='SubAdminSharePercentage']";
+	public final static String Admin_Invoice_TemplateList="//select[@id='InvoiceTemplateId']";
+	public final static String Admin_Invoice_Create="//button[@id='btnCreateInvoice']";
+	public final static String Admin_Invoice_AddProductBtn="//a[@id='btnAddProductModal']";
+	public final static String Admin_Invoice_Subbill="//input[@id='rdSubAdminIndividual']";
+	public final static String Admin_Invoice_TaxPric="//input[@id='tbxPrice']";
+	public final static String Admin_Invoice_ProductID="//select[@name='ProductId']";
+	public final static String Admin_Invoice_AddBtn="//div[@class='modal-footer']/button[@id='btnAddProduct']";
+	public final static String Admin_Invoice_DateInvoc="//input[@name='IssueDate']";
+	public final static String Admin_Invoice_DurationID="//select[@name='DurationTypeId']";
+	public final static String Admin_Invoice_MinTax="//input[@name='MinLimit']";
+	public final static String Admin_Invoice_CreateReapeat="//button[@id='btnCreateRepeatInvoice']";
+	public final static String Admin_Invoice_Conditon="//textarea[@id='txtConditions']";
+	public final static String Admin_Invoice_Conditonbtn="(//div[@id='divTerms']//input)[1]";
+	public final static String Admin_Invoice_Descript="//textarea[@id='txtBillDescription']";
+	public final static String Admin_Invoice_Descript1="//textarea[@id='txtDescription_1']";
+	public final static String Admin_Invoice_SaveButton="//button[@id='btnUpdateBill']";
+	public final static String Admin_Invoice_ExportButton="//button[@id='btnUpdateBill']";
+	public final static String Admin_Invoice_Count="(//table[@id='tblBillList']//tbody/tr[@role='row'])";
+	public final static String Admin_Invoice_AfteraddCount="(//table[@id='tblInvoiceList']//tbody/tr[@role='row'])";
+	public final static String Admin_Invoice_AfteraddInvoice="(//table[@id='tblBillList']//tbody/tr[@role='row'])";
+	public final static String Admin_Invoice_ClientRoleId="(//li[@role='treeitem'])";
+	public final static String Admin_RegistDate_exprDate ="//a[contains(@class,'calendars-today')]";
+	public final static String Admin_InvoiceLastCheckBox="(//table[@id='tblBillList']//tbody/tr[@role='row'])//input[@type='checkbox'][last()]";
+	public final static String Admin_Invoice_GetBilId="(//td[contains(text(),' Bill Number')]/span)[1]";
+	public final static String Admin_ExportContact_Link="//a[contains(text(),'Exported Contracts')]";
+	public final static String Admin_Invoice_GetContactId="(//td[contains(text(),' Bill Number')]/span)[1]";
+	public final static String Admin_Invoice_NextBtn="//a[text()='Next']";
+	public final static String Admin_Invoice_Next="//li[a[text()='Next']][contains(@class,'next disabled')]";
+	public final static String Admin_Invoice_NextPrevLink="(//li[a[text()='Next']]/preceding-sibling::li)[last()]/a";
+	public final static String Admin_Export_CancellationBtn="//button[@id='btnCancelSelected']";
+	public final static String Admin_Export_PayOutsideBtn="//button[@id='btnPayCashSelected']";
+	public final static String Admin_Export_ViewContactBtn="(//table[@id='tblBillList']//tbody/tr[@role='row'])//a[@title='View Contract'][last()]";
+	public final static String Admin_ExportExcel="//a[@id='btnExport']";
+	public final static String Admin_ExportExcel_Verify="//span[@id='spnUnderProcessing']";
+	public final static String Admin_Invoice_BillNo="//a[contains(@href,'billNo')]";
+	public final static String Admin_Invoice_BillerNumber="//label[contains(text(),'Bill Number')]/h6";
+	public final static String Admin_Invoice_PrintButton="//button[@id='btnPrintInvoice']";
+	public final static String Admin_ExportContact_InvID="//a[contains(@href,'invoiceId')]";
+	public final static String Admin_ExportContact_ContactHeader="//label[contains(text(),'Contract Number')]/following-sibling::span";
+	public final static String Admin_ExportContact_InvoiceDetails="//h6[text()='Invoice Details']";
+	
+	public final static String Admin_Client = "//a[@id='lnkMyClients2']";
+	public final static String Admin_Add_Individualclient = "//a[@id='lnkCustomerList2']";
+	public final static String Admin_Add_Individualclient_Button = "//button[@id='btnAddCustomer']";
+	public final static String Admin_Corporate_Name = "//input[@id='CompanyName']";
+	public final static String Admin_ClientName = "//input[@id='Name']";
+	public final static String Admin_CorporateName = "//input[@id='CompanyName']";
+	public final static String Admin_CR_Number= "//input[@id='RegistrationNo']";
+	public final static String Admin_IN_nationalID= "//input[@id='IdNumber']";
+	public final static String Admin_ClientRef_Number= "//input[@id='CustomerRefNumber']";
+	public final static String Admin_IN_ClientRef_Number= "//input[@id='CustomerRefNumber']";
+	public final static String Admin_ClientSearch_button= "//button[@id='btnSearch']";
+	public final static String Admin_Individualclient_fname = "//input[@id='FirstName']";
+	public final static String Admin_Individualclient_sname = "//input[@id='SecondName']";
+	public final static String Admin_Individualclient_tname = "//input[@id='ThirdName']";
+	public final static String Admin_Individualclient_lname = "//input[@id='LastName']";
+	public final static String Admin_Individualclient_IdNumber = "//input[@id='IdNumber']";
+	public final static String Admin_Individualclient_DateOfBirth = "//input[@id='DateOfBirth']";
+	public final static String Admin_Individualclient_DateOfYear = "//select[@title='Change the year']";
+	public final static String Admin_Individualclient_DateOfMonth = "//select[@title='Change the month']";
+	public final static String Admin_Individualclient_Email = "//input[@id='Email']";
+	public final static String Admin_Individualclient_Refno = "//input[@id='CustomerRefNumber']";
+	public final static String Admin_Individualclient_MobileNo = "//input[@id='MobileNo']";
+	public final static String Admin_Individualclient_Add = "//input[@id='btnAdd']";
+	
+	public final static String Admin_Settings = "//a[@id='lnkMySettings']";
+	public final static String Admin_Individualclient_Name = "//input[@id='Name']";
+	public final static String Admin_Invoice_Search ="//button[text()='Search']";
+	public final static String Admin_Add_Invoice_template = "//a[@id='lnkInvoiceSetting2']";
+	public final static String Admin_Add_Invoice_Button = "//button[@id='btnAddTemplate']";
+	public final static String Admin_Invoice_TemplateArabic = "//input[@id='NameAr']";
+	public final static String Admin_Invoice_TemplateEng= "//input[@id='NameEn']";
+	public final static String Admin_Invoice_Templatetype= "//input[@id='BillType_16']";
+	public final static String Admin_Invoice_Templatetype_One= "//input[@id='BillType_15']";
+	public final static String Admin_Invoice_Add = "//button[@id='btnAdd']";
+	public final static String Admin_Tamplate_AddTitleHdr="//h5[@id='exampleModalLongTitle']";
+	public final static String Admin_Tamplate_AddTemplNameArbicHdr="//label[text()='Template Name in Arabic']";
+	public final static String Admin_Tamplate_AddTemplNameEngHdr="//label[text()='Template Name in English']";
+	public final static String Admin_Tamplate_AddRefercodeHdr="//label[text()='Reference Code']";
+	public final static String Admin_Tamplate_AddActDdeacHdr="(//label[text()='Activate/Deactivate'])[1]";
+	public final static String Admin_Tamplate_AddBillPaymentyHdr="//label[text()='Bill Payment']";
+	
+	
+	public final static String Admin_Tamplate_Table="(//table[contains(@id,'DataTables_Table')]//tbody/tr[@role='row'])";
+	public final static String Admin_Tamplate_UpdateBtn="//button[contains(@id,'btnUpdate')]";
+	public final static String Admin_Tamplate_UpdateTitleHdr="//h5[@id='exampleModalLongTitle']";
+	public final static String Admin_Tamplate_UpdateDesHdr="//label[text()='Description']";
+	public final static String Admin_Tamplate_UpdateInVTyeHdr="//label[text()='Invoice Type']";
+	public final static String Admin_Tamplate_DeleteBtn="//button[contains(@id,'btnDelete')]";
+	public final static String Admin_Tamplate_DeletePop="//h5[@id='ConfirmActivationMessage']";
+	public final static String Admin_Tamplate_DeleteConfBtn="// button[@id='btnConfirm']";
+	public final static String Admin_Tamplate_DeleteNoBtn="// button[text()='No']";
+	
+	public final static String Admin_Prod_NameArabic = "(//input[@id='Name'])[2]";
+	public final static String Admin_Prod_Ref = "//input[@id='Code']";
+	public final static String Admin_Prod_Description = "//textarea[@id='Description']";
+	public final static String Admin_Invoice_TemplateEnglish= "//input[@id='NameEn']";
+	public final static String Admin_Prod_Price= "//input[@id='Price']";
+	public final static String Admin_Prod_MaxPrice= "//input[@id='MaxPrice']";
+	
+	public final static String Admin_Prod_MinPrice= "//input[@id='MinPrice']";
+	public final static String Admin_Prod_Addbutton="//button[@id='btnAddProduct']";
+	public final static String Admin_Individualclient_fistname = "//input[@id='FirstName']";
+	public final static String Admin_Maxlimit = "//input[@id='Limit']";
+	public final static String Admin_TransferDuration = "//input[@id='TransferDuration']";
+	public final static String Admin_AzimFee = "//input[@id='AzimFee']";
+	public final static String Admin_sadadFee = "//input[@id='sadadFee']";
+	public final static String Admin_AdminAliasNameEn = "//input[@id='AdminAliasNameEn']";
+	public final static String Admin_MaximumInvoiceAmount = "//input[@id='MaximumInvoiceAmount']";
+	public final static String Admin_Imgdownload = "//a[@class='text-white']";
+	public final static String Admin_InvoiceName= "(//a[@target='_blank'])[9]";
+	public final static String Admin_Invoice_Select="(//select[@id='ServiceId'])[2]";
+    //Admin settings Discount Management
+	public final static String Admin_Menu_Discount ="//a[text()='Discounts Management']";
+	public final static String Admin_DiscountNameEn="//input[@id='NameEn']";
+	public final static String Admin_DiscountNameAr="//input[@id='NameAr']";
+	public final static String Admin_DiscPercentage="//input[@id='Value']";
+	public final static String Admin_AddDiscountBtn="//button[text()='Add Discount']";
+	public final static String Admin_SearchDiscountBtn="//button[text()='Search']";
+	public final static String Admin_SearchDiscountName="//input[@id='DiscountName']";
+	public final static String Admin_AddDiscount="//button[@id='btnAddDiscount']";
+	public final static String Admin_DiscountStatusToggle="(//input[@class='switch'])[1]";
+	public final static String Admin_confirmationMsg="//h5[@id='ConfirmActivationMessage']";
+	public final static String Admin_Activate="//button[@id='btnConfirmActivation']";
+    public final static String Admin_Discount_DeleteBtn ="//a[@class='mx-1 action bg-danger deleteItem']";	
+	public final static String Admin_User_DeleteBtn ="//a[@class=\"mx-1 action bg-danger\"]";	
+	public final static String Admin_User_ConfirmDeleteBtn ="//button[@class=\"btn btn-danger\"]";	
+	public final static String Admin_Product_noData="//td[contains(text(),'No data available in table')]";
+	public final static String Admin_Discount_YesConfBtn ="//button[@id='btnConfirmDelete']";
+	public final static String Admin_Tamplate_ConfirmDeletePop="//h5[@id='ConfirmDeleteMessage']";
+	
+	//public final static String Admin_Individualclient_Search = "//button[@id='btnSearch']";
+	public final static String Admin_Individualclient_Search = "//button[@id='btnSearch']";
+	public final static String Admin_Invoice_Delete = "//select[@onchange='SelectAction(this)']";
+	public final static String Admin_InvoiceDelete = "(//select[@onchange='SelectAction(this)'])[1]";
+	public final static String Admin_Invoice_Reasontxt="//input[@type='search']";
+	public final static String Admin_Invoice_Deletebtn = "//button[@id='btnConfirmDelete']";
+	public final static String Admin_Invoice_Deletechkbox="//label[@for='Deleted']";
+	public final static String Admin_Invoice_table="//table[@id='tblCustomers']";
+	public final static String Admin_Individualclient_SearchByname = "//input[@id='Name']";
+	public final static String Admin_Corpclient_Searchname = "(//span[contains(text(),'client')])[1]";
+	public final static String Admin_Corpclient_SearchName = "(//span[contains(text(),'FullNameOne')])[1]";
+	public final static String Admin_Individualclient_Back ="//a[text()='Back']";
+	public final static String Admin_Invoice_Fixed="//input[@name='SubBillerShareAmount']";
+	public final static String Admin_Invoice_Percentage="//input[@name='SubBillerSharePercentage']";
+	
+//	public final static String AdminSystem_Individual="//h6[text()='Individual Clients Management']";
+//    public final static String AdminSystem_Individual_link="//a[@id='lnkActivateClients2']";
+//    public final static String AdminSystem_IndividualClient_Name="//input[@id='CustomerName']";
+//    public final static String AdminSystem_Individual_national="//input[@id='NationalID']";
+//    public final static String AdminSystem_Individual_Search="//button[@id='btnSearch']";
+//    public final static String AdminSystem_Individual_verify="//h6[@class='justify-content-start align-middle align-self-center mb-3']";
+//	
+	
+	
+	
+	
+	
+	public final static String Admin_Add_Companyclient = "//a[@id='lnkCompanyList2']";
+	public final static String Admin_Corporateclient_name = "//input[@id='NameAr']";
+	public final static String Admin_CorporateclientName= "//input[@id='CompanyName']";
+	public final static String Admin_Corporateclient_Rno = "//input[@id='RegistrationNo']";
+	public final static String Admin_Corporateclient_lang = "//label[text()='English']";
+	public final static String Admin_Corporateclient_commissioner = "//input[@id='CommissionerNameAr']";
+	public final static String Admin_Corporateclient_commissionerID = "//input[@id='CommissionerNationalId']";
+	public final static String Admin_Corporateclient_commissioner_Mobile = "//input[@id='CommissionerMobileNo']";
+	public final static String Admin_Corporateclient_commissioner_Email = "//input[@id='CommissionerEmail']";
+	public final static String Admin_Corporateclient_commissioner_Crno = "//input[@id='CustomerRefNumber']";
+	
+
+
+
+
+	public final static String Admin_Individualclient_CustomerRefNumber = "//input[@id='CustomerRefNumber']";
+	public final static String Admin_Individualclient_Companyname = "//input[@id='CompanyName']";
+	public final static String Admin_Corporateclient_tbl = "//table[@id='tblCompanies']";
+	public final static String Admin_Corporateclient_search = "//input[@id='CompanyName']";
+	public final static String Admin_Individualclient_Searchname = "//span[contains(text(),'comp')]";
+	public final static String Admin_Corporateclient_Save = "//input[@id='btnUpdate']";
+	public final static String Admin_Individualclient_Deactivate ="(//input[@type='checkbox'])[3]";
+	public final static String Admin_Individualclient_button="//button[text()='Yes']";
+	public final static String Admin_Company_ToggleBtn="(//table[@id='tblCompanies']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+	public final static String Admin_Company_ToggleButton="(//table[@id='tblCustomers']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+	public final static String Admin_Company_Togglebtn="//label[@class=\"mb-0\"]";
+	public final static String Admin_Compan_ActivePop="//h5[@id='ConfirmActivationMessage']";
+	public final static String Admin_Compan_ActiveConfbtn="// button[@id='btnConfirmActivation']";
+	public final static String Admin_Individualclient_export="//a[@id='btnExport']";
+	public final static String Admin_Invoice_form ="//form[@action='ePayment-ar4.html']";
+	public final static String Admin_Invoice_view ="(//a[@title='View Contract'])[1]";
+
+	public final static String Admin_Product_ActivePop="//h5[@id='ConfirmActivationMessage']";
+	public final static String Admin_Product_ActiveConfbtn="// button[@id='btnConfirmActivation']";
+	public final static String Admin_Product_ToggleBtn="(//table[@id='tblProducts']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+	public final static String Admin_Product_ToggleButton="(//input[@class='switch'])[1]";
+	public final static String Admin_Systemmgmt_AddProductBtn="//button[@id='btnAddProduct']";
+	public final static String Admin_AddBtn="//div[@class='modal-footer']/button[@id='btnAddProduct']";
+	public final static String Admin_Add_Product = "//a[text()='Products Management']";
+	public final static String Admin_Add_Cat = "//button[text()='Add']";
+	public final static String Admin_Add_tax = "(//button[text()='Add Tax'])[2]";
+	public final static String Admin_Add_RefError = "//span[contains(text(),' already')]";
+
+	public final static String Admin_Status = "//input[@id='status']";
+	public final static String Admin_Cat_Addbtn = "//button[@id='btnAddService']";
+	public final static String Admin_Prod_CatArabic = "(//input[@id='Name'])[2]";
+	public final static String Admin_taxArabic = "//input[@id='NameAr']";
+	public final static String Admin_PercentageValue = "//input[@id='Value']";
+	public final static String Admin_Prod_CatEng= "//input[@id='NameEn']";
+	public final static String Admin_SearchCat ="//button[text()='Search']";	
+	public final static String Admin_Updatebtn ="//button[@onclick='Update(this);']";
+	public final static String Admin_UpdateSearch ="//input[@id='Name']";
+	public final static String Admin_Prod_CatEnglish ="(//input[@id='Name'])[1]";
+    public final static String Admin_Prod_CatSrch ="//button[text()='Search']";
+	public final static String Admin_Prod_Nodata ="//td[text()='No data available in table']";
+	public final static String Admin_CatTable ="//table[@id='DataTables_Table_0']";
+	public final static String Admin_UpdateCat = "//button[text()='Save Changes']";
+	public final static String Admin_Tax_Addbtn = "//button[@id='btnAddTax']";
+	public final static String Admin_Prod_Category="//a[@id='lnkServiceList2']";
+	public final static String Admin_Tax_Mgmt="//a[@id='lnkTaxList2']";
+	public final static String Admin_Tax_ToggleBtn="(//table[@id='tblTaxes']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+
+	public final static String Admin_Prod_Pricelist= "//li[@class='select2-search select2-search--inline']";
+	public final static String Admin_Pricelist= "//li[contains(text(),'price')]";
+	public final static String Admin_Search ="//button[text()='Search']";	
+	public final static String Admin_Sytemmanagement = "//a[@id='lnkSystemMangement2']";
+	public final static String Admin_Update = "//button[@id='btnUpdate']";
+	public final static String Admin_Product_EditLink="//table[contains(@id,'tblProducts')]//tbody/tr[@role='row']/td/a";
+    //corporate clients management
+//	public final static String Admin_CorporateClient_addbtn ="//a[@id='lnkActivateCompanies2']";
+//	public final static String Admin_CorporateClient_crefield ="//input[@id='RegistrationNo']";
+//	public final static String Admin_Corporatename_efield ="//input[@id='CompanyName']";
+//	public final static String Admin_Corporateclient_srchbtn ="//button[@id='btnSearch']";
+	
+	
+	public final static String Admin_SignUp_Btn ="//a[contains(@href,'BillerCompanySignUp')]";
+	public final static String Admin_CompanyName_eField ="//input[@name='CompanyNameAr']";
+	public final static String Admin_EconomySector_List ="//select[@name='EconomicSectorID']";
+	public final static String Admin_Country_List ="//select[@name='CountryID']";
+	public final static String Admin_City_List ="//select[@name='CityID']";
+	public final static String Admin_District_eField ="//input[@name='District']";
+	public final static String Admin_Street_eField ="//input[@name='Street']";
+	public final static String Admin_BuildNo_eField ="//input[@name='BuildingNo']";
+	public final static String Admin_PostalCode_eField ="//input[@name='PostalCode']";
+	public final static String Admin_MailBox_eField ="//input[@name='MailBox']";
+	public final static String Admin_OfficNo_eField ="//input[@name='OfficeNo']";
+	public final static String Admin_EmplyName_eField ="//input[@name='EmployeeName']";
+	public final static String Admin_EmplyJobTitle_eField ="//input[@name='EmployeeJobTitle']";
+	public final static String Admin_EmplyMobileNumber_eField ="//input[@name='EmployeeMobileNo']";
+	public final static String Admin_EmplyEmail_eField ="//input[@name='EmployeeEmail']";
+	public final static String Admin_CustomerSupPhNo_eField ="//input[@name='CustomerSupportPhoneNo']";
+	public final static String Admin_IBANum_eField ="//input[@name='IBAN']";
+	public final static String Admin_IBANAttmnt_eField ="//input[@name='IBANAttachment']";
+	public final static String Admin_BankCountryType_List ="//select[@name='BankAccountTypeId']";
+	public final static String Admin_BankCertAttmnt_eField ="//input[@name='BankCertificateAttachment']";
+	public final static String Admin_CRNumber_eField ="//input[@name='RegistrationNo']";
+	public final static String Admin_RegiAttachment_eField ="//input[@name='RegistrationAttachment']";
+	public final static String Admin_RegistDate_eField ="//input[@name='RegistrationDateHijri']";
+	public final static String Admin_RegistDate_Issuedate ="(//tr[td[a[contains(@class,'calendars-today')]]]//following-sibling::td)[6]";
+	public final static String Admin_ExperyDate_eField ="//input[@name='ExpiredRegistrationDateHijri']";
+	public final static String Admin_Taxno_eField ="//input[@name='TaxNo']";
+	public final static String Admin_IsTaxable_RadBtn ="//div[label[contains(text(),'Taxable')]]/input[@name='IsTaxable']";
+	public final static String Admin_NoTaxable_RadBtn ="//div[label[contains(text(),'Non-Taxable')]]/input[@name='Taxable']";
+	public final static String Admin_TaxRegisAttmnt_eField ="//input[@name='TaxRegistrationAttachment']";
+	public final static String Admin_FirstName_eField ="//input[@name='FirstNameAr']";
+	public final static String Admin_SurName_eField ="//input[@name='FatherNameAr']";
+	public final static String Admin_GradFatherName_eField ="//input[@name='GrandFatherNameAr']";
+	public final static String Admin_LastName_eField ="//input[@name='LastNameAr']";
+	public final static String Admin_NationalID_eField ="//input[@name='NationalID']";
+	public final static String Admin_CommisionIdentyAttmnt_eField ="//input[@name='CommissionerIdentityAttachment']";
+	public final static String Admin_MemDumAssoAttmnt_eField ="//input[@name='MemorandumOfAssociationAttachment']";
+	public final static String Admin_AuthLterTemltAttmnt_eField ="//span[@id='lblAuthorizationLetterTemplateAttachment']";
+	public final static String Admin_CommisionPhNo_eField ="//input[@name='CommissionerPhoneNo']";
+	public final static String Admin_CommisionEmail_eField ="//input[@name='CommissionerEmail']";
+	public final static String Admin_UserID_eField ="//input[@name='Username']";
+	public final static String Admin_Password_eField ="//input[@name='Password']";
+	public final static String Admin_ConfPawd_eField ="//input[@name='ConfirmPassword']";
+	public final static String Admin_Confirmation_CheckBox="//input[@name='Confirmation']";
+	public final static String Admin_ReCatchBox_eField ="//iframe[@title='reCAPTCHA']";
+	public final static String Admin_CatchBox_eField ="//span[@id='recaptcha-anchor']";
+	public final static String Admin_SignUp_btn="//input[@id='btnSignUp']";
+	public final static String Admin_Close_btn ="//button[text()='Close']";
+	public final static String Admin_AttachetedImage_Link="//input[contains(@accept,'image') and (@name='IBANAttachment')]";
+	public final static String Admin_RegisterComp_btn ="//h4[contains(text(),'Registration completed successfully')]";
+	public final static String Admin_Link = "//a[text()='Biller Login']";
+	public final static String Admin_NoAppBillerMangm="//a[text()='Not Approved Billers Management']";
+	public final static String Admin_SystemMgm_SearchItem="//input[@name='Name']";
+	public final static String Admin_SystemMgm_Searchbtn="//button[@id='btnSearch']";
+	public final static String Admin_SystemMgm_BillerAliasName="//input[@name='BillerAliasNameAr']";
+	public final static String Admin_SystemMgm_BillerActivateBtn="(//a[contains(@href,'BillerActivation')])[1]";
+	public final static String Admin_SystemMgm_BillerAliasEnName="//input[@name='BillerAliasNameEn']";
+	public final static String Admin_SystemMgm_IsBiller="(//input[@name='IsSuperBiller'])[2]/preceding-sibling::input";
+	public final static String Admin_SystemMgm_IsBillerYesBtn="(//button[@id='btnConfirmSetAsSuperBiller'])";
+	public final static String Admin_SystemMgm_SavesBtn="(//input[@id='btnSave'])";
+	public final static String Admin_SystemMgm_SaveYesBtn="(//button[@id='btnConfirmSaveBillerInfo'])";
+	public final static String Admin_SystemMgm_BillerCode="//input[@name='BillerCode']";
+	public final static String Admin_SystemMgm_BillerTemBenificary="//input[@name='TempBenificaryName']";
+	public final static String Admin_SystemMgm_BillerTransferDura="//input[@name='TransferDuration']";
+	public final static String Admin_SystemMgm_BillerCategoryID="//select[@name='BillerCategoryId']";
+	public final static String Admin_SystemMgm_ApprovalBtn="//button[contains(text(),'Approval')]";
+	public final static String Admin_SystemMgm_ApprovalYesBtn="//button[@id='btnConfirmApproveBillerInfo']";
+	public final static String Admin_SystemMgm_ApprovalCloseBtn="//button[text()='Close']";
+	public final static String Admin_SystemMgm_RecordNotApproved="(//table[@id='dtBasicExample']//tbody/tr[@role='row'])";
+	public final static String Admin_SystemMgm_ErrorMeesage="//div[@id='alert-error']";
+	public final static String Admin_ApproveBillerMangm="//a[text()='Approved Billers Management']";
+	public final static String Admin_RejectButton="//button[@id='btnReject']";
+	public final static String Admin_RejectConfiMessage="//div[@id='modalRejectBillerInfo']//div[@class='modal-body text-center']/h6";
+	public final static String Admin_RejectYesButton="//button[@id='btnConfirmRejectBillerInfo']";
+	public final static String Admin_SystemMgm_RecordApproved="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])";
+	public final static String Admin_SystemMgm_RecordUnclickable="//input[@class='switch unclickable']";
+	public final static String Admin_SystemMgm_RecordNotFound="//td[text()='No data available in table']";
+	public final static String Admin_SystemMgm_CorpName="(//table[@id='dtBasicExample']//tbody/tr[@role='row'])//td[2]";
+	public final static String Admin_SystemMgm_CorpType="(//table[@id='dtBasicExample']//tbody/tr[@role='row'])//td[4]";
+	public final static String Admin_SystemMgm_EmailConf="(//table[@id='dtBasicExample']//tbody/tr[@role='row'])//label[1]";
+	public final static String Admin_SystemMgm_EyeIcon="((//table[@id='dtBasicExample']//tbody/tr[@role='row'])//a)[4]";
+	public final static String Admin_SystemMgm_trackerEyeIcon="((//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//a)[4]";
+	public final static String Admin_SystemMgm_EyeIcon_view="((//table[@id='dtBasicExample']//tbody/tr[@role='row'])//a)[4]";
+	public final static String Admin_SystemMgm_EyeIconView="((//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])[1]//a[@class='mx-1 action bg-accent'])[2]";
+	public final static String Admin_ApproveMgn_ToggleBtn="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+	public final static String Admin_ApprovedMgm_BillerName="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//td[2]";
+	public final static String Admin_ApprovedMgm_BillerID="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//td[3]";
+	public final static String Admin_ApprovedMgm_BillerType="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//td[4]";
+	public final static String Admin_ApprovedMgm_EmailConf="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//label[1]";
+	public final static String Admin_ApprovedMgm_EyeIcon="((//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//a)[4]";
+	public final static String Admin_NotAppmMgm_IsTrackerBiller="(//input[@name='IsTrackedBiller'])[2]/preceding-sibling::input";
+	public final static String Admin_NotAppmMgm_IsTrackerBillerYesbtn="(//button[@id='btnConfirmSetAsTrackedBiller'])";
+	public final static String Admin_TrackerBillerMangm="//a[text()='Tracked Billers Management']";
+	public final static String Admin_TrackerBillerMangm_Record="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])";
+	public final static String Admin_TrackerBillerMangm_CorpName="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//td[2]";
+	public final static String Admin_TrackerBillerMangm_CorpType="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//td[5]";
+	public final static String Admin_TrackerBillerMangm_Corpotype="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//td[5]";
+	public final static String Admin_TrackerBillerMangm_EmailConf="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//label[1]";
+	public final static String Admin_TrackerBillerMangm_EyeIcon="((//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])//a)[4]";
+	public final static String Admin_TrackerBillerMangm_ToggleBtn="(//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])[1]//input[@class='switch']";
+	public final static String Admin_TrackerBillerMangm_SelectNewSuper="//select[@id='NewSuperBillerId']";
+	public final static String Admin_TrackerBillerMangm_IndiviClenteID="((//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])[1]//a[contains(@href,'BillerClients')])[1]";
+	public final static String Admin_TrackerBillerMangm_CopoClientID="((//table[@id='dtApprovedBillers']//tbody/tr[@role='row'])[1]//a[contains(@href,'BillerClients')])[2]";
+	public final static String Admin_IndividualClient_RowCount="(//table[@id='tblBillerClients']//tbody/tr[@role='row'])";
+	public final static String Admin_ExportBille_InvoiceID="(//table[@id='tblBillList']//tbody/tr[@role='row'])[1]//a";
+	//public final static String Admin_ExportBille_InvoiceID="((//table[@id='tblBillList']//tbody/tr[@role='row'])[1]//td/a)[1]";
+	public final static String Admin_MyBill_Button="//a[text()='My Bills']";
+	public final static String Admin_MyBill_BillNumberField="//input[@id='txtBillNo']";
+	public final static String Admin_MyBill_ViewButton="//button[@id='btnViewInvoice']";
+	public final static String Admin_MyBill_InvalidNumber="//span[@id='BillNo-invalid']";
+	public final static String Admin_MyBill_BillNumber="//label[contains(text(),'Bill Number')]/h6";
+	public final static String Admin_MyBill_BillStatus="//label[contains(text(),'Invoice Status:')]/h6";
+	public final static String Admin_MyBill_DetailsHeader="//h3[contains(text(),'Invoice Details')]";
+    //Admin Reports Super biller reports
+//	public final static String Admin_Reports_superbiller="//h6[text()='Super Billers Report']";
+//	public final static String Admin_ReportsSuperbiller="//a[@id='lnkAggregatorSuperBillersReport2']";
+//	public final static String Admin_Reports="//a[@id='lnkMyReports']";
+//	public final static String Admin_ReportsAdmin="//a[@id='lnkSystemMangementSub22']";
+//	public final static String Admin_BillerNameDropdwn="//span[@id='select2-SuperBillers-container']";
+//	public final static String Admin_TrackedBillerDropdwn="//span[@id='select2-TrackedBillers-container']";
+//	public final static String Admin_GenerateReportBtn="//button[@id='btnSearch']";
+    //Admin Reports Outside paid edaat paymnets  reports
+		public final static String Admin_ReportsOutsidePaid="//a[@id='lnkBillCashReport2']";
+		public final static String Admin_ReportsFromCalender="//input[@id='FromDate']";
+		public final static String Admin_ReportsFromYear="(//select[@class='calendars-month-year'])[2]";
+		public final static String Admin_ReportsFromMonth="(//select[@class='calendars-month-year'])[1]";
+		public final static String Admin_ReportsToCalender="//input[@id='ToDate']";
+		public final static String Admin_ReportBillerName="//span[@id='select2-BillerId-container']";
+		public final static String Admin_GenerateReport="//button[@id='btnSearch']";
+	//Admin Reports Biller transaction report
+		public final static String Admin_BillerTransaction="//a[@id='lnkBillTransReport2']";
+		public final static String Admin_Ticketsize="//a[@id='lnkAggregatorTicketSizeReport2']";
+		public final static String Admin_FromMonth="//select[@id='FromMonth']";
+		public final static String Admin_FromYear="//select[@id='FromYear']";
+		public final static String Admin_ToMonth="//select[@id='ToMonth']";
+		public final static String Admin_ToYear="//select[@id='ToYear']";
+		public final static String Admin_clientType="//select[@id='ClientTypeId']";
+		public final static String Admin_MainBiller="//span[@id='select2-BillerId-container']";
+		public final static String Admin_Generatereport="//button[@id='btnSearch']";
+		public final static String Admin_ReportImage="//img[@class='A67037c61e82b4cb580e95868d1093d6924']";
+		public final static String Admin_ClickTicketsize="//select[@id='TicketSizeId']";
+		public final static String Admin_ReportVerify="//div[text()='Billers Transactions']";
+		public final static String Admin_TicketReportVerify="//div[text()='Ticket Size Report']";
+		public final static String Admin_ReportImageVerify="//img[@usemap='#P8cfea8274cd542b0afde078162ea1e29_1_Map7iT0']";
+
+	public final static String Admin_ClientTypeReporttext="//div[text()='Clients Type Report']";
+	
+       public final static String Admin_ImportclientsData_IndividualDataForm ="//a[@href='/Content/Files/ClientsData-Template.xlsx']";
+       
+     //
+	//Admin System management Individual client
+//         public final static String AdminSystem_Individual="//h6[text()='Individual Clients Management']";
+//	     public final static String AdminSystem_Individual_link="//a[@id='lnkActivateClients2']";
+//	     public final static String AdminSystem_IndividualClient_Name="//input[@id='CustomerName']";
+//	     public final static String AdminSystem_Individual_national="//input[@id='NationalID']";
+//	     public final static String AdminSystem_Individual_Search="//button[@id='btnSearch']";
+//	     public final static String AdminSystem_Individual_verify="//h6[@class='justify-content-start align-middle align-self-center mb-3']";
+	     public final static String AdminSystem_IndividualClientStatus="//select[@id='Types']";
+	  
+//Admin Usermanagement userlist
+	public final static String Admin_Usermanagement_Userlist = "//h6[text()='Users List']";
+	public final static String Admin_Menu_UserManagement ="//a[text()='Groups Management']";
+	public final static String Admin_Menu_UserList ="//a[text()='Users List']";
+	public final static String Admin_UserList_AddUserBt ="//button[@id='btnAddUser']";
+	public final static String Admin_UserListAdd_NameInput ="//input[@id='NameAR']";
+	public final static String Admin_UserListAdd_EmailInput ="//input[@id='EMail']";
+	public final static String Admin_UserListAdd_PhoneInput ="//input[@id='Phone']";
+	public final static String Admin_UserListAdd_GroupCheckBox ="//div[@id='GroupsListDiv']//input";
+	public final static String Admin_UserListAdd_GroupCheckbox ="(//div[@id='GroupsListDiv']//input)[1]";
+	public final static String Admin_UserListAdd_AddUserBtPop ="//button[@id='btnAddUser']";
+	public final static String Admin_UserListSearch_NameBt ="//input[@id='Name']";
+	public final static String Admin_UserListSearch_EmailBt ="//input[@id='Email']";
+	public final static String Admin_UserListSearch_SaerchBt ="//button[@id='btnSearch']";
+	public final static String Admin_UserList_DeleteBtn ="//a[contains(@id,'btndelete')]";	
+	public final static String Admin_UserList_ConfirmDeletePop="//h5[@id='ConfirmDeleteMessage']";
+	public final static String Admin_UserList_YesConfBtn ="//button[@id='btnConfirmDelete']";
+	public final static String Admin_Product_NoData="//td[contains(text(),'No data available in table')]";
+	public final static String Admin_UserList_UserName="(//table[@id='tblUsers']//tbody/tr[@role='row'])[1]//a/span";
+	public final static String Admin_UserList_dltcheck="//label[text()='Deleted Users']";
+	public final static String Admin_UserList_dltVerify="//div[@id='tblUsers_wrapper']//tr//td[3]";
+	public final static String Admin_UserMgm_UsersList_Editbtn="(//a[@onclick='Update(this)'])[1]";
+	public final static String Admin_UserMgm_UsersList_Savechange="//button[@id='btnUpdate']";
+	public final static String Admin_UserMgm_UsersList_Deletebtn="(//a[@onclick='Delete(this)'])[1]";
+	public final static String Admin_UserMgm_UsersList_YesDeletebtn="//button[@id='btnConfirmDelete']";
+	public final static String Admin_UserMgm_UsersList_DeletedCheckbox="//label[@for='Deleted']";
+	public final static String Admin_UserList_Email="//table[@id='tblUsers']//tbody//td[3]";
+	public final static String Admin_UserList_UserNameClick="//a[@class='mx-1']";
+	public final static String Admin_UserList_ViewUserInfoNameTxt="(//label[@class='requiredLabel font-weight-bold'])[1]";
+	
+	
+	
+//    
+// System management sub biller
+//    public final static String Admin_system_sublink="//a[@id='lnkSubBillerList2']";
+//    public final static String Admin_system_subBlr_verif="//h6[text()='Sub Billers Management']";
+//    public final static String Admin_system_subBlr_Edit="(//div[@id='dtCompanies_wrapper']//tr//td[9])[1]";
+//    public final static String Admin_system_subBlr_Edit_verif="//h6[text()='General Info']";
+
+     //Admin User Management Groups Management
+    public final static String Admin_GroupMgm_Header="//h6[text()='Groups Management']";
+	public final static String Admin_GroupMgm_SearchGrpName="//input[@id='groupName']";
+	public final static String Admin_GroupMgm_SearchCode="//input[@name='Code']";
+	public final static String Admin_GroupMgm_SearchButton="//button[text()='Search']";
+	public final static String Admin_GroupMgm_AddGrpBtn="//button[@id='btnAddGroup']";
+	public final static String Admin_AddGroupMgm_ArabicName="//input[@name='NameAr']";
+	public final static String Admin_AddGroupMgm_Name="//input[@name='Name']";
+	public final static String Admin_AddGroupMgm_Description="//input[@name='Description']";
+	public final static String Admin_AddGroupMgm_GroupCode="//input[@name='GroupCode']";
+	public final static String Admin_AddGroupMgm_AddBtn="//button[@id='btnAdd']";
+	public final static String Admin_GroupMgm_UsersBtn="//button[@onclick='GroupUsers(this);']";
+	public final static String Admin_GroupMgm_ViewUser="(//button[@onclick='GroupUsers(this);'])[1]";
+	public final static String Admin_GroupMgm_Userspopup="//h6[@id='exampleModalLongTitle']";
+	public final static String Admin_SearchGroupMgm_GrpName="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[1]/a";
+	public final static String Admin_SearchGroupMgm_Code="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[2]";
+	public final static String Admin_UserManagement="//a[contains(@id,'lnkUserAccount2')]";
+	public final static String Admin_GropManagment="(//a[text()='Groups Management'])[last()]";
+	public final static String Admin_SearchGroupMgm_EditIcon="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[3]/button[contains(@id,'btnUpdatePermission')]";
+	public final static String Admin_EditGroup_Receivable="//input[@id='2Receivables']";
+	public final static String Admin_EditGroup_UpdateBtn="//button[@id='btnUpdate']";
+	public final static String Admin_SearchGroupMgm_DeleteBtn="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[6]/a";
+	public final static String Admin_SearchGroupMgm_YesDeleteBtn="//button[@id='btnConfirmDelete']";
+	public final static String Admin_SearchGroupMgm_Nodata="//td[text()='No data available in table']";
+	public final static String Admin_SearchGroupMgm_PermissuionPOp="//h6[@id='exampleModalLongTitle']";
+	public final static String Admin_Usermng_groups="//div[@id='GroupsListDiv']//label[@class='custom-control-label']";
+	public final static String Admin_Usermng_nodata="//td[text()='No data available in table']";
+	public final static String Admin_Usermng_viewgrp="//h6[text()='View Group']";
+	public final static String Admin_Usermng_viewClose="//button[text()='Close']";
+	public final static String Admin_Usermng_Verifygroup="//td[text()='No data available in table']";
+	public final static String Admin_GrpMgm_GrpPermissionbtn="(//button[@onclick='UpdatePermission(this);'])[1]";
+	public final static String Admin_GrpMgm_DistributionPermission="(//label[@class='custom-control-label'])[1]";
+	public final static String Admin_GrpMgm_ReceivablesPermission="(//label[@class='custom-control-label'])[23]";
+	public final static String Admin_GrpMgm_SavePermission="//button[@id='btnUpdate']";
+	public final static String Admin_GrpMgm_ViewPermission="(//button[@onclick='ViewPermission(this);'])[1]";
+	public final static String Admin_GrpMgm_ViewDistributionPermission="//a[@id='1Distribution']";
+	public final static String Admin_GrpMgm_ViewReceivablesPermission="//a[@href='#_Receivables']";
+	public final static String Admin_Usermng_eyebtn="(//td/button[@onclick='ViewPermission(this);'])[1]";
+	public final static String Admin_Usermng_viewpermision="//h6[text()='View Group Permission']";
+	public final static String Admin_UserList_statustg="(//label)[4]";
+	
+	//Admin Reports Biller Monitoring report
+	 public final static String Admin_BillerMonitoring="//a[@id='lnkBillerMonitoringReport2']";
+	 public final static String Admin_Reorts_monitor_Fromd="//input[@id='FromDate']";
+	 public final static String Admin_Reorts_monitor_Fromyear="//select[ @title='Change the year']";
+	 public final static String Admin_Reorts_monitor_Fromon="//select[@title='Change the month']"; 
+	 public final static String Admin_Reorts_monitor_Tod="//input[@id='ToDate']";
+	 public final static String Admin_Reorts_monitor_Toyear="//select[@title='Change the year']";
+	 public final static String Admin_Reorts_monitor_omon="//select[@title='Change the month']";
+	 public final static String Admin_Reorts_monitor_srcbtn="//button[@id='btnSearch']";
+	 public final static String Admin_Reorts_monitor_BillerName="//span[@role='textbox']";	
+	 public final static String Admin_Reorts_monitor_verify="//div[text()='ENGLISH BILLER']";
+	 
+	//Admin Reports Corporate Billers Reports
+	 public final static String Admin_Corporate_Billers_Report="//a[@id='lnkAggregatorBillersReport2']";
+	 public final static String Admin_Corporate_verifyReport="//div[text()='Corporate Billers List']";
+	 public final static String Admin_Corporate_Report="//iframe";
+	
+	 //Admin Reports Individual Client Reports
+	 public final static String Admin_IndivReport="//a[@id='lnkIndividualClientsReport2']";
+	 public final static String Admin_Reorts_Indiv_BillerName="//span[@role='textbox']";	
+	 public final static String Admin_Reorts_Indiv_NationalityName="//select[@id='NationalityId']";
+	 public final static String Admin_Reorts_Indiv_srcbtn="//button[@id='btnSearch']";
+	
+	
+	public final static String Biller_GroupMgm_SearchGrpName="//input[@id='groupName']";
+	public final static String Biller_GroupMgm_Header="//h6[text()='Groups Management']";
+	//public final static String Biller_GroupMgm_SearchGrpName="//input[@id='groupName']";
+	public final static String Biller_GroupMgm_SearchCode="//input[@name='Code']";
+	public final static String Biller_GroupMgm_SearchButton="//button[text()='Search']";
+	public final static String Biller_GroupMgm_AddGrpBtn="//button[@id='btnAddGroup']";
+	public final static String Biller_AddGroupMgm_ArabicName="//input[@name='NameAr']";
+	public final static String Biller_AddGroupMgm_Name="//input[@name='Name']";
+	public final static String Biller_AddGroupMgm_Description="//input[@name='Description']";
+	public final static String Biller_AddGroupMgm_GroupCode="//input[@name='GroupCode']";
+	public final static String Biller_AddGroupMgm_AddBtn="//button[@id='btnAdd']";
+	public final static String Biller_GroupMgm_UsersBtn="//button[@onclick='GroupUsers(this);']";
+	public final static String Biller_GroupMgm_Userspopup="//h6[@id='exampleModalLongTitle']";
+	public final static String Biller_SearchGroupMgm_GrpName="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[1]/a";
+	public final static String Biller_SearchGroupMgm_Code="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[2]";
+	public final static String Biller_UserManagement="//a[contains(@id,'lnkUserAccount2')]";
+	public final static String Biller_GropManagment="(//a[text()='Groups Management'])[last()]";
+	public final static String Biller_SearchGroupMgm_EditIcon="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[3]/button[contains(@id,'btnUpdatePermission')]";
+	public final static String Biller_EditGroup_Receivable="//input[@id='2Receivables']";
+	public final static String Biller_EditGroup_UpdateBtn="//button[@id='btnUpdate']";
+	public final static String Biller_SearchGroupMgm_DeleteBtn="(//table[@id='tblGroups']//tbody/tr[@role='row'])[1]//td[6]/a";
+	public final static String Biller_SearchGroupMgm_YesDeleteBtn="//button[@id='btnConfirmDelete']";
+	public final static String Biller_SearchGroupMgm_Nodata="//td[text()='No data available in table']";
+	public final static String Biller_SearchGroupMgm_PermissuionPOp="//h6[@id='exampleModalLongTitle']";
+	public final static String Biller_Userlist_groups="//div[@id='GroupsListDiv']//label[@class='custom-control-label']";
+	
+	public final static String Admin_TaxSearch ="//input[@id='TaxName']";
+	public final static String Admin_taxTable ="//table[@id='tblTaxes']";
+	public final static String Admin_SubBiller_CorporatePage="//h6[text()='Corporate Sub Billers']";
+	public final static String Admin_SubBiller_BillerName="//input[@id='Name']";
+	public final static String Admin_SubBiller_CRnumber="//input[@id='RegistrationNumber']";
+	public final static String Admin_SubBiller_SearchBtn="//button[text()='Search']";
+    //admin System management Individual client management
+	public final static String AdminSystem_Individual="//h6[text()='Individual Clients Management']";
+	public final static String AdminSystem_Individual_link="//a[@id='lnkActivateClients2']";
+	public final static String AdminSystem_IndividualClient_Name="//input[@id='CustomerName']";
+	public final static String AdminSystem_Individual_national="//input[@id='NationalID']";
+	public final static String Admin_System_Individual_clientstatus="//Select[@id='Types']";
+	public final static String AdminSystem_Individual_Search="//button[@id='btnSearch']";
+	public final static String AdminSystem_Individual_grid="//table[@id='dtCustomers']";
+ //public final static String AdminSystem_Individual_verify="//h6[@class='justify-content-start align-middle align-self-center mb-3']";
+//	public final static String Admin_System_Individual_clientstatus="//Select[@id='Types']";
+	public final static String Admin_SymIndividua_statustoggle="//span[@class='switch switch-sm']";
+    public final static String Admin_SymIndividual_statustoggletextarea ="//textarea[@id='submit_activationNotesText']";
+    public final static String Admin_SymIndividual_Statustoggleyesbtn ="//button[text()='Yes' and @id='submit_btnConfirmActivation']";
+    public final static String Admin_SymIndividual_statustoggleconformactivation ="//button[@id='submit_btnConfirmActivation']";
+   
+    public final static String Admin_SymIndividua_RequestRecordBtn ="//button[@class='btn']";
+    public final static String Admin_SymIndividual_Historypage ="//h5[@class='modal-title']";	
+	public final static String AdminNationalIDVerify="//tbody//td[4]";
+
+	public final static String AdminSystem_Individual_verify="//a[@href='/ClientManagement/ClientDetails?ClientId=196267']";
+	public final static String AdminSystem_Individuaul_SettingsBTN="//a[@class='mx-1 action bg-accent']";
+	public final static String AdminSystem_Individuaul_SuspendradioBTN="//input[@id=\"AccountStatusId_1100\"]";
+	public final static String AdminSystem_Individuaul_SettingConirmBTN="//button[@id='btnConfirmSetting']";
+	public final static String AdminSystem_Individuaul_SuspendPermradioBTN="//input[@id='AccountStatusId_1101']";
+	public final static String AdminSystem_Individuaul_SuspendReason="//span[@role='combobox']";
+	
+	
+	//public final static String AdminSystem_Individual_verify="//h6[@class='justify-content-start align-middle align-self-center mb-3']";
+	public final static String AdminSystem_Individual_Clientstatus="//select[@id='Types']";
+	public final static String AdminSystem_Individual_Clientstatus_Verify="(//table[@id='dtCustomers']//td[7])[1]";
+	
+	
+	 //Admin Reports Super biller reports
+	
+    //Admin Reports Super biller reports
+	public final static String Admin_Reports_superbiller="//h6[text()='Super Billers Report']";
+    public final static String Admin_ReportsSuperbiller="//a[@id='lnkAggregatorSuperBillersReport2']";
+    public final static String Admin_Reports="//a[@id='lnkMyReports']";
+    public final static String Admin_ReportsAdmin="//a[@id='lnkSystemMangementSub22']";
+    public final static String Admin_BillerNameDropdwn="//span[@id='select2-SuperBillers-container']";
+    public final static String Admin_TrackedBillerDropdwn="//span[@id='select2-TrackedBillers-container']";
+    public final static String Admin_GenerateReportBtn="//button[@id='btnSearch']";
+    public final static String Admin_IndClientReport="//div[text()='Individual Clients List ']";
+    public final static String Admin_SuperBillerReport="//div[text()='Super Billers List']";
+
+    //public final static String AdminSystem_Individual_verify="//h6[@class='justify-content-start align-middle align-self-center mb-3']";
+	public final static String Biller_UserList_savebtn ="//button[@id='btnUpdate']";
+	public final static String Biller_UserList_UserName="(//table[@id='tblUsers']//tbody/tr[@role='row'])[1]//a/span";
+	public final static String Biller_UserList_IsDeletChekckbox="//input[@id='Deleted']";
+	public final static String Biller_Invoice_ComCustIDList="//select[@name='CompanyId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Biller_Invoice_NextPrevLink="(//li[a[text()='Next']]/preceding-sibling::li)[last()]/a";
+	public final static String Biller_ExportBille_InvoiceID="(//table[@id='tblBillList']//tbody/tr[@role='row'])[1]//a";
+	public final static String Biller_Invoice_CustIDList="//select[@name='CustomerId']/following-sibling::span//span[@class='select2-selection__arrow']";
+	public final static String Biller_Invoice_subIndividualRdv="//input[@id='rdSubbillerIndividual']";
+	public final static String Biller_Invoice_Createandsave="//button[@id='btnCreateInvoice']";
+	public final static String Biller_Invoice_installmentButton="//button[@id='btnCreateRepeatInvoice']";
+	public final static String Biller_Invoice_SaveINSTALButton="//button[@id='btnUpdateBill']";
+	public final static String Biller_Invoice_ExportinastallButton="//button[text()='Export']";
+	public final static String Biller_Invoice_pymtEle="//h6[text()='Payments invoices']";
+
+	//Client Module
+	 public final static String Biller_nonapproved_Afteradd="(//div[@class='card-body table-responsive']//tbody/tr[@role='row'])";
+	 public final static String AppBiller_Name="//td[2]";
+	 public final static String Userlist_close="//button[text()='Close']";
+	 //BillerPayables
+	 public final static String Biller_Payables="//a[@id='lnkPayments2']";
+	 public final static String Biller_Incomingbills="//h6[text()='Incoming Bills']";
+	 public final static String Biller_IncomingbillsBtn="(//a[text()='Incoming Bills'])[2]";
+	 public final static String Biller_BillNumber="//input[@name='billNo']";
+	 public final static String Biller_BillerName="//input[@name='billerName']";
+	 public final static String Biller_Status="//select[@name='BillStatusId']";
+	 public final static String Biller_ContractNo="//input[@name='InvoiceNo']";
+	 public final static String Biller_Searchbtn="//button[@id='btnSearch']";
+	 public final static String Biller_Billsrow="(//tr[@role='row'])[1]";
+ public final static String Biller_BillsGrid="//table";
+	 public final static String Biller_BillsVerify="//td/a/span";
+       //importclientdata
+	 // public final static String Biller_importclientsym="//h6[text()='Import Clients Data']";
+	  public final static String Biller_Clientbtn="//a[@id='lnkMyClients2']";
+      public final static String Biller_ImportClientbtn="//a[text()='Import Clients Data' and @class='nav-link']";
+      //public final static String Biller_ImportClientbtn="//a[text()='Import Clients Data' and @class='nav-link active']";
+
+	  public final static String Biller_IndivRdnBtn="//label[@class='custom-control-label' and @for='rdCustomer']";
+	  public final static String Biller_CarpoRdnBtn="//label[@class='custom-control-label' and @for='rdCompany']";
+	  public final static String Biller_IndDownimg="//span[contains(text(),'Individual Data Form')]";
+	  public final static String Biller_CorpDownimg="//span[contains(text(),'Corporate Data Form')]";
+	  public static final String Biller_importclientsym ="//h6[text()='Import Clients Data']";
+	  public static final String Biller_import_AttachFile ="//input[@id='ExcelFile']";
+	  public final static String Biller_ClientProcessButton ="//button[@id='btnProcessingExcelFile']";
+      public final static String Biller_ClientConfirmUploadButton ="//button[@id='btnConfirmUpload']";
+//Pricelist
+	//public final static String Biller_PriceListpagetxt = "//h6[@class='justify-content-start align-middle align-self-center']";
+	//    public final static String Biller_PriceList="//a[@id='lnkPriceList2']";
+	 //   public final static String Biller_PriceListsfield="//input[@id='Name']";
+	   // public final static String Biller_PriceListSeacrchbtn="//button[@class='btn btn-primary']";
+	    public final static String Biller_PriceListDeletebtn="//a[@class='mx-1 action bg-danger deleteItem']";
+	    public final static String Biller_PriceListDeleteConformbtn="//button[@id='btnConfirmDelete']";
+	    public final static String Biller_PriceListNodata="//td[text()='No data available in table']";
+	    public final static String Biller_Searchpresent="//td[text()='No data available in table']";
+	    public final static String Biller_AddPricelistbtn="//button[text()='Add price list +']";
+	    public final static String Biller_Pricelistnameinarabic="//input[@id='NameAr']";
+	    public final static String Biller_PricelistnameinEnglish="//input[@id='NameEn']";
+	    public final static String Biller_Pricelistbtn="//input[@id='Value']";
+	    public final static String Biller_Pricelistincradiobtn="//label[contains(text(),'Increase Price')]";
+	    public final static String Biller_Pricelistdscradiobtn="//label[contains(text(),'Decrease Price')]";
+	    public final static String Biller_Pricelistdescriptionbtn="//textarea[@id='Description']";
+	    public final static String Biller_AddPricelistbtn2="//button[@id='btnAdd']";
+	    public final static String Biller_AddPriceFromdate="//input[@id='FromDate']";
+	    public final static String Biller_AddPriceTodate="//input[@id='ToDate']";
+	    public final static String Biller_AddPriceFromYear="//select[@title='Change the year']";
+	    public final static String Biller_AddPriceFromMonth="//select[@title='Change the month']";
+	    public final static String Biller_AddPriceToyear="//select[@title='Change the year']";
+	    public final static String Biller_AddPriceToMonth="//select[@title='Change the month']";
+	    public final static String Biller_Roundinguprdn="//label[contains(text(),'Rounding Up')]";
+	    public final static String Biller_Roundingdownrdn="//label[contains(text(),'Rounding Down')]";
+	    public final static String Biller_RoundingNordn="//label[contains(text(),'No Rounding')]";
+	    public final static String Biller_ActiveCheckbox="//label[contains(text(),'Activate/Deactivate')]";
+//Termsmanagement
+	//    public final static String Biller_Termsmanagementsym="//h6[text()='Terms Management']";
+	 //   public final static String Biller_Settingbtn="//a[@id='lnkMySettings']";
+	  //  public final static String Biller_Termsmanagementbtn="(//a[text()='Terms Management'])[2]";
+	   // public final static String Biller_Termsnameinarabic="//tr/th[text()='Term Name in Arabic']";
+	    //My Account
+	    public final static String Biller_Notificationsym="//h6[text()='Notification Settings']";
+	    public final static String Biller_MyAccountbtn="//a[@id='ulNotificationTypeList']";
+		//public static String Biller_MyAccountbtn="//a[@id='ulNotificationTypeList']";
+		public static String Biller_Notificationbtn="(//a[text()='Notification Settings'])[2]";
+		public static String Biller_SMSTogglebtn="//td[contains(text(),'Send SMS')]/..//label";
+		public static String Biller_CancalTogglebtn="//button[text()='Yes']";
+		public static String Biller_ActiveTogglebtn="//button[text()='Yes']";
+		public static String Biller_CancalActivationpop="//h5[text()='Cancel activation?']";
+		public static String Biller_ConformActivationpop="//h5[text()='Confirm activation?']";
+public static String Biller_MyAccount_pushNotificationtoggelbtn="//label[@for='1']";
+		public static String Biller_MyAccount_pushNotification_Confirmbtn="//button[@id='btnConfirmActivation']";
+		
+		//Subbiller
+		public final static String Biller_SubBiller_Edit="//a[@class='mx-1 action bg-accent']";
+	    public final static String Biller_SubBiller_Invoice_Total_AMT_ChkBox="//input[@id='HasInvoiceFees']";
+	    public final static String Biller_SubBiller_FixedValue_ChkBox="//input[@id='HasOperationalFees']";
+	    public final static String Biller_SubBiller_Percentage_ChkBox="//input[@id='HasOperationalFeesPercentage']";
+	    public final static String Biller_SubBiller_FixedValue_Amt="//input[@id='OperationalFees']";
+	    public final static String Biller_SubBiller_Percentage_Val="//input[@id='OperationalFeesPercentage']";
+	    public final static String Biller_SubBiller_Trans_Fee_Deduct_ChxBox="//input[@id='DeductTransferFeesFromSubBiller']";
+	    public final static String Biller_SubBiller_Save="//input[@id='btnUpdate']";
+	    public final static String Biller_AddSubBilleer="//button[@id='btnAddSubBiller']";
+	    public final static String Biller_SubBillerName="//input[@id='IndividualNameAr']";
+	    public final static String Biller_SubBiller_IBAN="//input[@id='IBAN']";
+	    public final static String Biller_SubBiller_Benificary="//input[@id='BeneficiaryName']";
+	    public final static String Biller_SubBillerAddButton="//input[@id='btnAdd']";
+	    public final static String Biller_SubBiller_MOB="//input[@id='MobileNo']";
+	    public final static String Biller_SubBiller_Email="//input[@id='Email']";
+	    //reports
+	   // public final static String Biller_ReportMenu = "//a[@id='lnkMyReports']";
+	   // public final static String Biller_ReceivablesReportsbtn = "//a[@class='dropdown-toggle collapsed']";
+	    public final static String Biller_ReportClientaccountsym ="//h6[text()='Client Account Statement']";
+	    public final static String Biller_ReportClientaccountbtn ="//a[@id='lnkCustomerAccount2']";
+	   // public final static String Biller_ClientType ="//select[@name='ClientTypeId']";
+	    public final static String Biller_ClientTypeindvidutial ="(//select/option[text()='Individual'])[1]";
+	    public final static String Biller_SubbillerTypeindvidutial ="(//li[@role='treeitem'])[1]";
+	   // public final static String Biller_SubbillerTypeindvidutial ="//select[@id='SubBillerType' and @name='SubBillerType']";
+	    public final static String Biller_ClientTypeCorporate ="(//select/option[text()='Corporate'])[1]";
+	    public final static String Biller_SubbillerTypeCorporate ="(//select/option[text()='Corporate'])[1]";
+	    public final static String Biller_ClientName ="//span[@id='select2-ClientId-container']";
+	    public final static String Biller_SelectClientName ="(//li[@role='treeitem'])";
+	    public final static String Biller_SelectSubbillertype ="//select[@name='SubBillerType']";
+	    //public final static String Biller_SelectSubbillerName ="(//span[@role='combobox'])[2]";
+
+	    //public final static String Biller_SubbillerTypeCorporate ="(//option[text()='Corporate'])[1]";
+
+	    public final static String Biller_SelectSubbillerName ="(//span[text()='- Select Sub Biller -'])[2]";
+	    public final static String Biller_SelectSubbillerName1 ="(//li[@role='treeitem'])";
+	    public final static String Biller_Invoicecontract ="//input[@id='InvoiceNumber']";
+	   
+	    public final static String Biller_ReportFromdate="//input[@id='FromDate']";
+	    public final static String Biller_ReportTodate="//input[@id='ToDate']";
+	    public final static String Biller_reportFromYear="//select[@title='Change the year']";
+	    public final static String Biller_reportFromMonth="//select[@title='Change the month']";
+	    public final static String Biller_reportToyear="//select[@title='Change the year']";
+	    public final static String Biller_reportToMonth="//select[@title='Change the month']";
+	    public final static String Biller_reportsearchbutton="//button[text()=' Search']";
+	    public final static String Biller_report="//div[text()='Client Account Statement']";
+	    public final static String Biller_reportframe="//iframe";
+	    //Userlist
+	    public final static String Biller_Userlisttoggledisable="//td/span";
+	  //Term Management
+
+	    public final static String Biller_Terms_menu="//a[@id=\"lnkTermList2\"]";
+	    public final static String Biller_AddTerm_Btn="//button[@id=\"btnAddTerm\"]";
+	    public final static String Biller_TermName_Arabic="//input[@id=\"NameAr\"]";
+	    public final static String Biller_TermName_ENG="//input[@id=\"NameEn\"]";
+	    public final static String Biller_TermText_Arabic="//textarea[@id=\"DescriptionAr\"]";
+	    public final static String Biller_TermText_Eng="//textarea[@id=\"DescriptionEn\"]";
+	    public final static String Biller_TermToggle="//label[@for=\"status\"]";
+	    public final static String Biller_TermSave_BTN="//button[text()='Save']";
+	    public final static String Biller_TermTXT_Field="//input[@id=\"TermName\"]";
+	    public final static String Biller_Term_SearchBTN="//button[text()=\"Search\"]";
+	    public final static String Biller_TermStatusToggle="//label[@class=\"mb-0\"]";
+	    public final static String Biller_TermConfirmBTN="//button[@id=\"btnConfirmActivation\"]";
+	    public final static String Biller_TermNoDataAvilableTxt="//td[text()='No data available in table']";
+	  //Product Management
+
+	    public final static String Biller_Product_RefCode="//input[@id='Code']";
+	    public final static String Biller_Product_Description="//textarea[@id=\"Description\"]";
+	    public final static String Biller_Product_MinPrice="//input[@id=\"MinPrice\"]";
+	    public final static String Biller_Product_MaxPrice="//input[@id=\"MaxPrice\"]";
+	    public final static String Biller_Product_SingleToggle="//input[@id=\"single\"]";
+	    public final static String Biller_Product_SaveChangesBtn="//button[@id=\"btnUpdate\"]";
+	    public final static String Biller_Product_EditBtn="//a[@class='mx-1 action bg-accent']";
+	 
+	  //Client My Account page
+    public final static String ClientMyAccountMenu ="//a[@id='lnkBillerAccount2']";
+    public final static String ClientMyAccUpdateProfileMenu ="//a[@id='lnkUpdateCustomerData2']";
+    public final static String ClientMyAccUpdateProfileSecondName ="//input[@id='SecondName']";
+    public final static String ClientMyAccUpdateProfileThirdName ="//input[@id='ThirdName']";
+    public final static String ClientMyAccUpdateProfileLastName ="//input[@id='LastName']";
+    public final static String ClientMyAccUpdateProfileMobNumber ="//input[@id='MobileNo' and @name='MobileNo' ]";
+    public final static String ClientMyAccUpdateProfileSaveChangesBTN ="//input[@id='btnAdd']";
+    public final static String ClientMyAccUpdateProfileCancelbtn="//a[text()='Cancel']";
+    public final static String ClientMyAccUpdateClientLogininfo="//a[@id='UpdateCustomerLoginInfo2']";
+    public final static String ClientMyAccUpdateClientLogin_oldpwd="//input[@id='OldPassword']";
+    public final static String ClientMyAccUpdateClientLogin_newpwd="//input[@id='NewPassword']";
+    public final static String ClientMyAccUpdateClientLogin_confirmpwd="//input[@id='ConfirmPassword']";
+    public final static String ClientMyAccUpdateClientLogin_savebtn="//input[@id='btnAdd']";
+	  //report
+
+	    public final static String Biller_individual_Report=" //a[@id='lnkBillerIndividualClientsReport']";
+	    public final static String Biller_individualclient_List="//div[text()='Individual Clients List']";
+	    public final static String Biller_ReportsMenu="//a[@id=\"lnkMyReports\"]";
+	    public final static String Biller_Recevible_ReportMenu="//a[@id='refReceiptsSub22']";
+	   
+//Biller ReceivablesPaidOutSideEddat
+	 public final static String Biller_PaidOustSideEdaat="//h6[text()='Paid Outside EDAAT']";
+	 public final static String Biller_PaidOustSideEdaat_link="//a[@id='lnkPayCashList2']";
+	 public final static String Biller_Receivables_link="//a[@id='lnkReceipts2']";
+	 public final static String Biller_Receivables_PaidOutside_Table="//div[@id='tblReceiptVouchers_wrapper']";
+
+	 //BillerSubBillerIndividual
+	 public final static String Biller_subBiller="//a[@id='lnkSubBillers2']";
+	 public final static String Biller_subBiller_individual="//h6[text()='Individual Sub Billers']";
+	 public final static String Biller_subBiller_individual_link="//a[@id='lnkSubBillersIndividualList2']";
+	 public final static String Biller_subBiller_individual_grid="//div[@id='tblSubBillers_wrapper']";
+
+	 //BillerSubBillerAddIndividual
+	 public final static String Biller_AddsubBiller_btn="//button[text()=' Add Sub Billers+']";
+	 public final static String Biller_AddsubBiller_name="//input[@id='IndividualNameAr']";
+	 public final static String Biller_AddsubBiller_National="//input[@name='NationalId']";
+	 public final static String Biller_AddsubBiller_IBAN="//input[@id='IBAN']";
+	 public final static String Biller_AddsubBiller_Beneficiary="//input[@id='BeneficiaryName']";
+	 public final static String Biller_AddsubBiller_Iban="//input[@id='IBANAttachment']";
+	 public final static String Biller_AddsubBiller_Fees="//label[text()='Fees Deduction Based on Product']";
+	 public final static String Biller_AddsubBiller_mbl="//input[@id='MobileNo']";
+	 public final static String Biller_AddsubBiller_Email="//input[@id='Email']";
+	 public final static String Biller_AddsubBiller_addbtn="//input[@id='btnAdd']";
+	 public final static String Biller_AddsubBiller_addprod="//a[@id='btnNewProduct']";
+	 public final static String Biller_AddsubBiller_prodname="//select[@id='ProductId']";
+	 public final static String Biller_AddsubBiller_fixed="//input[@id='txtProductFixedValue']";
+	 public final static String Biller_AddsubBiller_per="//input[@id='txtProductPercentage']";
+	 public final static String Biller_AddsubBiller_prodiban="//input[@id='txtProductIBAN']";
+	 public final static String Biller_AddsubBiller_prodbene="//input[@id='txtProductBeneficiaryName']";
+	 public final static String Biller_AddsubBiller_prodatch="//input[@id='ProductIBANAttachment']";
+	 public final static String Biller_AddsubBiller_prodaddbt="//button[text()='Add']";
+	 public final static String Biller_AddsubBiller_verify="//table[@id='tblSubBillers']//tr//td[2]";
+	 public final static String Biller_AddsubBiller_SeaName="//input[@id='Name']";
+	 public final static String Biller_AddsubBiller_SeaNation="//input[@id='NationalId']";
+	 public final static String Biller_AddsubBiller_Search="//button[text()='Search']";
+	 public final static String Biller_AddsubBiller_check="//label[text()='Transfer Fees Deduction from Sub Biller Share']";
+	 
+	//Biller Receivables My balance
+	 public final static String Biller_Receivables_balance="//h6[text()='Search228']";
+	 public final static String Biller_Rcv_balFromd="//input[@id='FromDate']";
+	 public final static String Biller_Rcv_balFromyear="//select[ @title='Change the year']";
+	 public final static String Biller_Rcv_balFromon="//select[@title='Change the month']"; 
+	 public final static String Biller_Rcv_balTod="//input[@id='ToDate']";
+	 public final static String Biller_Rcv_balToyear="//select[@title='Change the year']";
+	 public final static String Biller_Rcv_balTomon="//select[@title='Change the month']";
+	 public final static String Biller_Rcv_balancelink="//a[text()='Balance Details']";
+	 
+	
+		
+	 
+	 public final static String Biller_Rcv_balContract="//input[@id='InvoiceNumber']";
+	 public final static String Biller_Rcv_balsubBiller="//select[@id='SubBillerType']";
+	 public final static String Biller_Rcv_balsubBillername="//span[@id='select2-InterpriseSubBillerId-container'] ";
+	 public final static String Biller_Rcv_balSearch="//button[@id='btnSearch']";
+	 public final static String Biller_Rcv_balverifyContract="//table[@id=\"tblWallets\"]//tr[1]//td[3]";
+	 
+	//Biller login footer
+	 public final static String Biller_loginverify="//h5[text()='Login']";
+	 public final static String Biller_About_Edaat="//a[text()='About Edaat']";
+	 public final static String Biller_About_verify="//img[@class='w-100 fit-contain img-en']";
+     	 //Admin Distribution
+	 public final static String Admin_DistRecordofpostingsym ="//h6[text()='Record of Posting']";
+     public final static String Admin_SysMng ="//a[@id='lnkSystemMangement2']";
+     public final static String Admin_DistBtn ="//a[text()='Distribution' and @id='refWalletManagementSub2']";
+     public final static String Admin_DistRecordofposting ="//a[text()='Record of Posting' and @id='lnkRecordPostings2']";
+     public final static String Admin_DistRecordofpostinggridview ="//table[@id='tblBillList']";
+     public final static String Admin_BatchNo ="//input[@id='batchNo']";
+     public final static String Admin_ClickFromdate ="//input[@id='FromDate']";
+     public final static String Admin_ClickTodate ="//input[@id='ToDate']";
+     public final static String Admin_ClickFromyear ="//select[@title='Change the year']";
+     public final static String Admin_ClickToyear ="//select[@title='Change the year']";
+     public final static String Admin_ClickFrommonth ="//select[@title='Change the month']";
+     public final static String Admin_ClickTomonth ="//select[@title='Change the month']";
+     public final static String Admin_Button ="//button[@id='btnSearch']";
+     
+     
+     public final static String Admin_Dist_DailyfileExporting ="//a[@id='lnDailyFile2']";
+     public final static String Admin_Dist_ExportFromd="//input[@id='DateFrom']";
+	 public final static String Admin_Dist_ExportFromyear="//select[ @title='Change the year']";
+	 public final static String Admin_Dist_ExportFromon="//select[@title='Change the month']"; 
+	 public final static String Admin_Dist_ExportTod="//input[@id='DateTo']";
+	 public final static String Admin_Dist_ExportToyear="//select[@title='Change the year']";
+	 public final static String Admin_Dist_Exportomon="//select[@title='Change the month']";
+	 public final static String Admin_Dist_BillerName="//span[@role='textbox']";
+	 public final static String Admin_Dist_TransferStatus="//select[@id='InvoicePostingId']";
+	 public final static String Admin_Dist_Export_srcbtn="//button[@id='btnSearch']";
+     
+     
+  
+  //Admin System management distribution management
+ 	//public final static String Admin_DistRecordofpostingsym ="//h6[text()='Record of Posting']";
+    // public final static String Admin_SysMng ="//a[@id='lnkSystemMangement2']";
+     //public final static String Admin_DistBtn ="//a[text()='Distribution' and @id='refWalletManagementSub2']";
+    // public final static Strincordofposting ="//a[text()='Record of Posting' and @id='lnkRecordPostings2']";
+     //public final static String Admin_DistRecordofpostinggridview ="//table[@id='tblBillList']";
+ 		
+      //Distribution Daily transfer requests
+     public final static String Admin_DistDailyTransferPage ="//a[@id='lnkTransferManagement2']";
+     public final static String Admin_AddTransferRequest ="//button[@id='btnAddTransferRequest']";
+     public final static String Admin_DailyTransReconciledCalender ="//input[@id='ReconciledDate']";
+     public final static String Admin_ReconciledMonth ="(//select[@class='calendars-month-year'])[1]";
+     public final static String Admin_ReconciledYear ="(//select[@class='calendars-month-year'])[2]";
+     public final static String Admin_ReconciledSearchBtn ="//button[text()='Search']";
+     public final static String Admin_B2BCheckbox ="(//label[text()='B2B Transfer'])[1]";
+     public final static String Admin_SendTransferRequestBTn="//button[@id='sendTransferRequest']";
+     public final static String Admin_TransferRequestYesBTn="//button[@id='btnConfirmSendRequest']";
+     public final static String Admin_viewRequest="//table[@id='tblTransferRequestsList']//tr[1]//td[6]";
+     public final static String Admin_CloseRequest="//button[@class='btn btn-link']";
+	 
+	 //Admin corporate clients management
+	 public final static String Admin_CorporateClient_addbtn ="//a[@id='lnkActivateCompanies2']";
+	 public final static String Admin_CorporateClient_crefield ="//input[@id='RegistrationNo']";
+	 public final static String Admin_Corporatename_efield ="//input[@id='CompanyName']";
+	 public final static String Admin_Corporateclient_srchbtn ="//button[@id='btnSearch']";
+	 public final static String Admin_SysMgmClient_CorpoclientMgmMenu="//a[@id='lnkActivateCompanies2']";
+	 public final static String Admin_SysMgm_CorpoclientDetails ="//div[@class='card-body table-responsive']";
+
+
+
+	//Admin SubBillers management
+	  public final static String Admin_system_sublink="//a[@id='lnkSubBillerList2']";
+	  public final static String Admin_system_subBlr_verif="//h6[text()='Sub Billers Management']";
+	  public final static String Admin_system_subBlr_Edit="(//div[@id='dtCompanies_wrapper']//tr//td[9])[1]";
+	  public final static String Admin_system_subBlr_Edit_verif="//h6[text()='General Info']";
+      public final static String Admin_system_subBlr_Table="//table[@id='dtCompanies']";
+	  public final static String Admin_system_subBlr_MainBiller="//span[@id='select2-selectedBillerId-container']";
+	  public final static String Admin_system_subBlr_SearchBtn="//button[@id='btnSearch']";
+	  public final static String Admin_system_subBlr_Grid="//td[text()='No data available in table']";
+      public final static String Admin_system_subBlr_click="//span[@role='textbox']";
+	  public final static String Admin_system_subBlr_indiv="//label[@for='rdSubbillerIndividual']";
+	  public final static String Admin_system_subBlr_Corp="//label[@for='rdSubbillerCompany']";
+	  public final static String Admin_system_subBlr_srcbtn="//button[@id='btnSearch']";
+	
+	    public final static String Admin_Corporateclient_RecordBtn ="//button[@class=\"btn\"]";
+	    public final static String Admin_Corporateclient_HistoryPopup ="//h5[@class='modal-title']";
+	   
+	  
+	//Admin SubBiller Corporate subBillers
+	  public final static String Admin_CorpSubBiller="//h6[text()='Corporate Sub Billers']";
+	  public final static String Admin_CorpSubBillerlnk="//a[@id='lnkSubBillersComanyList2']";
+	  public final static String Admin_SubBillers="//a[@id='lnkSubBillers2']";
+	  public final static String Admin_CorpSubBillerGrid="//table[@id='tblSubBillers']";
+	  public final static String Admin_CorpSubBillerPageVerify="//h6[text()='Corporate Sub Billers']";
+	//Admin Settings Pricing List
+	  public final static String Admin_Setting_pricelistpageVerify="//h6[text()='Pricing List']";
+	  public final static String Admin_Setting_pricelistlnk="//a[@id='lnkPriceList2']";
+	  public final static String Admin_Setting_pricelistlnk2="//a[@id='lnkPriceList2']";
+	  public final static String Admin_Settings_PriceFromd="//input[@id='FromDate']";
+	  public final static String Admin_Settings_PriceFromyear="//select[ @title='Change the year']";
+	  public final static String Admin_Settings_PriceFromon="//select[@title='Change the month']"; 
+	  public final static String Admin_Settings_PriceTod="//input[@id='ToDate']";
+	  public final static String Admin_Settings_PriceToyear="//select[@title='Change the year']";
+	  public final static String Admin_Settings_Priceomon="//select[@title='Change the month']";
+	  public final static String Admin_Settings_Addpricelistbtn="//button[text()='Add price list +']";
+	  public final static String Admin_Settings_PricelistArabicName="//input[@id='NameAr']";
+	  public final static String Admin_Settings_PricelistEnglishName="//input[@id='NameEn']";
+	  public final static String Admin_Settings_Pricelistbtn="//input[@id='Value']";
+	  public final static String Admin_Settings_Pricelistincradiobtn="//label[contains(text(),'Increase Price')]";
+	  public final static String Admin_Settings_Pricelistdscradiobtn="//label[contains(text(),'Decrease Price')]";
+	  public final static String Admin_Settings_descriptionbtn="//textarea[@id='Description']";
+	  public final static String Admin_Settings_AddPricelistbtn2="//button[@id='btnAdd']";
+	  public final static String Admin_Settings_ActivateCheckbox="//label[contains(text(),'Activate/Deactivate')]";
+	  public final static String Admin_Settings_Roundinguprdn="//label[contains(text(),'Rounding Up')]";
+	  public final static String Admin_Settings_RoundingNordn="//label[contains(text(),'No Rounding')]";
+	  public final static String Admin_Settings_Roundingdownrdn="//label[contains(text(),'Rounding Down')]";
+      public final static String Admin_Settings_PriceListsfield="//input[@id='Name']";
+  	  public final static String Admin_Settings_PriceListSeacrchbtn="//button[@class='btn btn-primary']";
+  	  public final static String Admin_Settings_PriceListnameverify="//div[@id='GridView']//tr//td[2]";
+      public final static String Admin_Settings_PriceList_nodata="//td[text()='No data available in table']";
+  	  public final static String Admin_Settings_PriceList_DeleteBtn="(//tr/td[7]/a[@class='mx-1 action bg-danger deleteItem'])[1]";
+  	  public final static String Admin_Settings_PriceList_yesDeleteBtn="//button[@id='btnConfirmDelete']";
+	  public final static String Admin_Settings_PriceListsym="//h6[text()='Pricing List']";
+  	  public final static String Admin_Settings_PriceListtable="//table";
+  	  public final static String Admin_Settings_PriceListUpdateBtn="//button[@id='btnUpdate_3110']";
+  	  public final static String Admin_Settings_PriceListUpdate="//h6[text()='Update price list']";
+		//Admin Module
+    
+  	//Admin Contacts Management
+  	  public final static String Admin_SymCorpoName ="//input[@id='CompanyName']";
+	  public final static String Admin_ContactsMGMToggle ="(//span[@class='switch switch-sm'])[1]";
+	  public final static String Admin_ContactsManagement="//a[@id='lnkContacts2']";
+	  public final static String Admin_ContactsMGM_SenderName="//input[@id='name']";
+	  public final static String Admin_ContactsMGM_SubjectDrop="//select[@id='subjectId']";
+	  public final static String Admin_ContactsMGM_StatusDrop="//select[@id='statusId']";
+	  public final static String Admin_ContactsMGM_SenderTypeDrop="//select[@id='SenderTypeId']";
+	  public final static String Admin_ContactsMGM_SearchButton="//button[@id='btnSearch']";
+	  public final static String Admin_ContactsMGM_Viewmessage="//a[@id='view_15827']";
+	  public final static String Admin_ContactsMGM_message="(//div[@id='tblContacts_wrapper']//tr//td[8])[1]";
+	  public final static String Admin_ContactsMGM_Replybtn="(//button[text()='Reply'])[1]";
+	  public final static String Admin_ContactsMGM_TextMsg="(//textarea[@id='BillerMessage'])[1]";
+	  public final static String Admin_ContactsMGM_SendReply="(//button[text()='Send reply'])[1]";
+	  public final static String Admin_ContactsMGM_MsgDetails_verify="//h5[@id='exampleModalLongTitle']";
+	  public final static String Admin_ContactsMGM_MsgDetails_Closebtn="//button[text()='Close']";
+	 // public final static String Admin_SymCorpoName ="//input[@name='CompanyName']";
+	 // public final static String Admin_ContactsMGM_message="(//div[@id='tblContacts_wrapper']//tr//td[8])[1]";
+	  public final static String Admin_ContactsMgm_SenderStatus ="";
+	  //public final static String Admin_ContactsMGM_message="(//div[@id='tblContacts_wrapper']//tr//td[8])[1]";
+
+	   public final static String Admin_SymCorptable ="//table[@id='tblContacts']";
+
+       public final static String Admin_SymCorpoCrNumber ="//input[@id='RegistrationNo']";
+       public final static String Admin_SymCorpoClientstatus ="//select[@id='Types']";
+       public final static String Admin_Symstatustogglebutton ="//label[@for='1']";
+       public final static String Admin_Symstatustoggleyesbtn ="//button[text()='Yes' and @id='submit_btnConfirmActivation']";
+       public final static String Admin_Symstatustoggletextarea ="//textarea[@id='submit_activationNotesText']";
+       public final static String Admin_Symstatustoggleconformactivation ="//button[@id='submit_btnConfirmActivation']";
+       public final static String Admin_Symstatustogglecancelbtn ="//button[text()='No']";
+
+//Admin Receivables Paid Outside Edaat
+       public final static String Admin_Receivables_Menu="//a[@id='lnkReceipts2']";
+       public final static String Admin_Receivables_PaidoutsideMenu="(//a[@href='/PayCashManagement/PayCash'])[2]";
+       public final static String Admin_PaidoutsideEdaat_BillNo="//input[@id='BillNo']";
+       public final static String Admin_PaidOutsideEdaat_DocumentNo="//input[@id='VoucherNo']";
+       public final static String Admin_PaidoutsideEdaat_SubBillerName="//span[@class='select2-selection__arrow']";
+       public final static String Admin_PaidoutsideEdaat_Searchbtn="//button[@id='btnSearch']";
+
+ //contract
+       public final static String Admin_Symcontactsym ="//h6[text()='Contacts Management']";
+//individal client admin
+       public final static String Admin_SymIndivClientname ="//input[@id='CustomerName']"; 
+       public final static String Admin_SymIndivNIDname ="//input[@id='NationalID']"; 
+       public final static String Admin_SymIndivClientstatus ="//select[@id='Types']";
+       public final static String Admin_Individualclient_srchbtn ="//button[@id='btnSearch']";
+       public final static String Admin_Individualdownload ="(//td//a)[2]";
+     //Admin subbiller
+       public final static String Admin_subbillerbtn ="//a[@id='lnkSubBillers2']";
+       public final static String Admin_CarpoSubbillerdatabtn ="(//a[text()='Corporate Sub Billers'])[2]";
+       public final static String Admin_Carpoaddsubbiller ="//button[@id='btnAddSubBiller']";
+       public final static String Admin_subbillerName ="//input[@id='CompanyNameAr']";
+       public final static String Admin_subbillerCRNumber ="//input[@id='RegistrationNo']";
+       public final static String Admin_subbillerCRNCertificate ="//input[@id='RegistrationAttachment']";
+       public final static String Admin_subbillerIban ="//input[@id='IBAN']";
+       public final static String Admin_subbillerBenfName ="//input[@id='BeneficiaryName']";
+       public final static String Admin_subbillerAttachIban ="//input[@id='IBANAttachment']";
+       public final static String Admin_subbillerTaxNumber ="//input[@id='VATNo']";
+       public final static String Admin_subbillerTotalAmountCheck ="//label[text()='Fees Deduction from Invoice Total Amount']";
+       public final static String Admin_subbillerFixedValue ="//label[@for='HasOperationalFees']";
+       public final static String Admin_subbillerPercentage ="//label[@for='HasOperationalFeesPercentage']";
+       public final static String Admin_subbillerEnterFixedValue ="//input[@id='OperationalFees']";
+       public final static String Admin_subbillerEnterPercentValue ="//input[@id='OperationalFeesPercentage']";
+       public final static String Admin_subbillerCity ="//span[text()='Select City']";
+       public final static String Admin_subbillerDisctictName ="//input[@id='District']";
+       public final static String Admin_subbillerStreetName ="//input[@id='Street']";
+       public final static String Admin_subbillerPostalName ="//input[@id='PostalCode']";
+       public final static String Admin_subbillerBuildName ="//input[@id='BuildingNo']";
+       public final static String Admin_subbillerEmployName ="//input[@id='EmployeeName']";
+       public final static String Admin_subbillerEmpleyEmail ="//input[@id='EmployeeEmail']";
+       public final static String Admin_subbillerEmpleyNumber ="//input[@id='EmployeeMobileNo']";
+       public final static String Admin_subbillerAddbtn ="//input[@id='btnAdd']";
+       public final static String Admin_subbillerBillerName ="//input[@id='Name']";
+       public final static String Admin_subbillerCrNumber ="//input[@id='RegistrationNumber']";
+       public final static String Admin_subbillerSearchBtn ="//button[text()='Search']";
+	   public final static String Admin_ReceviablesPaidOutsideEddatLink ="//a[@id='lnkPayCashList2']";
+       public final static String Admin_ReceviablesPaidOutsideEddatGridView ="//th[text()='Bill Number']";	
+      
+       
+  // Admin Corporate SubBiller
+       public final static String Admin_CorpoSubBiller ="//a[@id='lnkSubBillersComanyList2']";
+       public final static String Admin_CorpoSubBillerAddBTN ="//button[@id='btnAddSubBiller']";
+       public final static String Admin_CorpoSubBillerName="//input[@id='CompanyNameAr']";
+       public final static String Admin_CorpoSubBillerCRNum="//input[@id='RegistrationNo']";
+       public final static String Admin_CorpoSubBillerCRAttach="//input[@id='RegistrationAttachment']";
+       public final static String Admin_CorpoSubBillerIBAN="//input[@id='IBAN']";
+       public final static String Admin_CorpoSubBillerIBANAttach="//input[@id='IBANAttachment']";
+       public final static String Admin_CorpoSubBillerProductIBANAttach="//input[@id='ProductIBANAttachment']";
+       public final static String Admin_CorpoSubBillerBeneficaryName="//input[@id='BeneficiaryName']";
+       public final static String Admin_CorpoSubBillerTaxNum="//input[@id='VATNo']";
+       public final static String Admin_CorpoSubBillerFeeDeductonProductCHXbox="//input[@id='HasProductFees']";
+       public final static String Admin_CorpoSubBillerAddProduct="//a[@id='btnNewProduct']";
+       public final static String Admin_CorpoSubBillerSelectProduct="//select[@id='ProductId']";
+       public final static String Admin_CorpoSubBillerProFixedValue="//input[@id='txtProductFixedValue']";
+       public final static String Admin_CorpoSubBillerProPercentage="//input[@id='txtProductPercentage']";
+       public final static String Admin_CorpoSubBillerProductIBAN="//input[@id='txtProductIBAN']";
+       public final static String Admin_CorpoSubBillerProductBeneficaryName="//input[@id='txtProductBeneficiaryName']";
+       public final static String Admin_CorpoSubBillerProductAddBTN="//button[@id='btnAddProduct']";
+       public final static String Admin_CorpoSubBillerAddButton="//input[@id='btnAdd']";
+       public final static String Admin_CorpoSubBillerCityList="//span[@id='select2-CityID-container']";
+       
+ //Admin Corporate Client Report
+       
+       public final static String Admin_CorporateClientReportBTN ="//a[@id='lnkCompanyClientsReport2']";
+       public final static String Admin_CorporateClientBillerNameDropDown ="//span[@id='select2-BillerId-container']";
+       public final static String Admin_CorporateClientGenerateReportBTN ="//button[@id='btnSearch']";
+       public final static String Admin_CorporateClientReportTXT ="//td[@id='P4b860c0bb2974421aafaf099a8d411e0_1_oReportCell']";
+       public final static String Admin_CorporateClientReport ="//div[text()='Corporate Clients List']";
+       
+       //Admin Receviebales Paid OutSide Edaat
+       
+       //Admin Import Clients Data
+       public final static String Admin_ImportClientdatasym ="//h6[text()='Import Clients Data']";
+       public final static String Admin_ImportClientdatabtm ="//a[@id='lnkMyClients2']";
+       public final static String Admin_ImportClientdata ="//a[@id='lnkImportClients2']";
+       public final static String Admin_ImportCorporateradiobtn ="//label[@for='rdCompany']";
+       public final static String Admin_ImportCorporateradioImg ="//span[contains(text(),'Corporate Data Form')]";
+       public final static String Admin_ImportIndividualradioImg ="//span[contains(text(),'Individual Data Form')]";
+       public final static String Admin_ImportIndividualradiobtn ="//label[@for='rdCustomer']";
+       public final static String Admin_ImportAttachExelFileBTN ="//input[@id='ExcelFile']";
+       public final static String Admin_ClientProcessButton ="//button[@id='btnProcessingExcelFile']";
+       public final static String Admin_ClientConfirmUploadButton ="//button[@id='btnConfirmUpload']";
+       
+     
+       
+       //admin indiv report
+       public final static String Admin_IndivClientReport ="(//a[text()='Individual Clients Report'])[4]";
+       public final static String Admin_ClickBillerName ="//span[text()='- Select Biller -']";
+       public final static String Admin_SelectBillerName ="//li[@role='treeitem']";
+       
+       //Admin Reports Sub biller reports
+       public final static String Admin_Reports_SubbillerReportMenu="//a[@id='lnkSubBillersInforAggregatorReport']";
+       public final static String Admin_SubbillerReport_BillerNameDropdwn="//span[@id='select2-BillerId-container']";
+       public final static String Admin_SubbillerReport_CRNumberfield="//input[@id='RegistrationNumber']";
+       public final static String Admin_SubbillerReport_GenerateReportBtn="//button[@id='btnSearch']";
+       public final static String Admin_SubbillerReportverify="//div[text()='Corporate Sub Billers']";
+     
+       //Admin Reports Clients Type reports
+       public final static String Admin_Reports_ClientsTypeReportMenu="//a[@id='lnkAggregatorCustomersTypeReport2']";
+
+     
+       //Admin Settings Discount Management status toggle   
+      public final static String Admin_SettingDis_Activatebtn ="//label[@for='status']";
+     
+      //Admin Reports PaymentTransaction and Operation fees
+      public final static String Admin_Reports_PaymntTransaction_MainBlr="//span[@id='select2-BillerId-container']";
+      public final static String Admin_Reports_PaymntTransaction_generate="//button[text()='Generate Report']";
+      public final static String Admin_Reports_PaymntTransaction_report="//div[text()='ENGLISH BILLER']";
+      public final static String Admin_Reports_PaymntTransactionlink="//a[@id='lnkPaymentsTransactionsReport2']";
+      public final static String Admin_Reports_PaymntTransactionReport="//div[text()='Payment Transactions and Operations Fees Report']";
+
+    //Admin Reports Blocked Corporate Client report
+      public final static String Admin_Reports_Blockedcorporatelnk="//a[@id='lnkBlockedSystemCompaniesReport2']";
+      public final static String Admin_Reports_BlockedcorporateVerify="//div[text()='Blocked Corporate Clients']";
+  
+    //Admin Receivables Balance search
+      public final static String Admin_Receievable_Balance = "//h6[@id='hdrAlias']";
+      public final static String Admin_Receievable_link = "//a[@id='lnkReceipts2']";
+      public final static String Admin_BalanceDetailsPage = "//a[@id='lnkWalletDetails2']";
+      public final static String Admin_Rcv_balFromd="//input[@id='FromDate']";
+      public final static String Admin_Rcv_balFromyear="//select[ @title='Change the year']";
+      public final static String Admin_Rcv_balFromon="//select[@title='Change the month']";
+      public final static String Admin_Rcv_balTod="//input[@id='ToDate']";
+      public final static String Admin_Rcv_balToyear="//select[@title='Change the year']";
+      public final static String Admin_Rcv_balTomon="//select[@title='Change the month']";
+      public final static String Admin_Rcv_balancelink="//a[text()='Balance Details']";
+      public final static String Admin_Rcv_balContract="//input[@id='InvoiceNumber']";
+      public final static String Admin_Rcv_balSearch="//button[@id='btnSearch']";
+      public final static String Admin_Rcv_subbiler="//span[@id='select2-SubBillerId-container']";
+      public final static String Admin_BalanceDetailsViewBtn = "(//a[@title='View Contract'])[1]";
+      public final static String Admin_InvoiceDetails = "//h6[text()='Invoice Details']";
+      public final static String Admin_Update_btn="//button[@data-target='#updateAliasModal']";
+      public final static String Admin_Wallet_efield="//input[@id='Alias']";
+      public final static String Admin_Wallet_yesbtn="//button[@id='btnUpdateAlias']";
+      public final static String Admin_updated_Wallet="//h6[@id='hdrAlias']";
+      public final static String Admin_RcvBalanceSearch_Verify="//div[@id='tblWallets_wrapper']//tr[1]//td[3]";
+      
+      
+   
+   
+    //Admin Corporate client management
+      public final static String AdminSystem_Corporate_Clientstatus="//select[@id='Types']";
+      public final static String Admin_Sys_CorpVerify="(//div[@class='dataTables_wrapper dt-bootstrap4 no-footer']//tr//td)[7]";
+      public final static String AdminSystem_Corporate_Searchbtn="//button[@id='btnSearch']";
+
+      
+   //Admin system management Daily transfered record
+      public final static String Admin_DistRecordoftransferlink ="//a[@id='lnkTransferRequestsHistory2']";
+      public final static String AdminSys_Distri_record_Recnum="//input[@id='RequestNo']";
+      public final static String AdminSys_Distri_Reqd="//input[@id='Date']";
+      public final static String AdminSys_Distri_Reqyear="//select[ @title='Change the year']";
+      public final static String AdminSys_Distri_ReqMon="//select[@title='Change the month']";
+      public final static String AdminSys_Distri_Recond="//input[@id='ReconciledDate']";
+      public final static String AdminSys_Distri_Recon_Toyear="//select[@title='Change the year']";
+      public final static String AdminSys_Distri_Recon_Tomon="//select[@title='Change the month']";
+      //public final static String AdminSys_Distri_Recon_Fromdclick="//select[@title='Change the month']";
+      public final static String AdminSys_Distri_Requeststatus="//select[@id='BulkTransferRequestStatuses']";
+      public final static String AdminSys_Distri_Transferstatus="//select[@id='BulkTransferRequestBillerStatuses']";
+      public final static String AdminSys_Distri_recordsearchbtn="//button[text()='Search']";
+      public final static String AdminSys_Distri_recordsearch_verify="(//div[@id='tblTransferRequestsHistory_wrapper']//tr//td)[2]";
+   	  public static String Admin_ClickNationalityName ="//select[@id='NationalityId']";
+   
+   
+      public final static String Admin_CorpMGMSettingBtn ="//table[@id='dtCompanies']//tr[1]/td[9]/a";
+       public final static String Admin_CorpMGMSuspendRadioBtn ="(//div[@class='custom-control custom-radio'])[1]";
+       public final static String Admin_CorpMGMSuspendBtn ="//input[@id='AccountStatusId_1100']";
+       public final static String Admin_CorpMGMSuspendPermanentyBtn ="//input[@id='AccountStatusId_1101']";
+       public final static String Admin_CorpMGMSuspendReasonDrop="//span[@class='select2-selection select2-selection--multiple']";
+       public final static String Admin_CorpMGMSuspendReason="(//li[@class='select2-results__option'])[1]";
+       public final static String Admin_CorpMGMSuspendYesBtn ="//button[@id='btnConfirmSetting']";
+      // public final static String Admin_CorpMGMSettingBtn ="//table[@id='dtCompanies']//tr[1]/td[9]/a";
+
+//client Payables Incoming Bills Page
+       public final static String ClientIncomingBills ="//h3[text()='Incoming Bills']";
+       public final static String ClientPayablesMenu ="//a[@class='nav-link dropdown-toggle active collapsed']";
+       public final static String ClientsIncomingBillsBillnumber1 ="(//a[@title='View Bill Details'])[1]";
+       public final static String ClientsIncomingBillPrintBtn ="//button[@id='btnPrintInvoice']";
+//Client Payables Installments bills page
+      public final static String Client_Payables_InstallmentsPage_verify="//h3[text()='Installment Bills']";
+      public final static String Client_Payables_InstallmentsPage_lnk="//a[@id='lnkCustomerInvoices2']";
+      public final static String Client_Payables_Installments_Contractnum="//input[@id='InvoiceNo']";
+      public final static String Client_Payables_Installments_billername="//input[@id='billerName']";
+      public final static String Client_Payables_Installments_Search="//button[text()='Search']";
+      public final static String Client_Payables_Installments_Contract_Verify="//div[@id='tblBillList_wrapper']//tr/td[1]";
+
+ //Client Payables Incoming bills page
+      public final static String ClientsPayablesIncomingBillsBTN ="//a[@id='lnkIncomingBillsList2']";
+      public final static String ClientsPayablesInvoiceNumberTextField ="//input[@name='billNo']";
+      public final static String ClientsPayablesBillerNameDropdown ="//select[@id='billerId']";
+      public final static String ClientsPayablesPaymentStatusDropdown ="//select[@id='IsPaid']";
+      public final static String ClientsPayablesIncomingBillSerach ="//button[@class='btn btn-primary w-100 w-md-auto']";
+      public final static String ClientsPayablesIncomInvoiceDetailsText ="//h3[text()='Invoice Details']";
+//Client Payables Installments bills page
+
+       public final static String Client_Payables_InstallmentsPage_verify="//h3[text()='Installment Bills']";
+       public final static String Client_Payables_InstallmentsPage_lnk="//a[@id='lnkCustomerInvoices2']";
+       public final static String Client_Payables_Installments_Contractnum="//input[@id='InvoiceNo']";
+       public final static String Client_Payables_Installments_billername="//input[@id='billerName']";
+       public final static String Client_Payables_Installments_Search="//button[text()='Search']";
+       public final static String Client_Payables_Installments_Contract_Verify="//div[@id='tblBillList_wrapper']//tr/td[1]";
+       public final static String Client_Payables_Installments_Contract_Click="//td/a";
+       public final static String ClientsPayables_InstallmentsGrid ="//table[@id='tblBillList']";
+
+      //Client IncomingBills
+            public final static String ClientPayablesIncomingBillsGrid="//div[@id='tblBillList_wrapper']";
+
+       public final static String ClientsPayablesIncomingBillsBTN ="//a[@id='lnkIncomingBillsList2']";
+       public final static String ClientsPayablesInvoiceNumberTextField ="//input[@name='billNo']";
+       public final static String ClientsPayablesBillerNameDropdown ="//select[@id='billerId']";
+       public final static String ClientsPayablesPaymentStatusDropdown ="//select[@id='IsPaid']";
+       public final static String ClientsPayablesIncomingBillSerach ="//button[@class='btn btn-primary w-100 w-md-auto']";
+       public final static String ClientsPayablesIncomInvoiceDetailsText ="//h3[text()='Invoice Details']";
+       //public final static String ClientsPayablesIncomInvoiceDetailsText ="//h3[contains(text(),'Invoice')]";
+
+ public static final String ClientAccountStatementtext = "//h3[text()='Client Account Statement']";
+	   public static final String Client_ClientAccountStatementMenu = "//a[@id='lnkCustomerClearanceReport']";
+	   public static final String Client_ClientAccountStatement_BillerName = "//select[@id='BillerId']";
+	   public final static String Client_ClientAccountStatement_Fromyear = "//select[@title='Change the year']";
+	   public final static String Client_ClientAccountStatement_FromDate = "//input[@id='FromDate']";
+	   public final static String Client_ClientAccountStatement_FromMonth = "//select[@title='Change the month']";
+	   public final static String Client_ClientAccountStatement_ToMonth = "//select[@title='Change the month']";
+	   public final static String Client_ClientAccountStatement_Toyear = "//select[@title='Change the year']";
+	   public final static String Client_ClientAccountStatement_TODate = "//input[@id='ToDate']";
+	   public static final String Client_ClientAccountStatement_InvoiceContactfield = "//input[@id='InvoiceNumber']";
+	   public static final String Client_ClientAccountStatement_SearchBtn = "//button[text()='Search']";
+	   public static final String Client_ClientAccountStatement_Reportclientname = "//div[text()='client test']";
+	   public static final String Client_reportFrame = "//iframe[@src='/ReportViewerWebForm.aspx']";
+	   
+	   
+       public final static String Biller_Recevible_ReportSuperBiller="//a[@id='lnkSuperBillerReports2']";
+       public final static String Biller_Recevible_ReportSuperBillerCorporateClient="//a[@id='lnkAggregatorBillersTrackReport2']";
+       public final static String Biller_Rece_ReportSupBillerCorpoTrackBillName="//input[@class='select2-search__field']";
+       public final static String Biller_Rece_ReportSupBillerGenerateReportBTN="//button[@id='btnSearch']";
+       public final static String Biller_SuperBillerCorporateClientframe="//iframe[@src='/ReportViewerWebForm.aspx']";
+       public final static String Biller_SuperBillerCorporateReportClientText="//div[text()='Corporate Clients List']";
+       
+
+
+       
+       //Client Footer Links
+       public final static String ClientLoginAboutEdaatLink="//a[text()='About Edaat']";
+       public final static String ClientLoginAboutEdaatText="//img[@class='w-100 fit-contain img-en']";
+       public final static String ClientLoginOurServicesLink="//a[text()='Our Services']";
+       public final static String ClientLoginOurServicesEdaatFeaturesTXT="//h1[@class='display-4 text-primary mt-3 aos-init aos-animate']";
+       public final static String ClientLoginOurClientsLink="//a[text()='Our Clients']";
+       public final static String ClientLoginOurClientsTXT="//h1[text()='Our Clients']";
+       public final static String ClientLoginAZMFintechLink="//a[text()='About AZM Fintech']";
+       public final static String ClientLoginBillInquiryLink="//a[text()='Bill Inquiry']";
+       public final static String ClientLoginEnterInvoiceNumTXT="//p[text()='Enter Invoice Number']";
+       public final static String ClientLoginClientRegistrationLink="//a[text()='Client Registeration']";
+       public final static String ClientLoginNewClientRegistrationTXT="//h5[text()='New Client Registration']";
+       public final static String ClientLoginBillerRegistrationLink="//a[text()='Biller Registeration']";
+       public final static String ClientLoginNewBillerRegistrationTXT="//h5[text()='New Biller Registration']";
+       public final static String ClientLoginContactUSLink="//a[text()='Contact Us']";
+       public final static String ClientLoginContactusTXT="//h2[@class='h2 h2-responsive text-primary font-weight-bold animated slideInDown']";
+       public final static String ClientLoginFAQLink="//a[text()='FAQ']";
+       public final static String ClientLoginFAQ_TXT="//h2[@class='h2 h2-responsive text-dark font-weight-bold mt-4 animated slideInDown']";
+       public final static String ClientLoginTermsandConditionLink="//a[text()='Terms and Conditions']";
+       public final static String ClientLoginTermsandConditionTXT="//h2[@class='h2 h2-responsive text-dark font-weight-bold mt-4 animated slideInDown']";
+       public final static String ClientLoginPrivacyandPolicyLink="//a[text()='Privacy Policy']";
+       public final static String ClientLoginPrivacyandPolicyTXT="//h2[@class='h2 h2-responsive text-dark font-weight-bold mt-4 animated slideInDown']";
+       
+       
+   
+
+       //Biller Receivable Report OverDue
+       public static final String Biller_OverDueBillsReport = "//a[@id='lnkBillsDelayedReport2']";
+       public static final String Biller_OverDueBillsReportClientType = "//select[@id='ClientTypeId']";
+       public static final String Biller_OverDueBillsReportClientName = "//span[@id='select2-ClientId-container']";
+       public static final String Biller_OverDueBillsReportSubBillerType = "//select[@id='SubBillerType']";
+       public static final String Biller_OverDueBillsReportSubBillerName = "//span[@id='select2-InterpriseSubBillerId-container']";
+       public static final String Biller_OverDueBillsGenerateReportBTN = "//button[@id='btnSearch']";
+       public static final String Biller_OverDueBillClientNameinReport = "//div[text()='client 1 client 1 client 1']";
+       public static final String Biller_OverDueBillsReportFrame = "//iframe[@src='/ReportViewerWebForm.aspx']";
+       public static final String Biller_OverDueBillsReportclientNameTxtField = "//input[@class='select2-search__field']";
+       
+       public final static String Biller_AR_LoginBtn="//a[@class=\"btn btn-accent1\"]";
+  	 public final static String Biller_Login_ChangeLanguage="(//a[@id=\"English\"])[2]";
+	   
+       public final static String Biller_Trackedbiller="//input[@type='search']";
+       public final static String Biller_clientinvoicebtn="(//a[text()='Clients Invoices Report'])[4]";
+       public final static String Biller_frameclientinvoice="//table[@id='ReportViewer1_fixedTable']";
+       public final static String Biller_clientinvoice="//div[text()='Clients Invoices Report']";
+	
+	 //Biller Receivable Report super biller OverDue
+       public static final String Biller_SuperBillerOverDueBillsReport = "//a[@id='lnkBillsDelayedReport2']";
+       public static final String Biller_SuperBillerOverDueBillsReportClientName = "//span[@id='select2-ClientId-container']";
+       public static final String Biller_SuperBillerOverDueBillsReportSubBillerType = "//select[@id='SubBillerType']";
+       public static final String Biller_SuperBillerOverDueBillsReportSubBillerName = "(//span[@role='combobox'])[3]";
+       public static final String Biller_SuperBillerOverDueBillsGenerateReportBTN = "//button[@id='btnSearch']";
+       public static final String Biller_SuperBillerOverDueBillClientNameinReport = "//div[text()='client 1 client 1 client 1']";
+       public static final String Biller_SuperBillerOverDueBillsReportFrame = "//iframe[@src='/ReportViewerWebForm.aspx']";
+       public static final String Biller_SuperBillerOverDueBillsReportclientNameTxtField = "(//span[@role='combobox'])[1]";
+       public static final String Biller_SuperBillerOverDueBillesTrackedBiller = "//input[@class='select2-search__field']";
+       public static final String Biller_SuperBillerOverDueBillsReportClientType = "//select[@id='ClientTypeId']";
+       public static final String Biller_SuperBillerOverDueBillsReportPage = "(//a[@href='/SuperReport/ClientDelayedBillsReport'])[2]";
+ //Client My Account
+
+     public final static String ClientMyAccountMenu ="//a[@id='lnkBillerAccount2']";
+     public final static String ClientMyAccUpdateProfileMenu ="//a[@id='lnkUpdateCustomerData2']";
+     public final static String ClientMyAccUpdateProfileSecondName ="//input[@id='SecondName']";
+     public final static String ClientMyAccUpdateProfileThirdName ="//input[@id='ThirdName']";
+     public final static String ClientMyAccUpdateProfileLastName ="//input[@id='LastName']";
+     public final static String ClientMyAccUpdateProfileMobNumber ="//input[@id='MobileNo' and @name='MobileNo' ]";
+     public final static String ClientMyAccUpdateProfileSaveChangesBTN ="//input[@id='btnAdd']";
+     public final static String ClientMyAccUpdateProfileCancelbtn="//a[text()='Cancel']";
+     
+   //Client My account Update Client Login Info save
+     public final static String ClientMyAccUpdateLoginInfo="//a[@id='UpdateCustomerLoginInfo2']";
+     public final static String ClientLogininfoOldPassword="//input[@id='OldPassword']";
+     public final static String ClientLogininfoNewPassword="//input[@id='NewPassword']";
+     public final static String ClientLogininfoConfirmPassword="//input[@id='ConfirmPassword']";
+     public final static String ClientLogininfoSaveBtn="//input[@id='btnAdd']";
+     public final static String ClientLogininfoCancelBtn="//a[text()='Cancel']";
+     public final static String ClientLogininfoyesbtn="//button[text()='Yes']";
+     public final static String ClientLogininfoSave_Verify="//h5[contains(text(),'updating')]";
+     
+   //Biller login footer
+   //public final static String Biller_loginverify="//h5[text()='Login']";
+   // public final static String Biller_About_Edaat="//a[text()='About Edaat']";
+   //	 public final static String Biller_About_verify="//img[@class='w-100 fit-contain img-en']";
+   	 public final static String Biller_OurService="//a[text()='Our Services']";
+   	 public final static String Biller_OurService_verif="//a[text()='Our Services']";
+   	 public final static String Biller_OurClient="//a[text()='Our Clients']";
+   	 public final static String Biller_OurClient_verif="//h1[text()='Our Clients']";
+   	 public final static String Biller_fintech="//a[text()='About AZM Fintech']";
+   	 public final static String Biller_Enquiry="//a[text()='Bill Inquiry']";
+   	 public final static String Biller_Enquiry_verif="//h3[text()='Invoice Details']";
+   	 public final static String Biller_Clientreg="//a[text()='Client Registeration']";
+   	 public final static String Biller_Clientreg_verif="//h5[text()='New Client Registration']";
+   	 public final static String Biller_Clientreg_cancel="//a[text()=' Cancel']";
+   	 public final static String Biller_Clientreg_yescancel="//a[text()='Yes Cancel']";
+   	 public final static String Biller_registerlnk="//a[text()='Biller Registeration']";
+   	 public final static String Biller_registerlnk_verif="//h5[text()='New Biller Registration']";
+   	 public final static String Biller_ContactUs="//a[text()='Contact Us']";
+   	 public final static String Biller_ContactUs_verif="//a[text()='Contact Us']";
+   	 public final static String Biller_FAQ_link="//a[text()='FAQ']";
+   	 public final static String Biller_FAQ_Verify="//h2[contains(text(),'Frequently Asked Questions')]";
+   	 public final static String Biller_Tearms_link="//a[text()='Terms and Conditions']";
+   	 public final static String Biller_Tearms_Verify="//h2[contains(text(),'Terms and Conditions')]";
+   	 public final static String Biller_Priavcy_link="//a[text()='Privacy Policy']";
+   	 public final static String Biller_Priavcy_verify="//h2[contains(text(), 'Privacy Policy')]";
+
+   	 //Biller settings term management
+   	 public final static String Biller_Setting_termMgm_deletebtn_verify="//h5[contains(text(),'Are you exactly who deleted this term?')]";
+   	 public final static String Biller_Setting_termMgm_deleteyes="//button[text()='Yes, Delete']";
+   	 public final static String Biller_Setting_termMgm_after_delete="//td[text()='No data available in table']";
+   	 public final static String Biller_Setting_termMgm_deleteBtn="(//a[@class='mx-1 action bg-danger deleteItem'])[1]";
+      
+   	//Biller Settings my account Notification Send email toggle
+   	// public final static String Biller_MyAccount_sendEmail_togglebtn="(//table[@id='tblNotifications']//tr[2]//td)[3]";
+   	 public final static String Biller_MyAccount_sendEmail_togglebtn="(//label[@class='mb-0'])[2]";
+   	 public final static String Biller_MyAccount_sendEmail_CancelActive_verify="//h5[text()='Cancel activation?']";
+   	 public final static String Biller_MyAccount_sendEmail_CancelActive_yesbtn="//button[text()='Yes']";
+   	 public final static String Biller_MyAccount_sendEmail_ConfirmActive_verify="//h5[text()='Confirm activation?']";
+   	 public final static String Biller_MyAccount_sendEmail_ConfirmActive_yesbtn="//button[text()='Yes']";
+
+   	 //Biller Receivables report for super biller client account statement
+   	//public final static String Biller_ReportsMenu="//a[@id=\"lnkMyReports\"]";
+   // public final static String Biller_Recevible_ReportMenu="//a[@id='refReceiptsSub22']";
+   // public final static String Biller_Recevible_ReportSuperBiller="//a[@id='lnkSuperBillerReports2']";
+    public final static String Biller_Recevible_ReportSuperBillerCorporateClient="//a[@id='lnkAggregatorBillersTrackReport2']";
+    public final static String Biller_Rece_ReportSupBillerCorpoTrackBillName="//input[@class='select2-search__field']";
+    public final static String Biller_Rece_ReportSupBillerGenerateReportBTN="//button[@id='btnSearch']";
+    public final static String Biller_SuperBillerCorporateClientframe="//iframe[@src='/ReportViewerWebForm.aspx']";
+    public final static String Biller_SuperBillerCorporateReportClientText="//div[text()='Corporate Clients List']";
+   
+    public final static String Biller_Recevible_ReportSuperBiller="//a[@id='lnkSuperBillerReports2']";
+    public final static String Biller_Recevible_ReportSprBiler_ClientAccount="//a[@id='lnkCustomerAccountTrack2']";
+    public final static String Biller_ReportSuper_ClientAccount_ClientType="//select[@id='ClientTypeId']";
+    //(//option[text()='Corporate'])[1]
+    public final static String Biller_ReportSuper_ClientAccount_TrackedBiller="//input[@class='select2-search__field']";
+    //li[text()='Happy1'] 
+    public final static String Biller_ReportSuper_ClientAccount_subBiller_type="//select[@id='SubBillerType']";
+    public final static String Biller_ReportSuper_ClientAccount_subBiller_name="//span[@id='select2-SubBillerId-container']";
+   //span[text()='star']
+    public final static String Biller_ReportSuper_ClientAccount_search="//button[text()=' Search']";
+    public final static String Biller_ReportSuper_ClientAccount_Client="//span[@id='select2-ClientId-container']";
+    public final static String Biller_Rcv_superbilr_ClientAccount_Fromdate="//input[@id='Date']";
+    public final static String Biller_Rcv_superbilr_ClientAccount_Fromyear="//select[ @title='Change the year']";
+    public final static String Biller_Rcv_superbilr_ClientAccount_FromMon="//select[@title='Change the month']";
+    public final static String Biller_Rcv_superbilr_ClientAccount_Todate="//input[@id='ReconciledDate']";
+    public final static String Biller_Rcv_superbilr_ClientAccount_Toyear="//select[@title='Change the year']";
+    public final static String Biller_Rcv_superbilr_ClientAccount_Tomon="//select[@title='Change the month']";
+
+    
+	}
+
+
+	
+

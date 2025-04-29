@@ -1,0 +1,310 @@
+23:14:34.026 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:14:34.041 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+23:14:34.605 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+23:14:34.605 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+23:14:34.729 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+23:14:34.729 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+23:14:35.213 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+23:14:35.260 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+23:16:10.685 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:16:10.690 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+23:16:11.371 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+23:16:11.371 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+23:16:11.527 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+23:16:11.527 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+23:16:12.073 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+23:16:12.120 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+23:17:20.300 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:17:20.300 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:17:22.624 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:17:22.793 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b35d1b0b6301721e59e8a7058baeacfb (org.openqa.selenium.chrome.ChromeDriverService)
+23:17:43.622 INFO [ActiveSessions$1.onStop] - Removing session b35d1b0b6301721e59e8a7058baeacfb (org.openqa.selenium.chrome.ChromeDriverService)
+23:17:44.309 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:17:44.309 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:17:46.591 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:17:46.606 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d0b6e4095212b0738067c5e930a163f9 (org.openqa.selenium.chrome.ChromeDriverService)
+23:19:14.562 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:19:14.562 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+23:19:15.248 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+23:19:15.248 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+23:19:15.389 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+23:19:15.389 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+23:19:15.983 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+23:19:16.030 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+23:19:25.376 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:19:25.376 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:19:28.247 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:19:28.466 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 22cda7e33b75dd0522612ec94e3d0a4b (org.openqa.selenium.chrome.ChromeDriverService)
+23:21:08.905 INFO [ActiveSessions$1.onStop] - Removing session 22cda7e33b75dd0522612ec94e3d0a4b (org.openqa.selenium.chrome.ChromeDriverService)
+23:21:09.608 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:21:09.608 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:21:11.925 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:21:11.977 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session bdd3d8d65d8bf5d458259d1a3621517c (org.openqa.selenium.chrome.ChromeDriverService)
+23:21:13.893 INFO [ActiveSessions$1.onStop] - Removing session bdd3d8d65d8bf5d458259d1a3621517c (org.openqa.selenium.chrome.ChromeDriverService)
+23:21:14.555 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:21:14.555 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:21:16.857 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:21:16.888 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 36d43365950f75a3552ccb12a66e3627 (org.openqa.selenium.chrome.ChromeDriverService)
+23:37:20.311 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:37:20.311 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:37:22.620 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:37:22.651 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1ee75e4e9a436ddcde24b4aa66bf4ae8 (org.openqa.selenium.chrome.ChromeDriverService)
+23:37:31.589 INFO [ActiveSessions$1.onStop] - Removing session 1ee75e4e9a436ddcde24b4aa66bf4ae8 (org.openqa.selenium.chrome.ChromeDriverService)
+23:37:32.272 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:37:32.272 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:37:34.594 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:37:34.609 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 994c3d6646d3dda3bc8481199f4934e1 (org.openqa.selenium.chrome.ChromeDriverService)
+23:37:44.924 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:37:44.924 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:37:47.191 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:37:47.207 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c34b0d108ecd33dcf63cceb13c08936a (org.openqa.selenium.chrome.ChromeDriverService)
+23:48:13.136 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:48:13.136 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:48:15.473 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:48:15.502 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 50d86b9b5b0315e4cb999acb15b0b6a5 (org.openqa.selenium.chrome.ChromeDriverService)
+23:50:35.512 INFO [ActiveSessions$1.onStop] - Removing session 50d86b9b5b0315e4cb999acb15b0b6a5 (org.openqa.selenium.chrome.ChromeDriverService)
+23:50:36.163 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:50:36.163 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:50:38.515 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:50:38.530 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session aaae2dc47a60bf34ee44a770cea6088e (org.openqa.selenium.chrome.ChromeDriverService)
+23:51:18.455 INFO [ActiveSessions$1.onStop] - Removing session 36d43365950f75a3552ccb12a66e3627 (org.openqa.selenium.chrome.ChromeDriverService)
+23:52:54.563 INFO [ActiveSessions$1.onStop] - Removing session aaae2dc47a60bf34ee44a770cea6088e (org.openqa.selenium.chrome.ChromeDriverService)
+23:52:55.255 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:52:55.255 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:57:14.986 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:57:14.986 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:57:17.322 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:57:17.363 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a11ee7a229b1401cbc49afdd22467909 (org.openqa.selenium.chrome.ChromeDriverService)
+23:57:21.896 INFO [ActiveSessions$1.onStop] - Removing session a11ee7a229b1401cbc49afdd22467909 (org.openqa.selenium.chrome.ChromeDriverService)
+23:57:22.620 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:57:22.620 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:57:24.919 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:57:24.950 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b5753861b6524b48e9b579e553e17dac (org.openqa.selenium.chrome.ChromeDriverService)
+23:57:35.348 INFO [ActiveSessions$1.onStop] - Removing session b5753861b6524b48e9b579e553e17dac (org.openqa.selenium.chrome.ChromeDriverService)
+23:57:35.969 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+23:57:35.969 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+23:57:38.236 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+23:57:38.252 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 49288c20eb13e525adae2068dfc1e42e (org.openqa.selenium.chrome.ChromeDriverService)
+23:59:58.541 INFO [ActiveSessions$1.onStop] - Removing session 49288c20eb13e525adae2068dfc1e42e (org.openqa.selenium.chrome.ChromeDriverService)
+00:07:34.853 INFO [ActiveSessions$1.onStop] - Removing session 994c3d6646d3dda3bc8481199f4934e1 (org.openqa.selenium.chrome.ChromeDriverService)
+00:07:50.432 INFO [ActiveSessions$1.onStop] - Removing session c34b0d108ecd33dcf63cceb13c08936a (org.openqa.selenium.chrome.ChromeDriverService)
+00:14:29.198 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+00:14:29.198 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+00:14:31.485 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+00:14:31.511 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 517f6f8f3da6dd71f5ab3e75ef624b0c (org.openqa.selenium.chrome.ChromeDriverService)
+00:16:51.649 INFO [ActiveSessions$1.onStop] - Removing session 517f6f8f3da6dd71f5ab3e75ef624b0c (org.openqa.selenium.chrome.ChromeDriverService)
+00:16:52.388 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+00:16:52.388 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+00:16:54.711 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+00:16:54.738 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3bda78adab6d5bd341217d5e42eca078 (org.openqa.selenium.chrome.ChromeDriverService)
+00:19:14.727 INFO [ActiveSessions$1.onStop] - Removing session 3bda78adab6d5bd341217d5e42eca078 (org.openqa.selenium.chrome.ChromeDriverService)
+00:19:15.445 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+00:19:15.445 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+00:19:17.825 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+00:19:17.841 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d00efcad9751683a6c190c5ebce39fa6 (org.openqa.selenium.chrome.ChromeDriverService)
+00:21:37.995 INFO [ActiveSessions$1.onStop] - Removing session d00efcad9751683a6c190c5ebce39fa6 (org.openqa.selenium.chrome.ChromeDriverService)
+00:40:30.596 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+00:40:30.597 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+00:40:33.027 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+00:40:33.035 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 39eb85e00654c04cee930e0260b06aa9 (org.openqa.selenium.chrome.ChromeDriverService)
+00:42:52.623 INFO [ActiveSessions$1.onStop] - Removing session 39eb85e00654c04cee930e0260b06aa9 (org.openqa.selenium.chrome.ChromeDriverService)
+00:42:53.303 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+00:42:53.304 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+00:42:55.617 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+00:42:55.626 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 750490a74850ed2093632626cbff230f (org.openqa.selenium.chrome.ChromeDriverService)
+00:45:15.432 INFO [ActiveSessions$1.onStop] - Removing session 750490a74850ed2093632626cbff230f (org.openqa.selenium.chrome.ChromeDriverService)
+00:45:16.183 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+00:45:16.183 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+00:45:18.496 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+00:45:18.501 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 27c9c543f1b6d8dabc6d4e3ebe46647c (org.openqa.selenium.chrome.ChromeDriverService)
+00:47:38.549 INFO [ActiveSessions$1.onStop] - Removing session 27c9c543f1b6d8dabc6d4e3ebe46647c (org.openqa.selenium.chrome.ChromeDriverService)
+01:38:55.314 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:38:55.314 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+01:38:56.009 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+01:38:56.009 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:38:56.149 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:38:56.149 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:38:56.634 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:38:56.688 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:39:02.966 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+01:39:02.981 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+01:39:05.610 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+01:39:05.891 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7d960a67b328e0b7ae5a5b3b5388d036 (org.openqa.selenium.chrome.ChromeDriverService)
+01:41:41.191 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+01:41:41.191 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+01:41:43.484 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+01:41:43.516 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8fb958bac6fa85a52316c4db2b9aa948 (org.openqa.selenium.chrome.ChromeDriverService)
+01:46:17.415 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:46:17.430 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+01:46:18.097 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+01:46:18.097 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:46:18.237 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:46:18.237 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:46:18.791 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:46:18.838 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:46:25.241 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+01:46:25.241 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+01:46:27.588 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+01:46:27.955 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f8ac731438de4a40ff71161fe9a2fdbe (org.openqa.selenium.chrome.ChromeDriverService)
+01:50:16.122 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:50:16.122 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+01:50:16.888 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+01:50:16.888 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:50:17.013 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:50:17.013 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:50:17.563 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:50:17.594 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:50:26.167 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+01:50:26.183 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+01:50:28.541 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+01:50:28.868 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 172731805a872d69629b467f44b1e990 (org.openqa.selenium.chrome.ChromeDriverService)
+01:53:29.482 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:53:29.498 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+01:53:30.196 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+01:53:30.196 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:53:30.321 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:53:30.321 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:53:30.868 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:53:30.914 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:53:36.659 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+01:53:36.660 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+01:53:39.010 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+01:53:39.299 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b2a3570e7efa586b921b9b199f5145c8 (org.openqa.selenium.chrome.ChromeDriverService)
+01:54:00.500 INFO [ActiveSessions$1.onStop] - Removing session b2a3570e7efa586b921b9b199f5145c8 (org.openqa.selenium.chrome.ChromeDriverService)
+01:54:01.134 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+01:54:01.134 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+01:54:03.466 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+01:54:03.497 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 695c8cbd145d7c2c16de777cf97aee07 (org.openqa.selenium.chrome.ChromeDriverService)
+01:54:28.497 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:54:28.513 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+01:54:29.195 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+01:54:29.195 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:54:29.336 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:54:29.336 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:54:29.899 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:54:29.930 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+02:01:31.728 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+02:01:31.733 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+02:01:32.537 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+02:01:32.537 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+02:01:32.683 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+02:01:32.683 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+02:01:33.381 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+02:01:33.428 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+02:19:55.987 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+02:19:55.987 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+02:19:56.737 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+02:19:56.737 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+02:19:56.877 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+02:19:56.877 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+02:19:57.534 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+02:19:57.580 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:04:40.611 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:04:40.621 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+13:04:42.459 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+13:04:42.459 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:04:42.725 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:04:42.726 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:04:44.268 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:04:44.404 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:18:06.735 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:18:06.744 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+13:18:09.309 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+13:18:09.310 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:18:09.824 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:18:09.824 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:18:12.408 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:18:12.547 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:22:21.809 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:22:21.809 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+13:22:22.899 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+13:22:22.899 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:22:23.084 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:22:23.084 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:22:23.839 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:22:23.919 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:16:09.538 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:16:09.545 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+13:16:10.522 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+13:16:10.522 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:16:10.690 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:16:10.691 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:16:11.616 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:16:11.761 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+11:37:24.008 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:37:24.024 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+11:37:24.911 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+11:37:24.911 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+11:37:25.067 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+11:37:25.067 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+11:37:25.802 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+11:37:25.864 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:09:30.669 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:09:30.669 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+14:09:31.521 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+14:09:31.521 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+14:09:31.677 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+14:09:31.693 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+14:09:32.380 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+14:09:32.442 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:11:55.202 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:11:55.202 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+14:11:56.027 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+14:11:56.027 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+14:11:56.222 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+14:11:56.222 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+14:11:56.803 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+14:11:56.839 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:16:50.453 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:16:50.453 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+14:16:51.414 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+14:16:51.414 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+14:16:51.601 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+14:16:51.601 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+14:16:52.507 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+14:16:52.586 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:17:00.092 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+14:17:00.092 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+14:17:03.894 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+14:17:04.457 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0699dd962ca893379ba04054ed54ba3f (org.openqa.selenium.chrome.ChromeDriverService)
+14:19:24.964 INFO [ActiveSessions$1.onStop] - Removing session 0699dd962ca893379ba04054ed54ba3f (org.openqa.selenium.chrome.ChromeDriverService)
+14:19:25.960 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+14:19:25.960 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+14:19:28.607 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+14:19:28.681 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c752c7e4f7a68579825546e21f24442e (org.openqa.selenium.chrome.ChromeDriverService)
+14:21:48.909 INFO [ActiveSessions$1.onStop] - Removing session c752c7e4f7a68579825546e21f24442e (org.openqa.selenium.chrome.ChromeDriverService)
+14:21:49.682 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+14:21:49.682 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+14:21:52.160 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+14:21:52.210 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d8fba1907fc38669883eddd9184abda0 (org.openqa.selenium.chrome.ChromeDriverService)
+14:24:12.309 INFO [ActiveSessions$1.onStop] - Removing session d8fba1907fc38669883eddd9184abda0 (org.openqa.selenium.chrome.ChromeDriverService)
+14:25:44.137 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+14:25:44.137 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+14:25:47.131 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+14:25:47.204 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6ffaaec27aa22c37bff301196280968b (org.openqa.selenium.chrome.ChromeDriverService)
+15:47:18.008 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+15:47:18.014 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+15:47:18.870 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+15:47:18.870 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+15:47:19.007 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+15:47:19.008 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+15:47:19.701 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+15:47:19.769 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+15:47:44.699 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+15:47:44.700 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+15:47:47.981 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:47:48.407 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ab0cade312b9e71a598489438b6a766d (org.openqa.selenium.chrome.ChromeDriverService)
+15:50:58.503 INFO [ActiveSessions$1.onStop] - Removing session ab0cade312b9e71a598489438b6a766d (org.openqa.selenium.chrome.ChromeDriverService)
+15:50:59.394 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {browserName: chrome, goog:chromeOptions: {}, platform: WINDOWS, version: }
+15:50:59.394 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+15:51:01.986 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+15:51:02.025 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 54599c82d73a325290a33e8ded0b7a02 (org.openqa.selenium.chrome.ChromeDriverService)
+16:22:10.072 INFO [ActiveSessions$1.onStop] - Removing session 54599c82d73a325290a33e8ded0b7a02 (org.openqa.selenium.chrome.ChromeDriverService)
+11:59:37.627 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:59:37.632 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5551
+11:59:39.729 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5551
+11:59:39.729 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+11:59:40.283 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+11:59:40.283 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+11:59:41.822 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+11:59:41.882 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use

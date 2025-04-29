@@ -1,0 +1,1170 @@
+23:14:34.026 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:14:34.026 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+23:14:34.776 INFO [Hub.start] - Selenium Grid hub is up and running
+23:14:34.776 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+23:14:34.776 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+23:14:35.197 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:14:35.197 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:14:35.213 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+23:14:35.213 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+23:16:10.657 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:16:10.657 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+23:16:11.496 INFO [Hub.start] - Selenium Grid hub is up and running
+23:16:11.496 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+23:16:11.496 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+23:16:12.057 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:16:12.057 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:16:12.057 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:16:12.073 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+23:16:12.073 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+23:16:12.073 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+23:17:20.206 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:17:20.206 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=6ba153a8-ea90-434d-af25-a215a207b4bb, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:17:43.872 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:17:43.872 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=6ba153a8-ea90-434d-af25-a215a207b4bb, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:17:46.622 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+23:19:14.562 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:19:14.562 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+23:19:15.404 INFO [Hub.start] - Selenium Grid hub is up and running
+23:19:15.404 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+23:19:15.404 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+23:19:15.983 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:19:15.983 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:19:15.983 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+23:19:15.983 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+23:19:15.983 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+23:19:15.983 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+23:19:25.267 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:19:25.267 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:19:25.267 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:19:25.267 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:21:08.389 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:21:08.389 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:21:09.014 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:21:09.014 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:21:13.976 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:21:13.976 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:21:15.465 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:21:15.465 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:21:16.888 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+23:21:17.825 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+23:37:20.280 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:37:20.280 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:20.280 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:37:20.280 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:37:31.876 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:37:31.876 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:37:32.179 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:32.179 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:37:34.609 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+23:37:35.031 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+23:37:44.893 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:44.893 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:37:44.893 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:37:44.893 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:37:50.678 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:50.679 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:37:53.017 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+23:37:53.455 WARN [RequestHandler.process] - The client is gone for session ext. key c34b0d108ecd33dcf63cceb13c08936a, terminating
+23:48:13.089 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:48:13.089 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:48:13.089 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:48:13.089 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:50:35.759 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:50:35.759 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:50:37.553 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:50:37.554 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:52:54.651 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:52:54.651 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:52:56.667 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:52:56.669 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:57:14.923 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:57:14.923 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:57:14.923 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:57:14.923 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:57:22.195 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:57:22.195 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+23:57:22.432 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:57:22.432 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:57:28.988 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:57:28.988 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+23:57:35.395 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+23:57:35.395 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:14:29.175 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:14:29.175 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+00:14:29.175 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+00:14:29.176 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:16:51.571 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:16:51.571 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+00:16:51.795 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+00:16:51.795 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:19:13.887 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:19:13.887 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+00:19:14.836 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+00:19:14.836 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:40:30.576 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+00:40:30.576 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:40:30.577 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:40:30.577 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+00:42:52.468 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:42:52.468 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+00:42:52.717 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+00:42:52.718 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:45:15.578 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+00:45:15.578 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:45:15.579 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fa74e12d-5555-435c-b2c4-2a585c7ea3c1, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+00:45:15.580 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=db04d507-0ba6-4abf-8895-40ec7c205463, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:38:55.314 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:38:55.314 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+01:38:56.134 INFO [Hub.start] - Selenium Grid hub is up and running
+01:38:56.134 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+01:38:56.134 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+01:38:56.634 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:38:56.634 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:38:56.634 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+01:38:56.634 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+01:38:59.842 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:38:59.842 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+01:39:02.856 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:39:02.856 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:39:02.856 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=6b6dd1d3-58df-4463-be1c-6a74cf1939ca, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:39:02.856 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=89f0ca26-e971-429b-8b17-209e0715b1c7, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+01:41:14.651 WARN [RequestHandler.process] - The client is gone for session ext. key a4dd25e2-acdc-4dc0-92a5-4a07889f0679, terminating
+01:41:15.944 WARN [RequestHandler.process] - The client is gone for session ext. key 7d960a67b328e0b7ae5a5b3b5388d036, terminating
+01:41:40.143 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:41:40.143 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=6b6dd1d3-58df-4463-be1c-6a74cf1939ca, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:41:41.144 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:41:41.144 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=89f0ca26-e971-429b-8b17-209e0715b1c7, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+01:45:52.721 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:45:52.721 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:46:17.399 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:46:17.399 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+01:46:18.222 INFO [Hub.start] - Selenium Grid hub is up and running
+01:46:18.222 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+01:46:18.222 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+01:46:18.775 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:46:18.775 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:46:18.775 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:46:18.775 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+01:46:18.775 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+01:46:18.775 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+01:46:25.100 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:46:25.100 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:46:25.100 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=e46f1f1e-1424-4695-a5d5-4a33f15a6c15, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:46:25.100 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a76399b8-4ec3-41b0-bd40-fd1769629c94, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+01:50:16.106 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:50:16.106 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+01:50:17.028 INFO [Hub.start] - Selenium Grid hub is up and running
+01:50:17.028 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+01:50:17.028 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+01:50:17.547 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:50:17.547 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:50:17.547 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:50:17.547 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+01:50:17.547 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+01:50:17.547 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+01:50:26.058 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:50:26.058 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:50:26.058 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=1eb937fe-1ead-475a-a39a-8ad1aa174d8d, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+01:50:26.058 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=d8b8c752-2154-4e9d-af4b-d2fa2919d67c, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:53:18.377 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:53:18.377 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:53:29.466 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:53:29.482 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+01:53:30.321 INFO [Hub.start] - Selenium Grid hub is up and running
+01:53:30.321 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+01:53:30.321 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+01:53:30.853 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:53:30.853 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:53:30.853 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:53:30.868 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+01:53:30.868 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+01:53:30.868 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+01:53:36.530 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:53:36.530 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:53:36.530 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=390c5d71-eae2-43ef-ab1d-90fa33ec8321, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+01:53:36.530 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=f6e4a7cd-41c0-4f0f-a523-ffcc20e159e0, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:54:00.713 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+01:54:00.713 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=390c5d71-eae2-43ef-ab1d-90fa33ec8321, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+01:54:03.434 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:54:03.434 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=f6e4a7cd-41c0-4f0f-a523-ffcc20e159e0, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:54:04.743 WARN [RequestHandler.process] - The client is gone for session ext. key 695c8cbd145d7c2c16de777cf97aee07, terminating
+01:54:05.774 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+01:54:28.497 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:54:28.497 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+01:54:29.336 INFO [Hub.start] - Selenium Grid hub is up and running
+01:54:29.336 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+01:54:29.336 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+01:54:29.883 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:54:29.883 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:54:29.883 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+01:54:29.883 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+01:54:29.883 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+01:54:29.883 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+01:54:36.101 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:54:36.101 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: internet explorer, ensureCleanSession: true, ie.ensureCleanSession: true, ignoreProtectedModeSettings: true, platform: WINDOWS, version: }
+01:54:36.101 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a4593269-e514-4cf8-91e2-a5ea17d86d18, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:54:36.117 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=bd676113-ad89-4de0-880c-217b67b0e331, seleniumProtocol=WebDriver, browserName=internet explorer, platformName=WIN10, version=11, platform=WIN10}
+01:55:07.009 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:55:07.009 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a4593269-e514-4cf8-91e2-a5ea17d86d18, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+01:55:09.336 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+02:01:31.681 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+02:01:31.697 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+02:01:32.630 INFO [Hub.start] - Selenium Grid hub is up and running
+02:01:32.630 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+02:01:32.630 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+02:01:33.365 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:01:33.365 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:01:33.365 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:01:33.365 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:01:33.365 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+02:01:33.365 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+02:01:33.365 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5554
+02:01:33.365 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+02:02:01.176 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:02:01.176 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:02:11.065 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:02:11.065 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:04:33.069 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:04:33.069 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:13:59.175 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+02:13:59.175 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:13:59.175 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=f525f886-4c0a-455e-8824-0ee01277bc39, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+02:13:59.175 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:14:22.201 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:14:22.201 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:14:31.665 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:14:31.665 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:14:56.956 WARN [RequestHandler.process] - The client is gone for session ext. key 3EA3FCE4-8156-4A0E-AF90-CCCC0D3B7467, terminating
+02:15:22.375 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:15:22.375 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: internet explorer, ensureCleanSession: true, ie.ensureCleanSession: true, ignoreProtectedModeSettings: true, platform: WINDOWS, version: }
+02:15:22.375 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:15:22.375 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=097a750f-b915-4c12-9e00-665f05caa094, seleniumProtocol=WebDriver, browserName=internet explorer, platformName=WIN10, version=11, platform=WIN10}
+02:15:49.277 WARN [RequestHandler.process] - The client is gone for session ext. key 407c3357-19b4-419b-bbf4-67da82597458, terminating
+02:18:37.063 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:18:37.063 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: internet explorer, ensureCleanSession: true, ie.ensureCleanSession: true, ignoreProtectedModeSettings: true, platform: WINDOWS, version: }
+02:18:37.063 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:18:37.063 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=097a750f-b915-4c12-9e00-665f05caa094, seleniumProtocol=WebDriver, browserName=internet explorer, platformName=WIN10, version=11, platform=WIN10}
+02:18:46.940 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:18:46.940 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=887837bd-e8a2-47f0-ae0b-64f7c1baeb1b, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:18:49.303 INFO [RequestHandler.process] - Error forwarding the new session Error forwarding the request org.seleniumhq.jetty9.io.EofException
+org.openqa.grid.internal.exception.NewSessionException: Error forwarding the request org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:94)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:86)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.ClientGoneException: org.seleniumhq.jetty9.io.EofException
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:492)
+	at org.openqa.grid.internal.TestSession.forward(TestSession.java:286)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.forwardNewSessionRequestAndUpdateRegistry(RequestHandler.java:91)
+	... 34 more
+Caused by: org.seleniumhq.jetty9.io.EofException
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:292)
+	at org.seleniumhq.jetty9.io.WriteFlusher.flush(WriteFlusher.java:429)
+	at org.seleniumhq.jetty9.io.WriteFlusher.write(WriteFlusher.java:322)
+	at org.seleniumhq.jetty9.io.AbstractEndPoint.write(AbstractEndPoint.java:372)
+	at org.seleniumhq.jetty9.server.HttpConnection$SendCallback.process(HttpConnection.java:788)
+	at org.seleniumhq.jetty9.util.IteratingCallback.processing(IteratingCallback.java:241)
+	at org.seleniumhq.jetty9.util.IteratingCallback.iterate(IteratingCallback.java:224)
+	at org.seleniumhq.jetty9.server.HttpConnection.send(HttpConnection.java:528)
+	at org.seleniumhq.jetty9.server.HttpChannel.sendResponse(HttpChannel.java:778)
+	at org.seleniumhq.jetty9.server.HttpChannel.write(HttpChannel.java:834)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:234)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:218)
+	at org.seleniumhq.jetty9.server.HttpOutput.write(HttpOutput.java:535)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.openqa.grid.internal.TestSession.writeRawBody(TestSession.java:490)
+	... 36 more
+Caused by: java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at sun.nio.ch.SocketDispatcher.writev(Unknown Source)
+	at sun.nio.ch.IOUtil.write(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.write(Unknown Source)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint.flush(ChannelEndPoint.java:272)
+	... 50 more
+02:19:55.987 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+02:19:55.987 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+02:19:56.924 INFO [Hub.start] - Selenium Grid hub is up and running
+02:19:56.924 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+02:19:56.924 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+02:19:57.518 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:19:57.518 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:19:57.518 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:19:57.518 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+02:19:57.534 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5554
+02:19:57.534 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+02:19:57.534 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+02:19:57.534 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+02:20:29.768 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: internet explorer, ensureCleanSession: true, ie.ensureCleanSession: true, ignoreProtectedModeSettings: true, platform: WINDOWS, version: }
+02:20:29.768 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:20:29.768 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=29cbccfb-1070-49a3-8d2f-c788f9036d7e, seleniumProtocol=WebDriver, browserName=internet explorer, platformName=WIN10, version=11, platform=WIN10}
+02:20:29.784 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=5476d758-906f-45d1-a992-50a75e8348e4, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:21:48.470 WARN [RequestHandler.process] - The client is gone for session ext. key 30211540-37e3-4bfd-b510-f1af7684d6e8, terminating
+02:24:18.309 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:24:18.309 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: internet explorer, ensureCleanSession: true, ie.ensureCleanSession: true, ignoreProtectedModeSettings: true, platform: WINDOWS, version: }
+02:24:18.309 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=5476d758-906f-45d1-a992-50a75e8348e4, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:24:18.309 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=29cbccfb-1070-49a3-8d2f-c788f9036d7e, seleniumProtocol=WebDriver, browserName=internet explorer, platformName=WIN10, version=11, platform=WIN10}
+02:26:39.802 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:26:39.802 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=5476d758-906f-45d1-a992-50a75e8348e4, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+02:26:48.826 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:26:48.827 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=5476d758-906f-45d1-a992-50a75e8348e4, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:04:40.610 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:04:40.617 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+13:04:42.487 INFO [Hub.start] - Selenium Grid hub is up and running
+13:04:42.488 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+13:04:42.488 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+13:04:44.220 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:04:44.220 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:04:44.220 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:04:44.252 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:04:44.252 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+13:04:44.252 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5554
+13:04:44.252 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+13:04:44.253 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+13:07:04.814 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:07:04.814 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:07:04.825 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fddc7a18-f1c4-4e7d-9bbb-dd6ef44541f1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:07:04.890 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=966b0277-95b6-425b-a961-1f3cae9c7aea, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:09:33.010 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:09:33.010 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fddc7a18-f1c4-4e7d-9bbb-dd6ef44541f1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:09:36.432 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:09:36.432 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=966b0277-95b6-425b-a961-1f3cae9c7aea, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:11:55.699 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:11:55.699 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fddc7a18-f1c4-4e7d-9bbb-dd6ef44541f1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:12:06.477 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:12:06.478 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=966b0277-95b6-425b-a961-1f3cae9c7aea, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:13:36.206 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:13:36.206 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:13:36.210 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fddc7a18-f1c4-4e7d-9bbb-dd6ef44541f1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:13:36.210 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=966b0277-95b6-425b-a961-1f3cae9c7aea, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:16:00.215 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:16:00.215 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=fddc7a18-f1c4-4e7d-9bbb-dd6ef44541f1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:16:06.230 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:16:06.230 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=966b0277-95b6-425b-a961-1f3cae9c7aea, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:18:06.735 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:18:06.741 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+13:18:09.103 INFO [Hub.start] - Selenium Grid hub is up and running
+13:18:09.104 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+13:18:09.104 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+13:18:12.352 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:18:12.352 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:18:12.352 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:18:12.352 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:18:12.383 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5554
+13:18:12.383 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+13:18:12.383 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+13:18:12.383 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+13:18:50.154 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:18:50.154 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:18:50.154 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=565f51ed-bc38-4c68-97a2-04d31781d1bb, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:18:50.154 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=31e14f9f-def0-4be1-adf7-338a8455d3ef, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:21:20.773 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:21:20.773 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=565f51ed-bc38-4c68-97a2-04d31781d1bb, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:21:22.495 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:21:22.495 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=31e14f9f-def0-4be1-adf7-338a8455d3ef, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:21:27.146 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:21:27.146 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=565f51ed-bc38-4c68-97a2-04d31781d1bb, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:22:21.715 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:22:21.730 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+13:22:22.921 INFO [Hub.start] - Selenium Grid hub is up and running
+13:22:22.922 INFO [Hub.start] - Nodes should register to http://192.168.10.112:4444/grid/register/
+13:22:22.922 INFO [Hub.start] - Clients should connect to http://192.168.10.112:4444/wd/hub
+13:22:23.824 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:22:23.824 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:22:23.824 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:22:23.824 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:22:23.839 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5553
+13:22:23.839 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5551
+13:22:23.839 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5552
+13:22:23.839 INFO [DefaultGridRegistry.add] - Registered a node http://192.168.10.112:5554
+13:22:36.226 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:22:36.226 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:22:36.230 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=8f6cfc7e-219f-45c5-81a4-19cbecdd60bd, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:22:36.233 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=88192a01-4950-42b0-b793-2f5bfa455160, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:24:56.933 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:24:56.933 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=8f6cfc7e-219f-45c5-81a4-19cbecdd60bd, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:24:59.605 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:24:59.605 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=88192a01-4950-42b0-b793-2f5bfa455160, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:26:25.590 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:26:25.590 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=8f6cfc7e-219f-45c5-81a4-19cbecdd60bd, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:26:29.800 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:26:29.800 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=88192a01-4950-42b0-b793-2f5bfa455160, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:30:02.343 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:30:02.343 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:30:02.343 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=88192a01-4950-42b0-b793-2f5bfa455160, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:30:02.343 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=8f6cfc7e-219f-45c5-81a4-19cbecdd60bd, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:32:22.118 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:32:22.119 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=8f6cfc7e-219f-45c5-81a4-19cbecdd60bd, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:32:27.509 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:32:27.509 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=88192a01-4950-42b0-b793-2f5bfa455160, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:34:41.895 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:34:41.895 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=8f6cfc7e-219f-45c5-81a4-19cbecdd60bd, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:34:50.505 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:34:50.505 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=88192a01-4950-42b0-b793-2f5bfa455160, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:16:09.538 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:16:09.541 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+13:16:10.700 INFO [Hub.start] - Selenium Grid hub is up and running
+13:16:10.701 INFO [Hub.start] - Nodes should register to http://10.141.0.123:4444/grid/register/
+13:16:10.701 INFO [Hub.start] - Clients should connect to http://10.141.0.123:4444/wd/hub
+13:16:11.587 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:16:11.587 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:16:11.587 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:16:11.589 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+13:16:11.595 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.123:5554
+13:16:11.595 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.123:5552
+13:16:11.595 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.123:5553
+13:16:11.595 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.123:5551
+13:16:38.934 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:16:38.934 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:16:38.934 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a6a46b68-fcdb-4322-93f6-ab8433b2449b, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:16:38.950 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=80165e03-79aa-46e0-832c-3017a17f65b7, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:19:04.744 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:19:04.745 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a6a46b68-fcdb-4322-93f6-ab8433b2449b, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:19:05.601 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:19:05.601 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=80165e03-79aa-46e0-832c-3017a17f65b7, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:21:24.953 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:21:24.953 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a6a46b68-fcdb-4322-93f6-ab8433b2449b, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:21:31.819 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:21:31.819 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=80165e03-79aa-46e0-832c-3017a17f65b7, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:36:09.671 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:36:09.671 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:36:09.671 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=80165e03-79aa-46e0-832c-3017a17f65b7, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:36:09.671 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a6a46b68-fcdb-4322-93f6-ab8433b2449b, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:36:54.462 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:36:54.462 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a6a46b68-fcdb-4322-93f6-ab8433b2449b, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:38:35.821 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:38:35.821 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=80165e03-79aa-46e0-832c-3017a17f65b7, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+13:39:14.811 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+13:39:14.811 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a6a46b68-fcdb-4322-93f6-ab8433b2449b, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+13:41:02.007 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:41:02.007 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=80165e03-79aa-46e0-832c-3017a17f65b7, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+11:37:24.008 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:37:24.024 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+11:37:25.114 INFO [Hub.start] - Selenium Grid hub is up and running
+11:37:25.114 INFO [Hub.start] - Nodes should register to http://10.141.0.135:4444/grid/register/
+11:37:25.114 INFO [Hub.start] - Clients should connect to http://10.141.0.135:4444/wd/hub
+11:37:25.786 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:37:25.786 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:37:25.786 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:37:25.786 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:37:25.802 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5554
+11:37:25.802 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5553
+11:37:25.802 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5552
+11:37:25.802 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5551
+11:37:37.849 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:37:37.849 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+11:37:37.849 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+11:37:37.849 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+11:40:00.036 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+11:40:00.036 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+11:40:03.340 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:40:03.340 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+11:42:19.862 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+11:42:19.862 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+11:42:25.089 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:42:25.089 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+11:48:57.110 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:48:57.110 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+11:48:57.110 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+11:48:57.110 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+11:51:17.486 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+11:51:17.486 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+11:51:20.196 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:51:20.198 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+11:53:37.396 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+11:53:37.404 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+11:53:42.315 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:53:42.315 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+12:01:31.168 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+12:01:31.168 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+12:01:31.168 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+12:01:31.168 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+12:03:51.373 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+12:03:51.373 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+12:03:54.306 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+12:03:54.306 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+12:06:10.953 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+12:06:10.953 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=457e07cb-9081-4829-a9c7-3bbecf954ab1, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+12:06:16.010 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+12:06:16.010 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=810ac158-5f51-4794-9dd7-8698ab1b61f6, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:09:30.684 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:09:30.684 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+14:09:31.724 INFO [Hub.start] - Selenium Grid hub is up and running
+14:09:31.724 INFO [Hub.start] - Nodes should register to http://10.141.0.135:4444/grid/register/
+14:09:31.724 INFO [Hub.start] - Clients should connect to http://10.141.0.135:4444/wd/hub
+14:09:32.349 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:09:32.349 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:09:32.349 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:09:32.349 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:09:32.364 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5551
+14:09:32.364 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5552
+14:09:32.364 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5554
+14:09:32.364 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5553
+14:09:39.224 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:09:39.224 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:09:39.224 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=116e0b6f-a763-4bd0-bfba-5a5734b9a295, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:09:39.224 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=0f058eb7-6a5e-4e5f-b9ac-b71c39c25c83, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:11:46.185 WARN [RequestHandler.process] - The client is gone for session ext. key a01e5bef-448b-41bf-a041-ce921bbb62d4, terminating
+14:11:47.807 WARN [RequestHandler.process] - The client is gone for session ext. key F275E972-EF45-4472-84B3-534454F38BD5, terminating
+14:11:55.155 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:11:55.155 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+14:11:56.156 INFO [Hub.start] - Selenium Grid hub is up and running
+14:11:56.157 INFO [Hub.start] - Nodes should register to http://10.141.0.135:4444/grid/register/
+14:11:56.157 INFO [Hub.start] - Clients should connect to http://10.141.0.135:4444/wd/hub
+14:11:56.788 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:11:56.788 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:11:56.795 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:11:56.795 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5552
+14:11:56.795 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5551
+14:11:56.796 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5554
+14:11:56.803 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:11:56.805 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5553
+14:12:16.632 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:12:16.632 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:12:16.648 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=2e3d787a-273b-467b-a3db-58d522d9ba5a, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:12:16.648 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=831530e2-9088-4edc-afba-a3b17d68967c, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:14:37.086 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:14:37.086 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=2e3d787a-273b-467b-a3db-58d522d9ba5a, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:14:40.911 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:14:40.911 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=831530e2-9088-4edc-afba-a3b17d68967c, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:16:44.264 WARN [RequestHandler.process] - The client is gone for session ext. key 7b2ae0bd-1e4d-4203-947d-02684006b7ea, terminating
+14:16:45.288 WARN [RequestHandler.process] - The client is gone for session ext. key 3DA64974-BD93-401E-99EE-3EDE741E51A4, terminating
+14:16:50.421 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:16:50.421 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+14:16:51.570 INFO [Hub.start] - Selenium Grid hub is up and running
+14:16:51.570 INFO [Hub.start] - Nodes should register to http://10.141.0.135:4444/grid/register/
+14:16:51.570 INFO [Hub.start] - Clients should connect to http://10.141.0.135:4444/wd/hub
+14:16:52.507 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:16:52.507 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5551
+14:16:52.789 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:16:52.804 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5553
+14:16:52.820 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:16:52.820 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5552
+14:16:52.820 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+14:16:52.820 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.135:5554
+14:16:59.936 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:16:59.936 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+14:16:59.936 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:16:59.936 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=1901f152-1dc8-4bf2-aec6-640d43442d99, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:16:59.936 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=c5de6890-c8e5-4e8d-a53a-b6ce1b0d617d, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+14:16:59.936 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=66a0f0e5-92fd-4011-9489-ed5055bdd699, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:19:23.536 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:19:23.536 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=1901f152-1dc8-4bf2-aec6-640d43442d99, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:19:24.841 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:19:24.842 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=66a0f0e5-92fd-4011-9489-ed5055bdd699, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:19:25.261 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+14:19:25.261 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=c5de6890-c8e5-4e8d-a53a-b6ce1b0d617d, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+14:21:43.474 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:21:43.474 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=1901f152-1dc8-4bf2-aec6-640d43442d99, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:21:49.044 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+14:21:49.044 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=c5de6890-c8e5-4e8d-a53a-b6ce1b0d617d, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+14:21:49.478 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:21:49.478 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=66a0f0e5-92fd-4011-9489-ed5055bdd699, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:25:44.106 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+14:25:44.106 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:25:44.106 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+14:25:44.106 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=c5de6890-c8e5-4e8d-a53a-b6ce1b0d617d, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+14:25:44.106 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=66a0f0e5-92fd-4011-9489-ed5055bdd699, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+14:25:44.106 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=1901f152-1dc8-4bf2-aec6-640d43442d99, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+14:26:40.002 WARN [RequestHandler.process] - The client is gone for session ext. key 8BADE821-F69F-4F75-883F-D26B7929CFEC, terminating
+14:26:44.003 WARN [RequestHandler.process] - The client is gone for session ext. key 6ffaaec27aa22c37bff301196280968b, terminating
+15:47:18.006 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+15:47:18.009 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+15:47:19.024 INFO [Hub.start] - Selenium Grid hub is up and running
+15:47:19.025 INFO [Hub.start] - Nodes should register to http://10.141.0.100:4444/grid/register/
+15:47:19.026 INFO [Hub.start] - Clients should connect to http://10.141.0.100:4444/wd/hub
+15:47:19.686 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+15:47:19.686 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+15:47:19.686 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+15:47:19.686 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+15:47:19.694 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.100:5551
+15:47:19.694 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.100:5553
+15:47:19.694 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.100:5552
+15:47:19.694 INFO [DefaultGridRegistry.add] - Registered a node http://10.141.0.100:5554
+15:47:44.546 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+15:47:44.546 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+15:47:44.546 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+15:47:44.550 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=77b802ad-904a-43c0-bf0d-bc4cde70d5df, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+15:47:44.553 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a05d849b-42da-46be-a073-413314534160, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+15:47:44.553 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=6f7a1e52-ec5d-4af3-a5d4-0d71669310e0, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+15:50:57.184 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: MicrosoftEdge, platform: WINDOWS, version: }
+15:50:57.184 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=a05d849b-42da-46be-a073-413314534160, seleniumProtocol=WebDriver, browserName=MicrosoftEdge, platformName=WIN10, platform=WIN10}
+15:50:58.706 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, platform: WINDOWS, version: }
+15:50:58.707 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=77b802ad-904a-43c0-bf0d-bc4cde70d5df, seleniumProtocol=WebDriver, browserName=chrome, platformName=WIN10, platform=WIN10}
+15:51:00.217 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+15:51:00.217 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=6f7a1e52-ec5d-4af3-a5d4-0d71669310e0, seleniumProtocol=WebDriver, browserName=firefox, platformName=WIN10, platform=WIN10}
+15:52:15.400 WARN [RequestHandler.process] - The client is gone for session ext. key 54599c82d73a325290a33e8ded0b7a02, terminating
+15:52:17.581 WARN [RequestHandler.process] - The client is gone for session ext. key DD47AD43-7A64-4134-BEAB-8BC61E3E0191, terminating
+15:52:22.616 WARN [RequestHandler.process] - The client is gone for session ext. key 7ce192f1-4abb-4385-bdfb-4cc4b6395208, terminating
+11:44:51.631 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:44:51.634 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+11:44:53.036 INFO [Hub.start] - Selenium Grid hub is up and running
+11:44:53.037 INFO [Hub.start] - Nodes should register to http://10.0.75.1:4444/grid/register/
+11:44:53.037 INFO [Hub.start] - Clients should connect to http://10.0.75.1:4444/wd/hub
+11:59:37.597 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:59:37.601 INFO [GridLauncherV3$2.launch] - Launching Selenium Grid hub on port 4444
+11:59:39.337 INFO [Hub.start] - Selenium Grid hub is up and running
+11:59:39.338 INFO [Hub.start] - Nodes should register to http://10.0.75.1:4444/grid/register/
+11:59:39.338 INFO [Hub.start] - Clients should connect to http://10.0.75.1:4444/wd/hub
+11:59:41.795 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:59:41.795 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:59:41.795 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:59:41.795 WARN [BaseRemoteProxy.<init>] - Max instance not specified. Using default = 1 instance
+11:59:41.810 INFO [DefaultGridRegistry.add] - Registered a node http://10.0.75.1:5552
+11:59:41.810 INFO [DefaultGridRegistry.add] - Registered a node http://10.0.75.1:5553
+11:59:41.810 INFO [DefaultGridRegistry.add] - Registered a node http://10.0.75.1:5551
+11:59:41.811 INFO [DefaultGridRegistry.add] - Registered a node http://10.0.75.1:5554
+12:00:08.664 INFO [DefaultRemoteProxy.onEvent] - Marking the node http://10.0.75.1:5552 as down: cannot reach the node for 2 tries
+12:00:13.704 INFO [DefaultRemoteProxy.onEvent] - Marking the node http://10.0.75.1:5553 as down: cannot reach the node for 2 tries
+12:00:28.808 INFO [DefaultRemoteProxy.onEvent] - Marking the node http://10.0.75.1:5554 as down: cannot reach the node for 2 tries

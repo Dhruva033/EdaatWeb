@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="8">
+<!-- Scenario 3-->
+	<test name="Test-class test 3">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	   <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillsInvalid"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillvalids"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmGridView"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminUserMgmGroupMgmVerifyDeleteGroup"/>
+		</classes> 
+	</test>
+<!-- Scenario 4-->
+	<test name="Test-class test 4">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmUpdateGridView"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmApproveToggle"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmInvalidActivation"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmSearch"/>
+	   </classes>
+	</test>
+<!-- Scenario 5-->
+	<test name="Test-class test 5">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+       <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmCloseBiller"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmReject"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmSaveApprove"/>
+       </classes>
+	</test>
+<!-- Scenario 6-->
+	<test name="Test-class test 6">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+     <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmGridView"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmToggleStatus"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtCorporateClientSettingsBtn"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMngSamaIntegrationHistroyVerify"/>
+    	</classes>
+	</test>
+<!-- Scenario 7-->
+	<test name="Test-class test 7">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+     <class name="com.azmqalabs.edaattestautomation.testscripts.Client.ClientPayablesIncomingBillsBillNumberClick"/>
+    <class name="com.azmqalabs.edaattestautomation.testscripts.Client.ClientPayablesIncommingBillsPrint"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.Client.ClientPayIncommingBillsSearch"/>
+		</classes>
+	</test>
+<!-- Scenario 8-->
+	<test name="Test-class test 8">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+     <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmDistributionDailyTransferVerify"/>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystmMngDistributionFileExport"/>
+		</classes>
+	</test>
+</suite>

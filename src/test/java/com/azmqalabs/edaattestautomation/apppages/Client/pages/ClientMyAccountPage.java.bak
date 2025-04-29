@@ -1,0 +1,198 @@
+/**
+*
+* Test Script Name                      : NA.
+* Objective                             : Verify to update client Profile Functionality.
+* Version                               : 1.0
+* Author                                : Kalpana I R
+* Created Date                          : 
+* Last Updated on                       : N/A
+* Updated By                            : 
+* Pre-Conditions                        : 1)Client Login Credentials.
+* Epic Details                          : N/A
+* User Story Details                    : N/A
+* 
+**/
+package com.azmqalabs.edaattestautomation.apppages.Client.pages;
+
+import java.io.IOException;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.azmqalabs.edaattestautomation.apppages.masterpages.BasePage;
+import com.azmqalabs.edaattestautomation.common.ReadData;
+import com.azmqalabs.edaattestautomation.common.uielement.fieldDecorator;
+import com.azmqalabs.edaattestautomation.objectrepository.EdaatOR;
+import com.codoid.products.fillo.Recordset;
+
+public class ClientMyAccountPage extends BasePage {
+
+	public ClientMyAccountPage(WebDriver driver, ExtentTest test) {
+		this.driver = driver;
+		this.test = test;
+
+		PageFactory.initElements(new fieldDecorator(driver, test), this);
+	}
+
+
+	@FindBy(xpath = EdaatOR.ClientMyAccountMenu)
+	public WebElement Client;
+
+
+	public boolean Exists(){
+		return super.Exists(Client); 
+	}
+	//Function summary:Verify Update Client Profile and Save.
+	//Function Parameters:SecondName,ThirdName,LastName and MobileNumber.
+	public void UpdateClientProfileSave(Map<Object,Object>testdatamap) throws InterruptedException
+	{
+		try {
+			
+			WebClickUsingJS(EdaatOR.ClientMyAccUpdateProfileMenu);
+			Thread.sleep(1500);
+			WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileSecondName, testdatamap.get("SecondName").toString());
+		    Thread.sleep(1500);
+		    WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileThirdName, testdatamap.get("ThirdName").toString());
+		    Thread.sleep(1500);
+		    WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileLastName, testdatamap.get("LastName").toString());
+		    Thread.sleep(1500);
+		    WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileMobNumber, testdatamap.get("MobileNumber").toString());
+		    Thread.sleep(1500);
+		    WebClick(EdaatOR.ClientMyAccUpdateProfileSaveChangesBTN);
+			Thread.sleep(1500);	
+			test.log(Status.PASS,"Verify Update and save Profile " + driver.getTitle() +" * Update Client Profile and Save is Pass * " );
+			}
+			catch (Exception e) {
+				this.takeScreenShot();
+				test.log(Status.FAIL,"Verify Update and save Profile " + driver.getTitle() +" * Update Client Profile and Save is Fail * " );
+			}		
+	}
+//Function summary:Verify Update Client Profile and Close
+//Function Parameters:SecondName,ThirdName,LastName and MobileNumber.
+	public void UpdateClientProfileClose(Map<Object,Object>testdatamap)
+	{
+      try {	
+			WebClickUsingJS(EdaatOR.ClientMyAccUpdateProfileMenu);
+			Thread.sleep(1500);
+			WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileSecondName, testdatamap.get("SecondName").toString());
+		    Thread.sleep(1500);
+		    WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileThirdName, testdatamap.get("ThirdName").toString());
+		    Thread.sleep(1500);
+		    WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileLastName, testdatamap.get("LastName").toString());
+		    Thread.sleep(1500);
+		    WebClearandEdit(EdaatOR.ClientMyAccUpdateProfileMobNumber, testdatamap.get("MobileNumber").toString());
+		    Thread.sleep(1500);
+		    WebClick(EdaatOR.ClientMyAccUpdateProfileCancelbtn);
+			Thread.sleep(1500);
+			test.log(Status.PASS,"Verify Update Client Profile Close" + driver.getTitle() +" * Update Client Profile Close is Pass * " );
+            this.takeScreenShot();
+			}
+			catch (Exception e) {
+				this.takeScreenShot();
+				test.log(Status.FAIL,"Verify Update and save Profile " + driver.getTitle() +" * Update Client Profile and Save is Fail * " );
+			}		
+	}
+	//Function summary:Verify Update Client Login info and close.
+	//Function Parameters:New Password,Old Password,Confirm Password
+		public void UpdateClientLoginInfoClose(Map<Object,Object>testdatamap)
+		{
+	      try {	
+	            WebClickUsingJS(EdaatOR.ClientMyAccUpdateLoginInfo);
+	            Thread.sleep(800);
+                WebEdit(EdaatOR.ClientLogininfoOldPassword, testdatamap.get("Old Password").toString());
+	            Thread.sleep(800);
+                WebEdit(EdaatOR.ClientLogininfoNewPassword, testdatamap.get("New Password").toString());
+	            Thread.sleep(800);
+	            WebEdit(EdaatOR.ClientLogininfoConfirmPassword, testdatamap.get("Confirm Password").toString());
+	            Thread.sleep(800);
+			    WebClick(EdaatOR.ClientMyAccUpdateProfileCancelbtn);
+				Thread.sleep(800);
+				test.log(Status.PASS,"Verify Update Client Profile Close" + driver.getTitle() +" * Update Client Profile Close is Pass * " );
+				}
+				catch (Exception e) {
+					this.takeScreenShot();
+					test.log(Status.FAIL,"Verify Update and save Profile " + driver.getTitle() +" * Update Client Profile and Save is Fail * " );
+				}		
+	
+		}	
+	
+		public void UpdateClientLoginInfoSave(Map<Object,Object>testdatamap)
+		    {
+		        try {
+		            WebClickUsingJS(EdaatOR.ClientMyAccUpdateLoginInfo);
+		            Thread.sleep(1500);
+	                WebEdit(EdaatOR.ClientLogininfoOldPassword, testdatamap.get("Old Password").toString());
+		            Thread.sleep(1500);
+	                WebEdit(EdaatOR.ClientLogininfoNewPassword, testdatamap.get("New Password").toString());
+		            Thread.sleep(1500);
+		            WebEdit(EdaatOR.ClientLogininfoConfirmPassword, testdatamap.get("Confirm Password").toString());
+		            Thread.sleep(1500);
+		            WebClickUsingJS(EdaatOR.ClientLogininfoSaveBtn);
+		            Thread.sleep(1500);
+		            if(CheckElementExists(EdaatOR.ClientLogininfoSave_Verify)==true)
+		            {
+		            this.takeScreenShot();
+		            WebClickUsingJS(EdaatOR.ClientLogininfoyesbtn);
+		            test.log(Status.PASS,"Verify Update Client Login Info Save" + driver.getTitle() +" * Update Client Login Info Save is Pass * " );
+		            this.takeScreenShot();
+		            }
+		        }
+		        catch(Exception e)
+
+		        {
+		            this.takeScreenShot();
+		            test.log(Status.FAIL,"Verify Update Client Login Info Save" + driver.getTitle() +" * Update Client Login Info Save is Pass * " );
+		        }
+
+		        
+
+		    
+
+	
+		    }
+		    
+		    	//Function summary:Method to Verify NavigatetoUpdateClientLoginInfo
+	//Function Parameters:N/A
+	public void NavigatetoUpdateClientLoginInfo() throws InterruptedException
+	{
+		WebClickUsingJS(EdaatOR.ClientMyAccUpdateClientLogininfo);
+		Thread.sleep(1000);
+	}
+	//Function summary	 :Method to Verify VerifyNewPwdNotMatchconfirmPwd
+	//Function Parameters:OldPassword,NewPassword,ConfirmPassword,VerifyMessage
+	public void VerifyNewPwdNotMatchconfirmPwd(Map<Object, Object> testdatamap)
+	{
+		try
+		{
+		WebEdit(EdaatOR.ClientMyAccUpdateClientLogin_oldpwd,testdatamap.get("OldPassword").toString());
+		Thread.sleep(2000);
+		WebEdit(EdaatOR.ClientMyAccUpdateClientLogin_newpwd,testdatamap.get("NewPassword").toString());
+		Thread.sleep(2000);
+		WebEdit(EdaatOR.ClientMyAccUpdateClientLogin_confirmpwd,testdatamap.get("ConfirmPassword").toString());
+		Thread.sleep(2000);
+		WebClick(EdaatOR.ClientMyAccUpdateClientLogin_savebtn);
+		Thread.sleep(3000);
+		this.takeScreenShot();
+		VerifyValue1(getText("//span[text()='"+testdatamap.get("VerifyMessage").toString()+"']"),testdatamap.get("VerifyMessage").toString());
+		Thread.sleep(2000);
+		test.log(Status.PASS,"Verify Incase New Password not match Confirm Password" + driver.getTitle() +" * New Password not match Confirm Password is Pass * " );
+
+		}
+		catch (Exception e) {
+			
+		test.log(Status.FAIL,"Verify Incase New Password not match Confirm Password" + driver.getTitle() +" *  New Password not match Confirm Password is Fail * " );
+		this.takeScreenShot();
+		}
+
+	}
+
+}
+
+

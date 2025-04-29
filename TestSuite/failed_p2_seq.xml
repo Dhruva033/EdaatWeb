@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="8">
+<!-- Scenario 1-->
+	<test name="Test-class test 1">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	 <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmGridView"/>
+	 <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmGridView"/>
+     </classes>
+	</test>	
+<!-- Scenario 2-->
+	<test name="Test-class test 2">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	 <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmApproveToggle"/>
+	
+		</classes>
+	</test>
+<!-- Scenario 3-->
+	<test name="Test-class test 3">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+   
+    <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMgmSubBillerEditbutton"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminContactsMngMsgClose"/>
+		</classes> 
+	</test>
+</suite>

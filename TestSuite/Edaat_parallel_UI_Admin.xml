@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="3">	
+<!-- Scenario 1-->
+	<test name="Test-class test 1">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminNotApprovedBillersMgmErrorMsg"/>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemMgmIndividualClientAccountSettingButtonErrorMsg"/>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemMagmtCorporateClientSettingsBtnErrorMsg"/>
+     </classes>
+	</test>	
+<!-- Scenario 2-->
+	<test name="Test-class test 2">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemManagementAddTaxesErrorMsg"/>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemMgmDistributionDailyTransferVerifyErrorMsg"/>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemMgmDistributionEODSettlementReportErrorMsg"/>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemMngBillerCategoriesAddErrorMsg"/>
+		</classes>
+	</test>
+<!-- Scenario 3-->
+	<test name="Test-class test 3">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminSystemMagmtProductCatgoriesAddErrorMsg"/>
+		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminUserGrpMgmAddGroupErrorMsg"/>
+ 		<class name="com.azmqalabs.edaattestautomation.testscripts.admin.ui.AdminUserListAddUserErrorMsg"/>
+		</classes> 
+	</test>
+</suite>

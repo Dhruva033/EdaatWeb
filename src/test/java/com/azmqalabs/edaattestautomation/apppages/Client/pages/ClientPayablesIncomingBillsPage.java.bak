@@ -1,0 +1,158 @@
+/**
+*
+* Test Script Name                      : NA
+* Objective                             : Verify to Client PayablesIncoming Bills Page Functionality.
+* Version                               : 1.0
+* Author                                : Basavaraj Mudnur
+* Created Date                          : 
+* Last Updated on                       : N/A
+* Updated By   			 			    : Basavaraj Mudnur
+* Pre-Conditions					    : N/A
+* Epic Details						 	: N/A
+* User Story Details				 	: N/A
+**/
+package com.azmqalabs.edaattestautomation.apppages.Client.pages;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Map;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.server.handler.SendKeys;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.azmqalabs.edaattestautomation.apppages.GlobalConstant;
+import com.azmqalabs.edaattestautomation.apppages.masterpages.BasePage;
+import com.azmqalabs.edaattestautomation.common.uielement.fieldDecorator;
+import com.azmqalabs.edaattestautomation.objectrepository.EdaatOR;
+import com.google.sitebricks.routing.Action;
+
+
+
+public class ClientPayablesIncomingBillsPage extends BasePage
+{
+
+	public ClientPayablesIncomingBillsPage(WebDriver driver,ExtentTest test)
+	{
+		this.driver=driver;
+		this.test=test;
+
+		PageFactory.initElements(new fieldDecorator(driver,test), this);
+	}  
+
+
+	@FindBy(xpath = EdaatOR.Biller_Client)
+	public WebElement Client;
+
+
+	public boolean Exists(){
+		return super.Exists(Client); 
+	}
+	//Function Summary   : Method to verify Navigate to "Incoming Bills" Page.
+	//Parameter Summary : N/A
+	public void NavigatetoIncomingBills() throws InterruptedException
+	{
+		WebClickUsingJS(EdaatOR.ClientsPayablesIncomingBillsBTN);
+		Thread.sleep(1000);
+	}
+	
+	public void SelectBillerNameDropDown(Map<Object,Object>testdatamap) throws InterruptedException
+	{
+		WebClick(EdaatOR.ClientsPayablesBillerNameDropdown);
+		Thread.sleep(1000);
+		WebSelect(EdaatOR.ClientsPayablesBillerNameDropdown, testdatamap.get("BillerName").toString());
+	}
+	
+	public void SelectPaymentStatusDropDown(Map<Object,Object>testdatamap) throws InterruptedException
+	{
+		WebClick(EdaatOR.ClientsPayablesPaymentStatusDropdown);
+		Thread.sleep(1000);
+		WebSelect(EdaatOR.ClientsPayablesPaymentStatusDropdown, testdatamap.get("PaymentStatus").toString());
+	}
+	public void SearchIncomingBills(Map<Object,Object>testdatamap) throws Exception
+	{
+		//WebClick(EdaatOR.ClientsPayablesInvoiceNumberTextField);
+		WebEdit(EdaatOR.ClientsPayablesInvoiceNumberTextField, testdatamap.get("BillNumber").toString());
+		//driver.findElement(By.xpath(EdaatOR.ClientsPayablesInvoiceNumberTextField)).sendKeys(testdatamap.get("InvoiceNumber").toString());
+		SelectBillerNameDropDown(testdatamap);
+		SelectPaymentStatusDropDown(testdatamap);
+		WebClick(EdaatOR.ClientsPayablesIncomingBillSerach);
+		this.takeScreenShot();
+		Thread.sleep(1000);
+		verifyElementIsPresent("//td/a[text()='"+testdatamap.get("BillNumber").toString()+"']");
+		this.takeScreenShot();
+	}
+	public void ClickonBillNumber(String BillNumber)
+	{
+		WebClickUsingJS("//a[text()='"+BillNumber+"']");
+	}
+	
+	public void VerifyBillNumberClickable(Map<Object,Object>testdatamap) throws Exception
+	{	    
+		NavigatetoIncomingBills();
+		SearchIncomingBills(testdatamap);
+		Thread.sleep(2000);
+		ClickonBillNumber(testdatamap.get("BillNumber").toString());
+		verifyElementIsPresent(EdaatOR.ClientsPayablesIncomInvoiceDetailsText);
+		
+	}
+	//Function Summary   : Method to verify Bills Printout functionality.
+	//Parameter Summary : N/A
+	public void verifyBillsPrint(Map<Object, Object> testdatamap) throws InterruptedException {
+		try {
+		WebClickUsingJS(EdaatOR.ClientsIncomingBillsBillnumber1);
+		Thread.sleep(2000);
+		switchToWindow();
+		driver.findElement(By.xpath(EdaatOR.ClientsIncomingBillPrintBtn)).sendKeys(Keys.PAGE_DOWN);
+		WebClickUsingJS(EdaatOR.ClientsIncomingBillPrintBtn);
+		Thread.sleep(4000);
+		this.takeScreenShot();
+		test.log(Status.PASS,"Bills  Printout" + driver.getTitle() +" * Bills  Printout is Pass * " );
+		}
+	catch(Exception e){
+		this.takeScreenShot();
+		test.log(Status.FAIL,"Bills  Printout" + driver.getTitle() +" *Bills  Printout is FAIL * " );		
+	}
+		
+		
+
+	}
+	
+
+//Function Summary: Verify Incoming Bills GridView
+	//Function Parameter:NA
+	public void IncomingBillsGridView() throws InterruptedException
+	{
+		try {
+		NavigatetoIncomingBills();
+		if(CheckElementExists(EdaatOR.ClientPayablesIncomingBillsGrid)==true)
+		{
+			test.log(Status.PASS,"FUNC-Incoming BillsGrid View"+driver.getTitle()+"Incoming BillsGrid View is Pass");
+		}
+		else
+		{
+		      test.log(Status.FAIL,"Incoming BillsGrid View" + driver.getTitle() +" * Incoming BillsGrid View is FAIL * ");
+		}
+	}
+		catch(Exception e)
+		{
+		      test.log(Status.FAIL,"Incoming BillsGrid View" + driver.getTitle() +" * Incoming BillsGrid View is FAIL * ");
+		}
+	}
+	
+	
+}
+
+
+
+
+
+

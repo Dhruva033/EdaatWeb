@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmSaveApprove"/>	
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMngBillerMgmtVerifyNewCheckboxViewedAfterAdminCheckSubbillerCheckbox"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmVerifyToAddCategoryFees"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMngBillerMgmtAddMinimumInvoiceAmountIsNotMandatory"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSysMgmBillerMgmAssignNewPaymentMethodByAdmin"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmAssignAllPaymentMethods"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmAssignSamePaymentMethodForMoreThanOneBiller"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSysMgmBillerMgmAdminIsAbleToUpdateAddOrRemovePaymentMethods"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminApprovedBillersMgmUpdateGridView"/>
+ 	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmInvalidActivation"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminTrackerMgmSearch"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedMgmCloseBiller"/>
+	  <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminNotApprovedBillersMgmReject"/>
+    </classes>
+  </test> 
+</suite> 

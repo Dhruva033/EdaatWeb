@@ -1,0 +1,528 @@
+23:16:10.688 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:16:10.693 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+23:16:11.386 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+23:16:11.386 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+23:16:11.527 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+23:16:11.527 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+23:16:12.073 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+23:16:12.120 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+23:19:14.562 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+23:19:14.562 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+23:19:15.248 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+23:19:15.248 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+23:19:15.389 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+23:19:15.389 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+23:19:15.983 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+23:19:16.030 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+23:19:25.376 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:19:25.376 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:19:29.326 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:19:29.334 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8c7e22cf-321a-4f81-9f36-ebb2ff9bfa0e (org.openqa.selenium.firefox.GeckoDriverService)
+23:21:08.175 INFO [ActiveSessions$1.onStop] - Removing session 8c7e22cf-321a-4f81-9f36-ebb2ff9bfa0e (org.openqa.selenium.firefox.GeckoDriverService)
+23:21:08.430 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:21:08.431 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:21:10.772 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:21:10.772 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 342d7377-ab48-492f-a81f-92b0bd682a3d (org.openqa.selenium.firefox.GeckoDriverService)
+23:21:15.414 INFO [ActiveSessions$1.onStop] - Removing session 342d7377-ab48-492f-a81f-92b0bd682a3d (org.openqa.selenium.firefox.GeckoDriverService)
+23:21:15.512 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:21:15.512 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:21:17.810 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:21:17.810 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ef43898a-aa74-40bb-a18b-a0077a085fb0 (org.openqa.selenium.firefox.GeckoDriverService)
+23:37:20.311 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:20.311 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:37:23.125 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:37:23.129 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fa506480-60ef-4a13-a445-322ee6e072d9 (org.openqa.selenium.firefox.GeckoDriverService)
+23:37:32.126 INFO [ActiveSessions$1.onStop] - Removing session fa506480-60ef-4a13-a445-322ee6e072d9 (org.openqa.selenium.firefox.GeckoDriverService)
+23:37:32.226 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:32.226 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:37:35.031 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:37:35.031 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fa4443a3-54b3-4d9b-bffd-54dd4b5bb792 (org.openqa.selenium.firefox.GeckoDriverService)
+23:37:44.924 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:44.924 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:37:47.696 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:37:47.696 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d0575244-8115-4a2b-beab-610ebd72c32b (org.openqa.selenium.firefox.GeckoDriverService)
+23:37:50.451 INFO [ActiveSessions$1.onStop] - Removing session d0575244-8115-4a2b-beab-610ebd72c32b (org.openqa.selenium.firefox.GeckoDriverService)
+23:37:50.702 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:37:50.702 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:37:53.017 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:37:53.017 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 350e9bef-f43b-42e6-bf42-ab7510b6c51b (org.openqa.selenium.firefox.GeckoDriverService)
+23:48:13.136 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:48:13.136 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:48:15.443 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:48:15.450 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9c75c7d9-0939-4564-a3ae-467a6782990f (org.openqa.selenium.firefox.GeckoDriverService)
+23:50:37.395 INFO [ActiveSessions$1.onStop] - Removing session 9c75c7d9-0939-4564-a3ae-467a6782990f (org.openqa.selenium.firefox.GeckoDriverService)
+23:50:37.577 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:50:37.577 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:50:39.945 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:50:39.951 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7159ffc6-e88a-4c7c-9286-86d38614bfe5 (org.openqa.selenium.firefox.GeckoDriverService)
+23:51:18.470 INFO [ActiveSessions$1.onStop] - Removing session ef43898a-aa74-40bb-a18b-a0077a085fb0 (org.openqa.selenium.firefox.GeckoDriverService)
+23:52:56.539 INFO [ActiveSessions$1.onStop] - Removing session 7159ffc6-e88a-4c7c-9286-86d38614bfe5 (org.openqa.selenium.firefox.GeckoDriverService)
+23:52:56.697 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:52:56.697 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:52:58.985 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:52:58.985 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d966ef53-9a38-49fa-b124-9ead0491e07a (org.openqa.selenium.firefox.GeckoDriverService)
+23:55:18.285 INFO [ActiveSessions$1.onStop] - Removing session d966ef53-9a38-49fa-b124-9ead0491e07a (org.openqa.selenium.firefox.GeckoDriverService)
+23:57:14.986 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:57:14.986 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:57:17.306 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:57:17.310 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2316e0b5-41fe-44ae-a8fa-060fc74857a8 (org.openqa.selenium.firefox.GeckoDriverService)
+23:57:22.367 INFO [ActiveSessions$1.onStop] - Removing session 2316e0b5-41fe-44ae-a8fa-060fc74857a8 (org.openqa.selenium.firefox.GeckoDriverService)
+23:57:22.448 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:57:22.448 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:57:24.779 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:57:24.781 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 088730db-14dd-43c6-a3eb-e1c983ca0b0a (org.openqa.selenium.firefox.GeckoDriverService)
+23:57:28.941 INFO [ActiveSessions$1.onStop] - Removing session 088730db-14dd-43c6-a3eb-e1c983ca0b0a (org.openqa.selenium.firefox.GeckoDriverService)
+23:57:29.004 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+23:57:29.004 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+23:57:31.336 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:57:31.352 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2f165aef-3297-45c4-9f1f-423507eb42a0 (org.openqa.selenium.firefox.GeckoDriverService)
+23:57:33.652 INFO [ActiveSessions$1.onStop] - Removing session 2f165aef-3297-45c4-9f1f-423507eb42a0 (org.openqa.selenium.firefox.GeckoDriverService)
+00:07:39.306 INFO [ActiveSessions$1.onStop] - Removing session fa4443a3-54b3-4d9b-bffd-54dd4b5bb792 (org.openqa.selenium.firefox.GeckoDriverService)
+00:07:54.454 INFO [ActiveSessions$1.onStop] - Removing session 350e9bef-f43b-42e6-bf42-ab7510b6c51b (org.openqa.selenium.firefox.GeckoDriverService)
+00:14:29.197 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:14:29.197 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+00:14:31.974 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+00:14:31.978 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ff203c7e-5884-4115-81a0-fc998bde6d92 (org.openqa.selenium.firefox.GeckoDriverService)
+00:16:51.368 INFO [ActiveSessions$1.onStop] - Removing session ff203c7e-5884-4115-81a0-fc998bde6d92 (org.openqa.selenium.firefox.GeckoDriverService)
+00:16:51.618 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:16:51.618 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+00:16:54.438 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+00:16:54.441 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6de6d712-925d-4b5e-bedd-34c77635f968 (org.openqa.selenium.firefox.GeckoDriverService)
+00:19:13.825 INFO [ActiveSessions$1.onStop] - Removing session 6de6d712-925d-4b5e-bedd-34c77635f968 (org.openqa.selenium.firefox.GeckoDriverService)
+00:19:13.903 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:19:13.903 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+00:19:16.233 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+00:19:16.236 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5f34b9e5-1b91-45ee-a8bf-1ce21f515ee1 (org.openqa.selenium.firefox.GeckoDriverService)
+00:21:35.916 INFO [ActiveSessions$1.onStop] - Removing session 5f34b9e5-1b91-45ee-a8bf-1ce21f515ee1 (org.openqa.selenium.firefox.GeckoDriverService)
+00:40:30.595 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:40:30.596 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+00:40:33.430 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+00:40:33.431 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7a0b13bf-477f-470e-a235-5d5ce763c3d2 (org.openqa.selenium.firefox.GeckoDriverService)
+00:42:52.271 INFO [ActiveSessions$1.onStop] - Removing session 7a0b13bf-477f-470e-a235-5d5ce763c3d2 (org.openqa.selenium.firefox.GeckoDriverService)
+00:42:52.486 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:42:52.486 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+00:42:55.251 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+00:42:55.254 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d4f1c8e9-3615-46f3-b06b-23b67ad59945 (org.openqa.selenium.firefox.GeckoDriverService)
+00:45:15.384 INFO [ActiveSessions$1.onStop] - Removing session d4f1c8e9-3615-46f3-b06b-23b67ad59945 (org.openqa.selenium.firefox.GeckoDriverService)
+00:45:15.608 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+00:45:15.608 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+00:45:18.418 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+00:45:18.419 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8465d5ba-802d-42c5-8d94-20fbb7b2f4c7 (org.openqa.selenium.firefox.GeckoDriverService)
+00:47:37.446 INFO [ActiveSessions$1.onStop] - Removing session 8465d5ba-802d-42c5-8d94-20fbb7b2f4c7 (org.openqa.selenium.firefox.GeckoDriverService)
+01:38:55.314 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:38:55.330 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+01:38:55.993 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+01:38:55.993 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:38:56.134 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:38:56.134 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:38:56.634 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:38:56.688 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:39:02.981 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:39:02.981 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:39:05.838 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:39:05.862 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a4dd25e2-acdc-4dc0-92a5-4a07889f0679 (org.openqa.selenium.firefox.GeckoDriverService)
+01:41:40.159 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:41:40.159 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:41:42.989 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:41:42.989 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 943f2bb9-e9d4-4df9-8df3-55d6e37eff94 (org.openqa.selenium.firefox.GeckoDriverService)
+01:46:17.430 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:46:17.430 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+01:46:18.128 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+01:46:18.128 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:46:18.253 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:46:18.253 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:46:18.791 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:46:18.822 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:46:25.241 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:46:25.241 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:46:27.572 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:46:27.588 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 533f5691-9168-4160-994a-a4a815d8344a (org.openqa.selenium.firefox.GeckoDriverService)
+01:50:16.122 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:50:16.122 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+01:50:16.888 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+01:50:16.888 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:50:17.028 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:50:17.028 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:50:17.563 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:50:17.594 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:50:26.167 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:50:26.167 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:50:28.526 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:50:28.557 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 69d024f1-b422-427d-bc28-c8e764787db7 (org.openqa.selenium.firefox.GeckoDriverService)
+01:53:29.482 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:53:29.498 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+01:53:30.196 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+01:53:30.196 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:53:30.336 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:53:30.336 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:53:30.868 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:53:30.914 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:53:36.662 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:53:36.663 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:53:38.994 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:53:39.010 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9b4c7584-ce26-45ff-ac66-3898d7018857 (org.openqa.selenium.firefox.GeckoDriverService)
+01:54:03.366 INFO [ActiveSessions$1.onStop] - Removing session 9b4c7584-ce26-45ff-ac66-3898d7018857 (org.openqa.selenium.firefox.GeckoDriverService)
+01:54:03.450 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:54:03.450 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:54:05.758 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:54:05.758 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0c67ca5c-7731-42aa-8d44-92cc6e937639 (org.openqa.selenium.firefox.GeckoDriverService)
+01:54:28.497 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+01:54:28.513 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+01:54:29.195 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+01:54:29.195 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+01:54:29.336 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+01:54:29.336 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+01:54:29.899 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+01:54:29.930 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+01:54:36.211 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:54:36.211 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:54:38.598 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:54:38.614 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 327e941b-6808-4e0d-b7d5-09a109a2dc65 (org.openqa.selenium.firefox.GeckoDriverService)
+01:55:06.820 INFO [ActiveSessions$1.onStop] - Removing session 327e941b-6808-4e0d-b7d5-09a109a2dc65 (org.openqa.selenium.firefox.GeckoDriverService)
+01:55:07.025 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+01:55:07.025 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+01:55:09.320 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+01:55:09.320 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b0f74963-bc76-4a43-8245-446b4373faa4 (org.openqa.selenium.firefox.GeckoDriverService)
+02:01:31.740 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+02:01:31.740 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+02:01:32.537 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+02:01:32.537 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+02:01:32.683 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+02:01:32.683 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+02:01:33.381 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+02:01:33.428 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+02:02:01.270 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:02:01.270 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:02:03.584 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:02:03.600 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a5efd4a4-e8d8-4bd6-beea-61d99f5a2bc5 (org.openqa.selenium.firefox.GeckoDriverService)
+02:02:10.834 INFO [ActiveSessions$1.onStop] - Removing session a5efd4a4-e8d8-4bd6-beea-61d99f5a2bc5 (org.openqa.selenium.firefox.GeckoDriverService)
+02:02:11.096 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:02:11.096 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:02:13.444 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:02:13.444 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 25c7365d-d42d-4289-b3cc-0a94487a5b1d (org.openqa.selenium.firefox.GeckoDriverService)
+02:04:33.006 INFO [ActiveSessions$1.onStop] - Removing session 25c7365d-d42d-4289-b3cc-0a94487a5b1d (org.openqa.selenium.firefox.GeckoDriverService)
+02:04:33.085 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:04:33.085 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:04:35.365 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:04:35.365 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 63e06e99-e24b-4a48-a86b-ddd924d19228 (org.openqa.selenium.firefox.GeckoDriverService)
+02:06:54.739 INFO [ActiveSessions$1.onStop] - Removing session 63e06e99-e24b-4a48-a86b-ddd924d19228 (org.openqa.selenium.firefox.GeckoDriverService)
+02:13:59.237 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:13:59.237 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:14:02.066 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:14:02.081 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6dc6f593-337a-49a7-b39d-e111672140ed (org.openqa.selenium.firefox.GeckoDriverService)
+02:14:21.943 INFO [ActiveSessions$1.onStop] - Removing session 6dc6f593-337a-49a7-b39d-e111672140ed (org.openqa.selenium.firefox.GeckoDriverService)
+02:14:22.216 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:14:22.216 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:14:24.534 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:14:24.534 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9859740d-3c36-421c-ad4e-da7242a6f735 (org.openqa.selenium.firefox.GeckoDriverService)
+02:14:31.612 INFO [ActiveSessions$1.onStop] - Removing session 9859740d-3c36-421c-ad4e-da7242a6f735 (org.openqa.selenium.firefox.GeckoDriverService)
+02:14:31.679 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:14:31.679 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:14:33.974 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:14:33.974 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b6f1b458-220e-413d-954a-0cf8869a12bb (org.openqa.selenium.firefox.GeckoDriverService)
+02:14:39.238 INFO [ActiveSessions$1.onStop] - Removing session b6f1b458-220e-413d-954a-0cf8869a12bb (org.openqa.selenium.firefox.GeckoDriverService)
+02:15:22.421 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:15:22.421 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:15:24.708 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:15:24.708 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 407c3357-19b4-419b-bbf4-67da82597458 (org.openqa.selenium.firefox.GeckoDriverService)
+02:18:37.110 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:18:37.110 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:18:39.991 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:18:39.991 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 462f998f-2621-481c-8efc-607db11064b2 (org.openqa.selenium.firefox.GeckoDriverService)
+02:18:46.722 INFO [ActiveSessions$1.onStop] - Removing session 462f998f-2621-481c-8efc-607db11064b2 (org.openqa.selenium.firefox.GeckoDriverService)
+02:18:46.987 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:18:46.987 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:18:49.303 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:18:49.303 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d8682418-356c-4381-8ec6-66f36d59ab74 (org.openqa.selenium.firefox.GeckoDriverService)
+02:19:55.987 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+02:19:55.987 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+02:19:56.752 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+02:19:56.752 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+02:19:56.893 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+02:19:56.893 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+02:19:57.534 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+02:19:57.580 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+02:20:29.877 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:20:29.877 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:20:32.219 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:20:32.234 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 30211540-37e3-4bfd-b510-f1af7684d6e8 (org.openqa.selenium.firefox.GeckoDriverService)
+02:24:18.356 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:24:18.356 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:24:20.659 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:24:20.659 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8593845f-fba1-4ccb-9512-50796387af94 (org.openqa.selenium.firefox.GeckoDriverService)
+02:26:39.600 INFO [ActiveSessions$1.onStop] - Removing session 8593845f-fba1-4ccb-9512-50796387af94 (org.openqa.selenium.firefox.GeckoDriverService)
+02:26:39.833 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:26:39.833 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:26:42.615 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:26:42.631 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b98c844a-ca85-48f6-9824-8b47290d403f (org.openqa.selenium.firefox.GeckoDriverService)
+02:26:48.765 INFO [ActiveSessions$1.onStop] - Removing session b98c844a-ca85-48f6-9824-8b47290d403f (org.openqa.selenium.firefox.GeckoDriverService)
+02:26:48.848 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+02:26:48.849 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+02:26:51.142 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+02:26:51.142 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session bba3648f-92f6-403f-92da-3d4d6a02cd1e (org.openqa.selenium.firefox.GeckoDriverService)
+13:04:40.611 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:04:40.621 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+13:04:42.504 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+13:04:42.504 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:04:42.772 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:04:42.773 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:04:44.268 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:04:44.405 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:07:05.144 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:07:05.156 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:07:12.978 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:07:13.038 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 341c3dc4-8d43-48fb-94c0-399937830054 (org.openqa.selenium.firefox.GeckoDriverService)
+13:09:36.246 INFO [ActiveSessions$1.onStop] - Removing session 341c3dc4-8d43-48fb-94c0-399937830054 (org.openqa.selenium.firefox.GeckoDriverService)
+13:09:36.498 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:09:36.498 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:09:42.614 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:09:42.619 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 69485ea4-1f09-4c7d-afbc-a9e6403ae25f (org.openqa.selenium.firefox.GeckoDriverService)
+13:12:06.285 INFO [ActiveSessions$1.onStop] - Removing session 69485ea4-1f09-4c7d-afbc-a9e6403ae25f (org.openqa.selenium.firefox.GeckoDriverService)
+13:12:06.558 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:12:06.558 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:12:12.498 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:12:12.502 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8065294d-f76a-4f21-8ab5-205421863c6e (org.openqa.selenium.firefox.GeckoDriverService)
+13:13:13.354 INFO [ActiveSessions$1.onStop] - Removing session 8065294d-f76a-4f21-8ab5-205421863c6e (org.openqa.selenium.firefox.GeckoDriverService)
+13:13:36.308 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:13:36.309 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:13:42.825 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:13:42.828 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 14713730-5778-4f1e-b8b2-1e6113ba6630 (org.openqa.selenium.firefox.GeckoDriverService)
+13:16:05.985 INFO [ActiveSessions$1.onStop] - Removing session 14713730-5778-4f1e-b8b2-1e6113ba6630 (org.openqa.selenium.firefox.GeckoDriverService)
+13:16:06.340 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:16:06.341 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:16:12.465 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:16:12.469 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 52413269-0f7a-4627-a6fb-6ce23b17e29b (org.openqa.selenium.firefox.GeckoDriverService)
+13:18:06.736 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:18:06.752 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+13:18:09.369 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+13:18:09.369 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:18:09.852 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:18:09.853 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:18:12.408 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:18:12.566 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:18:50.437 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:18:50.437 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:18:59.906 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:18:59.982 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 141497ab-79d9-4960-a650-5233f6058785 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:20.565 INFO [ActiveSessions$1.onStop] - Removing session 141497ab-79d9-4960-a650-5233f6058785 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:20.800 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:21:20.800 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:21:23.811 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:21:23.811 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 963d6466-c910-4125-97b2-641510aa1215 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:27.092 INFO [ActiveSessions$1.onStop] - Removing session 963d6466-c910-4125-97b2-641510aa1215 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:27.162 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:21:27.162 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:21:29.501 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:21:29.504 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b10fc66d-7aa5-4dd5-ab39-dd8f3d4dd061 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:31.754 INFO [ActiveSessions$1.onStop] - Removing session b10fc66d-7aa5-4dd5-ab39-dd8f3d4dd061 (org.openqa.selenium.firefox.GeckoDriverService)
+13:22:21.793 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:22:21.793 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+13:22:22.887 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+13:22:22.887 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:22:23.074 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:22:23.074 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:22:23.839 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:22:23.920 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:22:36.357 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:22:36.357 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:22:39.252 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:22:39.283 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4e8419f1-c676-49fe-ab21-b41f3cd9d846 (org.openqa.selenium.firefox.GeckoDriverService)
+13:24:59.527 INFO [ActiveSessions$1.onStop] - Removing session 4e8419f1-c676-49fe-ab21-b41f3cd9d846 (org.openqa.selenium.firefox.GeckoDriverService)
+13:24:59.621 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:24:59.621 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:25:01.909 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:25:01.909 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 761be8a0-e96b-46d6-a142-cd4e7b415051 (org.openqa.selenium.firefox.GeckoDriverService)
+13:26:29.738 INFO [ActiveSessions$1.onStop] - Removing session 761be8a0-e96b-46d6-a142-cd4e7b415051 (org.openqa.selenium.firefox.GeckoDriverService)
+13:26:29.832 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:26:29.832 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:26:32.208 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:26:32.208 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2d1f40e4-e190-4af7-a2f3-77aac7052de6 (org.openqa.selenium.firefox.GeckoDriverService)
+13:28:52.012 INFO [ActiveSessions$1.onStop] - Removing session 2d1f40e4-e190-4af7-a2f3-77aac7052de6 (org.openqa.selenium.firefox.GeckoDriverService)
+13:30:02.374 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:30:02.374 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:30:05.189 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:30:05.189 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session bdc1ecff-9a8f-4fb9-98d7-a5fedc1c51e8 (org.openqa.selenium.firefox.GeckoDriverService)
+13:32:27.442 INFO [ActiveSessions$1.onStop] - Removing session bdc1ecff-9a8f-4fb9-98d7-a5fedc1c51e8 (org.openqa.selenium.firefox.GeckoDriverService)
+13:32:27.530 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:32:27.530 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:32:29.843 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:32:29.843 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4eb4ba43-d718-45d2-8aca-64d03e387b31 (org.openqa.selenium.firefox.GeckoDriverService)
+13:34:50.426 INFO [ActiveSessions$1.onStop] - Removing session 4eb4ba43-d718-45d2-8aca-64d03e387b31 (org.openqa.selenium.firefox.GeckoDriverService)
+13:34:50.548 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:34:50.548 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:34:52.880 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:34:52.880 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6f84221a-c5aa-41ca-978f-a7672f43774f (org.openqa.selenium.firefox.GeckoDriverService)
+13:37:12.053 INFO [ActiveSessions$1.onStop] - Removing session 6f84221a-c5aa-41ca-978f-a7672f43774f (org.openqa.selenium.firefox.GeckoDriverService)
+13:16:09.539 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+13:16:09.547 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+13:16:10.515 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+13:16:10.515 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+13:16:10.654 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+13:16:10.654 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+13:16:11.616 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+13:16:11.746 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+13:16:39.231 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:16:39.234 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:16:44.460 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:16:44.535 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3437b44e-50af-47f2-8a53-6d258d52c7c0 (org.openqa.selenium.firefox.GeckoDriverService)
+13:19:05.486 INFO [ActiveSessions$1.onStop] - Removing session 3437b44e-50af-47f2-8a53-6d258d52c7c0 (org.openqa.selenium.firefox.GeckoDriverService)
+13:19:05.635 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:19:05.635 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:19:09.274 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:19:09.276 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 96d7f412-7371-45b2-af35-691eb3434764 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:31.727 INFO [ActiveSessions$1.onStop] - Removing session 96d7f412-7371-45b2-af35-691eb3434764 (org.openqa.selenium.firefox.GeckoDriverService)
+13:21:31.856 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:21:31.856 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:21:35.438 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:21:35.443 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 78f2fcd3-f2ef-4373-90ad-1f51881a51dc (org.openqa.selenium.firefox.GeckoDriverService)
+13:23:58.603 INFO [ActiveSessions$1.onStop] - Removing session 78f2fcd3-f2ef-4373-90ad-1f51881a51dc (org.openqa.selenium.firefox.GeckoDriverService)
+13:36:09.726 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:36:09.726 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:36:13.254 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:36:13.257 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 751a4145-a5c9-48b8-a9ba-3a4f0fcfcf4c (org.openqa.selenium.firefox.GeckoDriverService)
+13:38:35.733 INFO [ActiveSessions$1.onStop] - Removing session 751a4145-a5c9-48b8-a9ba-3a4f0fcfcf4c (org.openqa.selenium.firefox.GeckoDriverService)
+13:38:35.848 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:38:35.848 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:38:40.491 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:38:40.494 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 64995e3e-1615-4a70-8855-b9a3782125d4 (org.openqa.selenium.firefox.GeckoDriverService)
+13:41:01.932 INFO [ActiveSessions$1.onStop] - Removing session 64995e3e-1615-4a70-8855-b9a3782125d4 (org.openqa.selenium.firefox.GeckoDriverService)
+13:41:02.051 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+13:41:02.051 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+13:41:06.727 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:41:06.729 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session cfb44352-f711-4df6-817e-1c57a5410775 (org.openqa.selenium.firefox.GeckoDriverService)
+13:43:27.113 INFO [ActiveSessions$1.onStop] - Removing session cfb44352-f711-4df6-817e-1c57a5410775 (org.openqa.selenium.firefox.GeckoDriverService)
+11:37:24.008 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:37:24.024 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+11:37:24.911 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+11:37:24.911 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+11:37:25.067 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+11:37:25.067 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+11:37:25.802 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+11:37:25.864 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+11:37:37.989 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:37:37.989 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:37:42.537 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:37:42.577 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 971dbead-af74-4e75-b563-978a989ff93b (org.openqa.selenium.firefox.GeckoDriverService)
+11:40:03.277 INFO [ActiveSessions$1.onStop] - Removing session 971dbead-af74-4e75-b563-978a989ff93b (org.openqa.selenium.firefox.GeckoDriverService)
+11:40:03.364 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:40:03.364 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:40:05.678 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:40:05.678 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a3ae2ec9-f220-458e-9de2-af5644a0d470 (org.openqa.selenium.firefox.GeckoDriverService)
+11:42:25.026 INFO [ActiveSessions$1.onStop] - Removing session a3ae2ec9-f220-458e-9de2-af5644a0d470 (org.openqa.selenium.firefox.GeckoDriverService)
+11:42:25.120 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:42:25.120 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:42:27.455 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:42:27.471 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 63ea1ceb-fbd6-4fb6-8fc4-692e09c17fe8 (org.openqa.selenium.firefox.GeckoDriverService)
+11:44:46.472 INFO [ActiveSessions$1.onStop] - Removing session 63ea1ceb-fbd6-4fb6-8fc4-692e09c17fe8 (org.openqa.selenium.firefox.GeckoDriverService)
+11:48:57.163 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:48:57.163 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:49:00.194 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:49:00.196 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b19bfd09-f6a9-4f76-83d5-1ebf653ffc8c (org.openqa.selenium.firefox.GeckoDriverService)
+11:51:20.071 INFO [ActiveSessions$1.onStop] - Removing session b19bfd09-f6a9-4f76-83d5-1ebf653ffc8c (org.openqa.selenium.firefox.GeckoDriverService)
+11:51:20.242 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:51:20.242 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:51:22.564 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:51:22.564 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 68c32846-ccc7-4591-ab35-dcf5c2e86792 (org.openqa.selenium.firefox.GeckoDriverService)
+11:53:42.258 INFO [ActiveSessions$1.onStop] - Removing session 68c32846-ccc7-4591-ab35-dcf5c2e86792 (org.openqa.selenium.firefox.GeckoDriverService)
+11:53:42.331 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+11:53:42.331 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:53:45.164 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:53:45.164 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c5d4b85b-8494-4bb9-af09-a8561e0b9e4f (org.openqa.selenium.firefox.GeckoDriverService)
+11:56:04.586 INFO [ActiveSessions$1.onStop] - Removing session c5d4b85b-8494-4bb9-af09-a8561e0b9e4f (org.openqa.selenium.firefox.GeckoDriverService)
+12:01:31.199 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+12:01:31.199 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+12:01:34.677 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:01:34.679 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d79fc013-35a7-4486-b3d0-0c8aa87abd4f (org.openqa.selenium.firefox.GeckoDriverService)
+12:03:54.229 INFO [ActiveSessions$1.onStop] - Removing session d79fc013-35a7-4486-b3d0-0c8aa87abd4f (org.openqa.selenium.firefox.GeckoDriverService)
+12:03:54.321 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+12:03:54.321 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+12:03:56.666 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:03:56.669 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3c779772-dff6-4899-b3c5-4af5ef433565 (org.openqa.selenium.firefox.GeckoDriverService)
+12:06:15.950 INFO [ActiveSessions$1.onStop] - Removing session 3c779772-dff6-4899-b3c5-4af5ef433565 (org.openqa.selenium.firefox.GeckoDriverService)
+12:06:16.026 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+12:06:16.026 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+12:06:18.388 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:06:18.388 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ff0a96e7-a546-472f-a5ea-17adb1f0075d (org.openqa.selenium.firefox.GeckoDriverService)
+12:08:39.288 INFO [ActiveSessions$1.onStop] - Removing session ff0a96e7-a546-472f-a5ea-17adb1f0075d (org.openqa.selenium.firefox.GeckoDriverService)
+14:09:30.669 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:09:30.669 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+14:09:31.521 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+14:09:31.521 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+14:09:31.677 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+14:09:31.677 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+14:09:32.380 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+14:09:32.442 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:09:39.349 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:09:39.349 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:09:43.351 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:09:43.367 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a01e5bef-448b-41bf-a041-ce921bbb62d4 (org.openqa.selenium.firefox.GeckoDriverService)
+14:11:55.171 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:11:55.171 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+14:11:55.980 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+14:11:55.980 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+14:11:56.175 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+14:11:56.175 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+14:11:56.802 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+14:11:56.839 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:12:16.757 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:12:16.757 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:12:19.793 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:12:19.840 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2299b9ea-916e-48bd-ae95-2ff4ece3197a (org.openqa.selenium.firefox.GeckoDriverService)
+14:14:40.830 INFO [ActiveSessions$1.onStop] - Removing session 2299b9ea-916e-48bd-ae95-2ff4ece3197a (org.openqa.selenium.firefox.GeckoDriverService)
+14:14:40.927 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:14:40.927 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:14:43.299 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:14:43.299 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7b2ae0bd-1e4d-4203-947d-02684006b7ea (org.openqa.selenium.firefox.GeckoDriverService)
+14:16:50.977 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+14:16:50.992 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+14:16:52.039 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+14:16:52.039 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+14:16:52.195 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+14:16:52.195 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+14:16:52.820 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+14:16:52.851 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+14:17:00.092 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:17:00.092 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:17:04.260 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:17:04.293 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a1e0b196-c711-406e-bc8d-619e80eb590f (org.openqa.selenium.firefox.GeckoDriverService)
+14:19:24.707 INFO [ActiveSessions$1.onStop] - Removing session a1e0b196-c711-406e-bc8d-619e80eb590f (org.openqa.selenium.firefox.GeckoDriverService)
+14:19:24.880 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:19:24.880 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:19:28.847 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:19:28.847 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 82954bea-ef03-4a2c-bdc3-a8a4f2db23af (org.openqa.selenium.firefox.GeckoDriverService)
+14:21:49.431 INFO [ActiveSessions$1.onStop] - Removing session 82954bea-ef03-4a2c-bdc3-a8a4f2db23af (org.openqa.selenium.firefox.GeckoDriverService)
+14:21:49.494 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:21:49.494 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:21:52.408 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:21:52.411 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f5f9f1fc-49c0-451e-a27e-d4325143cff7 (org.openqa.selenium.firefox.GeckoDriverService)
+14:24:15.217 INFO [ActiveSessions$1.onStop] - Removing session f5f9f1fc-49c0-451e-a27e-d4325143cff7 (org.openqa.selenium.firefox.GeckoDriverService)
+14:25:44.137 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+14:25:44.137 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+14:25:48.692 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:25:48.693 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 53e0db9c-39b4-4f06-bff3-0c235f7336f9 (org.openqa.selenium.firefox.GeckoDriverService)
+15:47:18.019 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+15:47:18.025 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+15:47:18.882 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+15:47:18.882 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+15:47:19.042 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+15:47:19.042 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+15:47:19.702 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+15:47:19.767 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+15:47:44.701 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+15:47:44.702 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+15:47:50.667 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+15:47:50.731 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 191607d8-d52f-403c-b7c0-eb1490fdae3c (org.openqa.selenium.firefox.GeckoDriverService)
+15:51:00.115 INFO [ActiveSessions$1.onStop] - Removing session 191607d8-d52f-403c-b7c0-eb1490fdae3c (org.openqa.selenium.firefox.GeckoDriverService)
+15:51:00.250 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptInsecureCerts: true, browserName: firefox, platform: WINDOWS, version: }
+15:51:00.251 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+15:51:03.141 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+15:51:03.142 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7ce192f1-4abb-4385-bdfb-4cc4b6395208 (org.openqa.selenium.firefox.GeckoDriverService)
+16:22:10.073 INFO [ActiveSessions$1.onStop] - Removing session 7ce192f1-4abb-4385-bdfb-4cc4b6395208 (org.openqa.selenium.firefox.GeckoDriverService)
+11:59:37.629 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.12.0', revision: '7c6e0b3'
+11:59:37.634 INFO [GridLauncherV3$3.launch] - Launching a Selenium Grid node on port 5552
+11:59:39.749 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5552
+11:59:39.749 INFO [GridLauncherV3$3.launch] - Selenium Grid node is up and ready to register to the hub
+11:59:40.266 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+11:59:40.266 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://localhost:4444/grid/register
+11:59:41.822 INFO [SelfRegisteringRemote.registerToHub] - Updating the node configuration from the hub
+11:59:41.883 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use

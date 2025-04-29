@@ -8,8 +8,8 @@
 	<name>Global Auto Testing Platform</name>
 	<description>Support All Types of Testing</description>
 	<properties>
-		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-		<jdk.version>17</jdk.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<jdk.version>1.8</jdk.version>
 		<maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
 		<suiteXmlFile />
 		<slf4j-simple.version>1.7.25</slf4j-simple.version>
@@ -60,7 +60,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven-surefire-plugin.version}</version>
 				<configuration>
-					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<suiteXmlFiles>
 						<suiteXmlFile>${basedir}/TestSuite/Client_P2.xml</suiteXmlFile>
 					</suiteXmlFiles>
@@ -71,13 +70,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
-					<verbose>true</verbose>
-					<fork>true</fork>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
 					<encoding>UTF-8</encoding>
-					<useIncrementalCompilation>false</useIncrementalCompilation>
-					<!--  false means true here  -->
 				</configuration>
 			</plugin>
 		</plugins>
@@ -463,6 +458,13 @@
 			<artifactId>javax.mail</artifactId>
 			<version>1.6.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.22</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 </project>

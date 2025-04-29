@@ -29,14 +29,15 @@ pipeline {
             }
         }
 
-    stage('Find Latest Report') {
-            steps {
-                bat '''
-                for /f "delims=" %%i in ('dir /b /od %REPORT_DIR%\\*.html') do set "latest=%%i"
-                echo Latest Report=!latest! > latest_report.txt
-                '''
-            }
-        }
+        stage('Find Latest Report') {
+    steps {
+        bat '''
+            cmd /v:on /c "for /f %%i in ('dir /b /od src\\test\\resources\\testreport\\edaat\\*.html') do set latest=%%i & echo !latest!" > latest_report.txt
+        '''
+    }
+}
+
+
 
         stage('Publish HTML Report') {
             steps {

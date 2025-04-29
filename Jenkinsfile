@@ -29,35 +29,32 @@ pipeline {
             }
         }
 
-        stage('Find Dynamic Report Name') {
+         stage('Find Latest Report') {
             steps {
                 script {
-                    def reportPath = new File(env.REPORT_DIR)
-                    if (!reportPath.exists()) {
-                        error "Report directory does not exist: ${env.REPORT_DIR}"
+                    def reportFile = bat(script: """
+                        for /f "delims=" %%i in ('dir /b /od ${REPORT_DIR}\\*.html') do set LAST_REPORT=%%i
+                        echo %LAST_REPORT%
+                    """, returnStdout: true).trim()
+                    
+                    if (reportFile) {
+                        env.REPORT_FILE = reportFile
+                        echo "Latest report file: ${env.REPORT_FILE}"
+                    } else {
+                        error "No report file found!"
                     }
-
-                    def htmlFiles = reportPath.listFiles().findAll { it.name.endsWith('.html') }
-                    if (htmlFiles.isEmpty()) {
-                        error "No HTML report found in ${env.REPORT_DIR}"
-                    }
-
-                    // Pick the most recently modified HTML report
-                    def latestFile = htmlFiles.max { it.lastModified() }
-                    echo "Found latest report file: ${latestFile.name}"
-                    env.REPORT_FILE = latestFile.name
                 }
             }
         }
 
-        stage('Publish Test Reports') {
+        stage('Publish Test Report') {
             steps {
                 publishHTML(target: [
                     allowMissing: false,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
-                    reportDir: "${env.REPORT_DIR}",
-                    reportFiles: "${env.REPORT_FILE}",
+                    reportDir: "${REPORT_DIR}",
+                    reportFiles: "${REPORT_FILE}",
                     reportName: 'Automation Test Results'
                 ])
             }

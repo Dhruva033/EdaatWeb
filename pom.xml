@@ -10,7 +10,7 @@
 	<properties>
 		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
 		<jdk.version>17</jdk.version>
-		<maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
+		<maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
 		<suiteXmlFile />
 		<slf4j-simple.version>1.7.25</slf4j-simple.version>
 		<slf4j-api.version>1.7.25</slf4j-api.version>
@@ -60,6 +60,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven-surefire-plugin.version}</version>
 				<configuration>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<suiteXmlFiles>
 						<suiteXmlFile>${basedir}/TestSuite/Client_P2.xml</suiteXmlFile>
 					</suiteXmlFiles>

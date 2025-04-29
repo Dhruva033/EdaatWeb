@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-     <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminSystemMagmtCorporateClientSettingsBtn"/>
-	 <class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminPaymentMethodVerifyAddFeesBasedOnInvoiceAmount"/>
+	<class name="com.azmqalabs.edaattestautomation.testscripts.admin.AdminMyBillsInvalid"/>
     </classes>
   </test>
 </suite>

@@ -30,19 +30,23 @@ pipeline {
         }
 
         stage('Find Latest Report') {
-    steps {
-        bat '''
-            cmd /v:on /c "for /f %%i in ('dir /b /od src\\test\\resources\\testreport\\edaat\\*.html') do set latest=%%i & echo !latest!" > latest_report.txt
-        '''
-    }
-}
-
-
+            steps {
+                bat '''
+                    @echo off
+                    setlocal enabledelayedexpansion
+                    set "latest="
+                    for /f "delims=" %%i in ('dir /b /a:-d /od src\\test\\resources\\testreport\\edaat\\*.html') do (
+                        set "latest=%%i"
+                    )
+                    echo !latest! > latest_report.txt
+                '''
+            }
+        }
 
         stage('Publish HTML Report') {
             steps {
                 script {
-                    def reportFile = readFile('latest_report.txt').trim().replace('Latest Report=', '')
+                    def reportFile = readFile('latest_report.txt').trim()
                     echo "Latest report file: ${reportFile}"
 
                     publishHTML(target: [

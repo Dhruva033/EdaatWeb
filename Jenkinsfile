@@ -1,31 +1,44 @@
 pipeline {
     agent any
+    
+    
+      tools {
+        maven 'Maven 3.8'
+        jdk 'JDK 11'
+    }
 
     environment {
         REPORT_DIR = 'src/test/resources/testreport/edaat'
-        REPORT_FILE = 'Admin_SystemManagement_MyBills_Client_Payables_P1_P2_P3_P4_SecondRun_*.html'
     }
 
     stages {
         stage('Checkout') {
             steps {
-
                 git url: 'https://github.com/Dhruva033/EdaatWeb.git', branch: 'master'
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                script {
-                    sh 'mvn clean install'
-                }
+                sh 'mvn clean install'
             }
         }
 
         stage('Run Tests') {
             steps {
+                sh 'mvn test -DsuiteXmlFile=TestSuite/Client_P2.xml'
+            }
+        }
+
+        stage('Find Dynamic Report Name') {
+            steps {
                 script {
-                    sh 'mvn test -DsuiteXmlFile=testsuite/Client_P2.xml'
+                    def files = sh(script: "ls ${REPORT_DIR}/*.html", returnStdout: true).trim().split("\n")
+                    if (files.length == 0) {
+                        error "No report file found!"
+                    }
+                    env.REPORT_FILE = files[0].tokenize('/').last()
+                    echo "Report file detected: ${env.REPORT_FILE}"
                 }
             }
         }

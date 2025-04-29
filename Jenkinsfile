@@ -20,13 +20,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'mvn test -DsuiteXmlFile=TestSuite/Client_P2.xml'
+                bat 'mvn test -DsuiteXmlFile=TestSuite/Client_P2.xml'
             }
         }
 

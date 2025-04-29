@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        REPORT_DIR = 'src/test/resources/testreport/edaat'
+        REPORT_DIR = 'src/test/resources/testReport/Edaat'
     }
 
     stages {
